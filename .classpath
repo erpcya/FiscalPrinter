@@ -3,8 +3,10 @@
 	<classpathentry kind="src" path="base"/>
 	<classpathentry kind="src" path="client"/>
 	<classpathentry kind="src" path="patches"/>
+	<classpathentry kind="src" path="test.tfhka"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/adempiere_370"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Get-Weight"/>
+	<classpathentry kind="lib" path="tools/lib/TfhkaJava.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
