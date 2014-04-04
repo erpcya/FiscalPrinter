@@ -14,4 +14,6 @@ package org.fiscalprinter.util;
 public interface I_Fiscal_Printer {
 	public void inforClient();
 	
+	public void printCmd(String cmd);
+	
 }
