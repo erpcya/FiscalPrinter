@@ -7,9 +7,9 @@
  */
 package org.fiscalprinter.process;
 
-import org.compiere.process.ProcessInfoParameter;
+/*import org.compiere.process.ProcessInfoParameter;
 import org.compiere.process.SvrProcess;
-/*import org.spin.model.MFTASerialPortConfig;
+import org.spin.model.MFTASerialPortConfig;
 import org.spin.model.X_FTA_SerialPortConfig;
 */
 import tfhka.Tfhka;
@@ -18,13 +18,13 @@ import tfhka.Tfhka;
  * @author <a href="mailto:dixon.22martinez@gmail.com">Dixon Martinez</a>
  *
  */
-public class FiscalPrinterOpenPort extends SvrProcess {
+public class FiscalPrinterOpenPort {/*extends SvrProcess {
 
 	int p_FTA_SerialPortConfig_ID;
 	
 	/* (non-Javadoc)
 	 * @see org.compiere.process.SvrProcess#prepare()
-	 */
+	 *
 	@Override
 	protected void prepare() {
 		for (ProcessInfoParameter para : getParameter()) {
@@ -32,14 +32,14 @@ public class FiscalPrinterOpenPort extends SvrProcess {
 			if(name == null)
 				;
 		/*	if(name.equals(X_FTA_SerialPortConfig.COLUMNNAME_FTA_SerialPortConfig_ID))
-				p_FTA_SerialPortConfig_ID = para.getParameterAsInt();*/
+				p_FTA_SerialPortConfig_ID = para.getParameterAsInt();*
 		}
 
 	}
 
 	/* (non-Javadoc)
 	 * @see org.compiere.process.SvrProcess#doIt()
-	 */
+	 *
 	@Override
 	protected String doIt() throws Exception {
 		/*MFTASerialPortConfig m_FTA_SerialPortConfig = new MFTASerialPortConfig(getCtx(), p_FTA_SerialPortConfig_ID, get_TrxName());
@@ -57,8 +57,8 @@ public class FiscalPrinterOpenPort extends SvrProcess {
 		catch(tfhka.PrinterExeption pe)
 		{}
 		
-		return String.valueOf(m_Tfhka.IndPuerto);*/
+		return String.valueOf(m_Tfhka.IndPuerto);*
 		return "";
 	}
-
+*/
 }
