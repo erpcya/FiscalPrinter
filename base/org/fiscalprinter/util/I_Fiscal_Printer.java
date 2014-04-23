@@ -16,4 +16,6 @@ public interface I_Fiscal_Printer {
 	
 	public void printCmd(String cmd);
 	
+	public boolean openPort(String port);
+	
 }
