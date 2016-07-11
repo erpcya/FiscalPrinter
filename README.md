@@ -1,4 +1,4 @@
-LVE-Fiscal-Printer
+Fiscal-Printer
 ==================
 
 Fiscal Printer Handler
