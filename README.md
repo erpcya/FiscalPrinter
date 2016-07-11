@@ -1,4 +1,4 @@
 LVE-Fiscal-Printer
 ==================
 
-Fiscal Printer localization Venezuela
+Fiscal Printer Handler
