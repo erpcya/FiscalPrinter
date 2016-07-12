@@ -20,17 +20,17 @@ import java.sql.Timestamp;
 import org.compiere.model.*;
 import org.compiere.util.KeyNamePair;
 
-/** Generated Interface for LVE_FP_Command
+/** Generated Interface for AD_FP_Cmd
  *  @author Adempiere (generated) 
  *  @version Release 3.8.0
  */
-public interface I_LVE_FP_Command 
+public interface I_AD_FP_Cmd 
 {
 
-    /** TableName=LVE_FP_Command */
-    public static final String Table_Name = "LVE_FP_Command";
+    /** TableName=AD_FP_Cmd */
+    public static final String Table_Name = "AD_FP_Cmd";
 
-    /** AD_Table_ID=54137 */
+    /** AD_Table_ID=54152 */
     public static final int Table_ID = MTable.getTable_ID(Table_Name);
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
@@ -48,6 +48,15 @@ public interface I_LVE_FP_Command
 	  * Client/Tenant for this installation.
 	  */
 	public int getAD_Client_ID();
+
+    /** Column name AD_FP_Cmd_ID */
+    public static final String COLUMNNAME_AD_FP_Cmd_ID = "AD_FP_Cmd_ID";
+
+	/** Set Fiscal Command	  */
+	public void setAD_FP_Cmd_ID (int AD_FP_Cmd_ID);
+
+	/** Get Fiscal Command	  */
+	public int getAD_FP_Cmd_ID();
 
     /** Column name AD_Org_ID */
     public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
@@ -90,15 +99,6 @@ public interface I_LVE_FP_Command
 	  * The record is active in the system
 	  */
 	public boolean isActive();
-
-    /** Column name LVE_FP_Command_ID */
-    public static final String COLUMNNAME_LVE_FP_Command_ID = "LVE_FP_Command_ID";
-
-	/** Set Command ID	  */
-	public void setLVE_FP_Command_ID (int LVE_FP_Command_ID);
-
-	/** Get Command ID	  */
-	public int getLVE_FP_Command_ID();
 
     /** Column name Name */
     public static final String COLUMNNAME_Name = "Name";

@@ -21,30 +21,31 @@ import java.util.Properties;
 import org.compiere.model.*;
 import org.compiere.util.KeyNamePair;
 
-/** Generated Model for LVE_FP_Device
+/** Generated Model for AD_FP_Cmd
  *  @author Adempiere (generated) 
  *  @version Release 3.8.0 - $Id$ */
-public class X_LVE_FP_Device extends PO implements I_LVE_FP_Device, I_Persistent 
+public class X_AD_FP_Cmd extends PO implements I_AD_FP_Cmd, I_Persistent 
 {
 
 	/**
 	 *
 	 */
-	private static final long serialVersionUID = 20160710L;
+	private static final long serialVersionUID = 20160712L;
 
     /** Standard Constructor */
-    public X_LVE_FP_Device (Properties ctx, int LVE_FP_Device_ID, String trxName)
+    public X_AD_FP_Cmd (Properties ctx, int AD_FP_Cmd_ID, String trxName)
     {
-      super (ctx, LVE_FP_Device_ID, trxName);
-      /** if (LVE_FP_Device_ID == 0)
+      super (ctx, AD_FP_Cmd_ID, trxName);
+      /** if (AD_FP_Cmd_ID == 0)
         {
-			setLVE_FP_Device_ID (0);
+			setAD_FP_Cmd_ID (0);
 			setName (null);
+			setValue (null);
         } */
     }
 
     /** Load Constructor */
-    public X_LVE_FP_Device (Properties ctx, ResultSet rs, String trxName)
+    public X_AD_FP_Cmd (Properties ctx, ResultSet rs, String trxName)
     {
       super (ctx, rs, trxName);
     }
@@ -66,60 +67,26 @@ public class X_LVE_FP_Device extends PO implements I_LVE_FP_Device, I_Persistent
 
     public String toString()
     {
-      StringBuffer sb = new StringBuffer ("X_LVE_FP_Device[")
+      StringBuffer sb = new StringBuffer ("X_AD_FP_Cmd[")
         .append(get_ID()).append("]");
       return sb.toString();
     }
 
-	/** Set Classname.
-		@param Classname 
-		Java Classname
-	  */
-	public void setClassname (String Classname)
+	/** Set Fiscal Command.
+		@param AD_FP_Cmd_ID Fiscal Command	  */
+	public void setAD_FP_Cmd_ID (int AD_FP_Cmd_ID)
 	{
-		set_Value (COLUMNNAME_Classname, Classname);
-	}
-
-	/** Get Classname.
-		@return Java Classname
-	  */
-	public String getClassname () 
-	{
-		return (String)get_Value(COLUMNNAME_Classname);
-	}
-
-	/** Set Description.
-		@param Description 
-		Optional short description of the record
-	  */
-	public void setDescription (String Description)
-	{
-		set_Value (COLUMNNAME_Description, Description);
-	}
-
-	/** Get Description.
-		@return Optional short description of the record
-	  */
-	public String getDescription () 
-	{
-		return (String)get_Value(COLUMNNAME_Description);
-	}
-
-	/** Set Device.
-		@param LVE_FP_Device_ID Device	  */
-	public void setLVE_FP_Device_ID (int LVE_FP_Device_ID)
-	{
-		if (LVE_FP_Device_ID < 1) 
-			set_ValueNoCheck (COLUMNNAME_LVE_FP_Device_ID, null);
+		if (AD_FP_Cmd_ID < 1) 
+			set_ValueNoCheck (COLUMNNAME_AD_FP_Cmd_ID, null);
 		else 
-			set_ValueNoCheck (COLUMNNAME_LVE_FP_Device_ID, Integer.valueOf(LVE_FP_Device_ID));
+			set_ValueNoCheck (COLUMNNAME_AD_FP_Cmd_ID, Integer.valueOf(AD_FP_Cmd_ID));
 	}
 
-	/** Get Device.
-		@return Device	  */
-	public int getLVE_FP_Device_ID () 
+	/** Get Fiscal Command.
+		@return Fiscal Command	  */
+	public int getAD_FP_Cmd_ID () 
 	{
-		Integer ii = (Integer)get_Value(COLUMNNAME_LVE_FP_Device_ID);
+		Integer ii = (Integer)get_Value(COLUMNNAME_AD_FP_Cmd_ID);
 		if (ii == null)
 			 return 0;
 		return ii.intValue();

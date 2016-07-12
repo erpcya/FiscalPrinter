@@ -17,7 +17,7 @@
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk8"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.adempiere.util.GenerateModel"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="&quot;/opt/Development/workspace/LVE-Fiscal-Printer/base/org/spin/model&quot;&#10;&quot;org.spin.model&quot;&#10;&quot;'ECA02','D'&quot;&#10;&quot;'LVE_FiscalPrinter','LVE_FP_Command','LVE_FP_Device_Cmd','LVE_FP_Device','LVE_FP_DeviceReturn','LVE_FP_Document','LVE_FP_DocumentLine','C_DocType'&quot;"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="&quot;/opt/Development/workspace/FiscalPrinter/base/org/spin/model&quot;&#10;&quot;org.spin.model&quot;&#10;&quot;'ECA02','D'&quot;&#10;&quot;'AD_FP_DocumentType','AD_FP_Cmd','AD_FP_Document','AD_FP_DocumentLine','C_DocType'&quot;"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="adempiere_380"/>
-<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-DPropertyFile=LVE-Fiscal-Printer.properties&#13;&#10;-DADEMPIERE_HOME=/Applications/Adempiere&#13;&#10;-Xms512M&#13;&#10;-Xmx512M&#13;&#10;-Dorg.adempiere.server.embedded=true"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-DPropertyFile=/opt/Development/ADempiere_Properties/FiscalPrinter.properties&#13;&#10;-DADEMPIERE_HOME=/Applications/Adempiere&#13;&#10;-Xms512M&#13;&#10;-Xmx512M&#13;&#10;-Dorg.adempiere.server.embedded=true"/>
 </launchConfiguration>

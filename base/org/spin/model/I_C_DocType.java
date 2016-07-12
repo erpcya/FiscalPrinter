@@ -49,6 +49,17 @@ public interface I_C_DocType
 	  */
 	public int getAD_Client_ID();
 
+    /** Column name AD_FP_DocumentType_ID */
+    public static final String COLUMNNAME_AD_FP_DocumentType_ID = "AD_FP_DocumentType_ID";
+
+	/** Set Fiscal Document Type	  */
+	public void setAD_FP_DocumentType_ID (int AD_FP_DocumentType_ID);
+
+	/** Get Fiscal Document Type	  */
+	public int getAD_FP_DocumentType_ID();
+
+	public org.spin.model.I_AD_FP_DocumentType getAD_FP_DocumentType() throws RuntimeException;
+
     /** Column name AD_Org_ID */
     public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
 
@@ -471,17 +482,6 @@ public interface I_C_DocType
 	  * Split document when there is a difference
 	  */
 	public boolean isSplitWhenDifference();
-
-    /** Column name LVE_FP_Document_ID */
-    public static final String COLUMNNAME_LVE_FP_Document_ID = "LVE_FP_Document_ID";
-
-	/** Set FP Document	  */
-	public void setLVE_FP_Document_ID (int LVE_FP_Document_ID);
-
-	/** Get FP Document	  */
-	public int getLVE_FP_Document_ID();
-
-	public org.spin.model.I_LVE_FP_Document getLVE_FP_Document() throws RuntimeException;
 
     /** Column name Name */
     public static final String COLUMNNAME_Name = "Name";

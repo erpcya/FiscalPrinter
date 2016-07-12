@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.spin.util;
+package test;
 
 import org.adempiere.exceptions.AdempiereException;
 
@@ -12,7 +12,7 @@ import tfhka.ve.*;
  * @author erpcya_tt
  *
  */
-public abstract class FiscalPrinterAbstract {
+public abstract class FiscalPrinterAbstract2 {
 
 	protected String portName;
 	protected String msg;
@@ -23,7 +23,7 @@ public abstract class FiscalPrinterAbstract {
 	 * Constructor
 	 * @author <a href="dixon.22martinez@gmail.com">Dixon Martinez</a>
 	 */
-	protected FiscalPrinterAbstract() {
+	protected FiscalPrinterAbstract2() {
 		tf = new Tfhka();
 	}
 	
@@ -55,20 +55,14 @@ public abstract class FiscalPrinterAbstract {
 		this.msg = msg;
 	}
 	
-	protected boolean isConnected() {
-		return false;
-	}
-	
-	public void openPort() {};
-	public void closePort() {};
-	public void checkFiscalPrinter() {};
-	public void checkDrawer() {};
-	public void readFPStatus () {};
-	public void sendCmd (String cmd) throws AdempiereException, PrinterException {};
-	
-	public int sendFileCmd (String route) {
-		return 0;
-	}
+	protected abstract boolean isConnected();
+	public abstract void openPort();
+	public abstract void closePort();
+	public abstract void checkFiscalPrinter();
+	public abstract void checkDrawer();
+	public abstract void readFPStatus ();
+	public abstract void sendCmd (String cmd) throws AdempiereException, PrinterException;
+	public abstract int sendFileCmd (String route);
 	
 	
 }

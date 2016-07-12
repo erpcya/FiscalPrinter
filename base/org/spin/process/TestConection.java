@@ -16,9 +16,6 @@
 
 package org.spin.process;
 
-import org.spin.model.MLVEFPDevice;
-import org.spin.model.MLVEFiscalPrinter;
-import org.spin.util.FiscalPrinterAbstract;
 
 /** Generated Process for (Test Conection)
  *  @author ADempiere (generated) 
@@ -38,9 +35,9 @@ public class TestConection extends TestConectionAbstract
 	@Override
 	protected String doIt() throws Exception
 	{
-		MLVEFiscalPrinter m_FP = new MLVEFiscalPrinter(getCtx(), p_Record_ID, get_TrxName());
+		/*MLVEFiscalPrinter m_FP = new MLVEFiscalPrinter(getCtx(), p_Record_ID, get_TrxName());
 		MLVEFPDevice m_FP_Device = (MLVEFPDevice) m_FP.getLVE_FP_Device();
-		String sPort = m_FP.getFTA_SerialPortConfig().getSerialPort();
+		String sPort = "";//= m_FP.getFTA_SerialPortConfig().getSerialPort();
 		String msg = "";
 		if(m_FP_Device.getClassname() != null) {
 			FiscalPrinterAbstract test = null;
@@ -56,6 +53,7 @@ public class TestConection extends TestConectionAbstract
 				msg = test.getMsg();
 			}
 		}
-		return msg;
+		return msg;*/
+		return null;
 	}
 }

@@ -14,62 +14,48 @@
  * All Rights Reserved.                                                       *
  * Contributor(s): Yamel Senih www.erpcya.com                                 *
  *****************************************************************************/
-package org.spin.util;
+package org.spin.model;
 
-import org.spin.model.MADDeviceConfig;
+import java.sql.ResultSet;
+import java.util.Properties;
 
 /**
- * @author <UserName>, <MailName>@erpcya.com, ERPCyA http://www.erpcya.com
- *		<li> FR [  ] 
+ * @author Dixon Martinez, dmartinez@erpcya.com, ERPCyA http://www.erpcya.com
+ *		<li> FR [ 1 ] 
  *		@see 
  */
-public class FiscalPrinterBixolon extends DeviceTypeManagement {
+public class MADFPDocumentLine extends X_AD_FP_DocumentLine {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1545366312517097380L;
 
 	/**
 	 * *** Constructor ***
-	 * @author <UserName>, <MailName>@erpcya.com, ERPCyA http://www.erpcya.com
-	 *		<li> FR [  ] 
+	 * @author Dixon Martinez, dmartinez@erpcya.com, ERPCyA http://www.erpcya.com
+	 *		<li> FR [ 1 ] 
 	 *		@see 
+	 * @param ctx
+	 * @param AD_FP_DocumentLine_ID
+	 * @param trxName
 	 */
-	public FiscalPrinterBixolon() {
+	public MADFPDocumentLine(Properties ctx, int AD_FP_DocumentLine_ID,
+			String trxName) {
+		super(ctx, AD_FP_DocumentLine_ID, trxName);
 	}
 
-	/* (non-Javadoc)
-	 * @see org.spin.util.DeviceTypeManagement#connect(org.spin.model.MADDeviceConfig)
+	/**
+	 * *** Constructor ***
+	 * @author Dixon Martinez, dmartinez@erpcya.com, ERPCyA http://www.erpcya.com
+	 *		<li> FR [ 1 ] 
+	 *		@see 
+	 * @param ctx
+	 * @param rs
+	 * @param trxName
 	 */
-	@Override
-	public void connect(MADDeviceConfig config) {
-	}
-
-	/* (non-Javadoc)
-	 * @see org.spin.util.DeviceTypeManagement#close()
-	 */
-	@Override
-	public void close() {
-	}
-
-	/* (non-Javadoc)
-	 * @see org.spin.util.DeviceTypeManagement#read(org.spin.model.MADDeviceConfig)
-	 */
-	@Override
-	public Object read(MADDeviceConfig config) {
-		return null;
-	}
-
-	/* (non-Javadoc)
-	 * @see org.spin.util.DeviceTypeManagement#write(org.spin.model.MADDeviceConfig)
-	 */
-	@Override
-	public Object write(MADDeviceConfig config) {
-		return null;
-	}
-
-	/* (non-Javadoc)
-	 * @see org.spin.util.DeviceTypeManagement#isCheckOk()
-	 */
-	@Override
-	public boolean isCheckOk() {
-		return false;
+	public MADFPDocumentLine(Properties ctx, ResultSet rs, String trxName) {
+		super(ctx, rs, trxName);
 	}
 
 }

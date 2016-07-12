@@ -21,37 +21,38 @@ import java.util.Properties;
 import org.compiere.model.*;
 import org.compiere.util.KeyNamePair;
 
-/** Generated Model for LVE_FP_Command
+/** Generated Model for AD_FP_DocumentType
  *  @author Adempiere (generated) 
  *  @version Release 3.8.0 - $Id$ */
-public class X_LVE_FP_Command extends PO implements I_LVE_FP_Command, I_Persistent 
+public class X_AD_FP_DocumentType extends PO implements I_AD_FP_DocumentType, I_Persistent 
 {
 
 	/**
 	 *
 	 */
-	private static final long serialVersionUID = 20160710L;
+	private static final long serialVersionUID = 20160712L;
 
     /** Standard Constructor */
-    public X_LVE_FP_Command (Properties ctx, int LVE_FP_Command_ID, String trxName)
+    public X_AD_FP_DocumentType (Properties ctx, int AD_FP_DocumentType_ID, String trxName)
     {
-      super (ctx, LVE_FP_Command_ID, trxName);
-      /** if (LVE_FP_Command_ID == 0)
+      super (ctx, AD_FP_DocumentType_ID, trxName);
+      /** if (AD_FP_DocumentType_ID == 0)
         {
-			setLVE_FP_Command_ID (0);
+			setAD_FP_DocumentType_ID (0);
 			setName (null);
+			setType (null);
 			setValue (null);
         } */
     }
 
     /** Load Constructor */
-    public X_LVE_FP_Command (Properties ctx, ResultSet rs, String trxName)
+    public X_AD_FP_DocumentType (Properties ctx, ResultSet rs, String trxName)
     {
       super (ctx, rs, trxName);
     }
 
     /** AccessLevel
-      * @return 4 - System 
+      * @return 6 - System - Client 
       */
     protected int get_AccessLevel()
     {
@@ -67,29 +68,46 @@ public class X_LVE_FP_Command extends PO implements I_LVE_FP_Command, I_Persiste
 
     public String toString()
     {
-      StringBuffer sb = new StringBuffer ("X_LVE_FP_Command[")
+      StringBuffer sb = new StringBuffer ("X_AD_FP_DocumentType[")
         .append(get_ID()).append("]");
       return sb.toString();
     }
 
-	/** Set Command ID.
-		@param LVE_FP_Command_ID Command ID	  */
-	public void setLVE_FP_Command_ID (int LVE_FP_Command_ID)
+	/** Set Fiscal Document Type.
+		@param AD_FP_DocumentType_ID Fiscal Document Type	  */
+	public void setAD_FP_DocumentType_ID (int AD_FP_DocumentType_ID)
 	{
-		if (LVE_FP_Command_ID < 1) 
-			set_ValueNoCheck (COLUMNNAME_LVE_FP_Command_ID, null);
+		if (AD_FP_DocumentType_ID < 1) 
+			set_ValueNoCheck (COLUMNNAME_AD_FP_DocumentType_ID, null);
 		else 
-			set_ValueNoCheck (COLUMNNAME_LVE_FP_Command_ID, Integer.valueOf(LVE_FP_Command_ID));
+			set_ValueNoCheck (COLUMNNAME_AD_FP_DocumentType_ID, Integer.valueOf(AD_FP_DocumentType_ID));
 	}
 
-	/** Get Command ID.
-		@return Command ID	  */
-	public int getLVE_FP_Command_ID () 
+	/** Get Fiscal Document Type.
+		@return Fiscal Document Type	  */
+	public int getAD_FP_DocumentType_ID () 
 	{
-		Integer ii = (Integer)get_Value(COLUMNNAME_LVE_FP_Command_ID);
+		Integer ii = (Integer)get_Value(COLUMNNAME_AD_FP_DocumentType_ID);
 		if (ii == null)
 			 return 0;
 		return ii.intValue();
+	}
+
+	/** Set Description.
+		@param Description 
+		Optional short description of the record
+	  */
+	public void setDescription (String Description)
+	{
+		set_Value (COLUMNNAME_Description, Description);
+	}
+
+	/** Get Description.
+		@return Optional short description of the record
+	  */
+	public String getDescription () 
+	{
+		return (String)get_Value(COLUMNNAME_Description);
 	}
 
 	/** Set Name.
@@ -116,6 +134,32 @@ public class X_LVE_FP_Command extends PO implements I_LVE_FP_Command, I_Persiste
     {
         return new KeyNamePair(get_ID(), getName());
     }
+
+	/** Type AD_Reference_ID=53847 */
+	public static final int TYPE_AD_Reference_ID=53847;
+	/** Report = R */
+	public static final String TYPE_Report = "R";
+	/** Document = D */
+	public static final String TYPE_Document = "D";
+	/** Process = P */
+	public static final String TYPE_Process = "P";
+	/** Set Type.
+		@param Type 
+		Type of Validation (SQL, Java Script, Java Language)
+	  */
+	public void setType (String Type)
+	{
+
+		set_Value (COLUMNNAME_Type, Type);
+	}
+
+	/** Get Type.
+		@return Type of Validation (SQL, Java Script, Java Language)
+	  */
+	public String getType () 
+	{
+		return (String)get_Value(COLUMNNAME_Type);
+	}
 
 	/** Set Search Key.
 		@param Value 

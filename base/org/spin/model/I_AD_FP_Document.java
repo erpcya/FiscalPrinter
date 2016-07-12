@@ -20,17 +20,17 @@ import java.sql.Timestamp;
 import org.compiere.model.*;
 import org.compiere.util.KeyNamePair;
 
-/** Generated Interface for LVE_FP_Device
+/** Generated Interface for AD_FP_Document
  *  @author Adempiere (generated) 
  *  @version Release 3.8.0
  */
-public interface I_LVE_FP_Device 
+public interface I_AD_FP_Document 
 {
 
-    /** TableName=LVE_FP_Device */
-    public static final String Table_Name = "LVE_FP_Device";
+    /** TableName=AD_FP_Document */
+    public static final String Table_Name = "AD_FP_Document";
 
-    /** AD_Table_ID=54134 */
+    /** AD_Table_ID=54153 */
     public static final int Table_ID = MTable.getTable_ID(Table_Name);
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
@@ -49,6 +49,37 @@ public interface I_LVE_FP_Device
 	  */
 	public int getAD_Client_ID();
 
+    /** Column name AD_DeviceType_ID */
+    public static final String COLUMNNAME_AD_DeviceType_ID = "AD_DeviceType_ID";
+
+	/** Set Device Type	  */
+	public void setAD_DeviceType_ID (int AD_DeviceType_ID);
+
+	/** Get Device Type	  */
+	public int getAD_DeviceType_ID();
+
+	public org.spin.model.I_AD_DeviceType getAD_DeviceType() throws RuntimeException;
+
+    /** Column name AD_FP_Document_ID */
+    public static final String COLUMNNAME_AD_FP_Document_ID = "AD_FP_Document_ID";
+
+	/** Set Fiscal Document	  */
+	public void setAD_FP_Document_ID (int AD_FP_Document_ID);
+
+	/** Get Fiscal Document	  */
+	public int getAD_FP_Document_ID();
+
+    /** Column name AD_FP_DocumentType_ID */
+    public static final String COLUMNNAME_AD_FP_DocumentType_ID = "AD_FP_DocumentType_ID";
+
+	/** Set Fiscal Document Type	  */
+	public void setAD_FP_DocumentType_ID (int AD_FP_DocumentType_ID);
+
+	/** Get Fiscal Document Type	  */
+	public int getAD_FP_DocumentType_ID();
+
+	public org.spin.model.I_AD_FP_DocumentType getAD_FP_DocumentType() throws RuntimeException;
+
     /** Column name AD_Org_ID */
     public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
 
@@ -61,19 +92,6 @@ public interface I_LVE_FP_Device
 	  * Organizational entity within client
 	  */
 	public int getAD_Org_ID();
-
-    /** Column name Classname */
-    public static final String COLUMNNAME_Classname = "Classname";
-
-	/** Set Classname.
-	  * Java Classname
-	  */
-	public void setClassname (String Classname);
-
-	/** Get Classname.
-	  * Java Classname
-	  */
-	public String getClassname();
 
     /** Column name Created */
     public static final String COLUMNNAME_Created = "Created";
@@ -91,19 +109,6 @@ public interface I_LVE_FP_Device
 	  */
 	public int getCreatedBy();
 
-    /** Column name Description */
-    public static final String COLUMNNAME_Description = "Description";
-
-	/** Set Description.
-	  * Optional short description of the record
-	  */
-	public void setDescription (String Description);
-
-	/** Get Description.
-	  * Optional short description of the record
-	  */
-	public String getDescription();
-
     /** Column name IsActive */
     public static final String COLUMNNAME_IsActive = "IsActive";
 
@@ -116,15 +121,6 @@ public interface I_LVE_FP_Device
 	  * The record is active in the system
 	  */
 	public boolean isActive();
-
-    /** Column name LVE_FP_Device_ID */
-    public static final String COLUMNNAME_LVE_FP_Device_ID = "LVE_FP_Device_ID";
-
-	/** Set Device	  */
-	public void setLVE_FP_Device_ID (int LVE_FP_Device_ID);
-
-	/** Get Device	  */
-	public int getLVE_FP_Device_ID();
 
     /** Column name Name */
     public static final String COLUMNNAME_Name = "Name";

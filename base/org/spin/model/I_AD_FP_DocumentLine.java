@@ -20,17 +20,17 @@ import java.sql.Timestamp;
 import org.compiere.model.*;
 import org.compiere.util.KeyNamePair;
 
-/** Generated Interface for LVE_FP_DocumentLine
+/** Generated Interface for AD_FP_DocumentLine
  *  @author Adempiere (generated) 
  *  @version Release 3.8.0
  */
-public interface I_LVE_FP_DocumentLine 
+public interface I_AD_FP_DocumentLine 
 {
 
-    /** TableName=LVE_FP_DocumentLine */
-    public static final String Table_Name = "LVE_FP_DocumentLine";
+    /** TableName=AD_FP_DocumentLine */
+    public static final String Table_Name = "AD_FP_DocumentLine";
 
-    /** AD_Table_ID=54140 */
+    /** AD_Table_ID=54154 */
     public static final int Table_ID = MTable.getTable_ID(Table_Name);
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
@@ -48,6 +48,37 @@ public interface I_LVE_FP_DocumentLine
 	  * Client/Tenant for this installation.
 	  */
 	public int getAD_Client_ID();
+
+    /** Column name AD_FP_Cmd_ID */
+    public static final String COLUMNNAME_AD_FP_Cmd_ID = "AD_FP_Cmd_ID";
+
+	/** Set Fiscal Command	  */
+	public void setAD_FP_Cmd_ID (int AD_FP_Cmd_ID);
+
+	/** Get Fiscal Command	  */
+	public int getAD_FP_Cmd_ID();
+
+	public org.spin.model.I_AD_FP_Cmd getAD_FP_Cmd() throws RuntimeException;
+
+    /** Column name AD_FP_Document_ID */
+    public static final String COLUMNNAME_AD_FP_Document_ID = "AD_FP_Document_ID";
+
+	/** Set Fiscal Document	  */
+	public void setAD_FP_Document_ID (int AD_FP_Document_ID);
+
+	/** Get Fiscal Document	  */
+	public int getAD_FP_Document_ID();
+
+	public org.spin.model.I_AD_FP_Document getAD_FP_Document() throws RuntimeException;
+
+    /** Column name AD_FP_DocumentLine_ID */
+    public static final String COLUMNNAME_AD_FP_DocumentLine_ID = "AD_FP_DocumentLine_ID";
+
+	/** Set Fiscal Document Line	  */
+	public void setAD_FP_DocumentLine_ID (int AD_FP_DocumentLine_ID);
+
+	/** Get Fiscal Document Line	  */
+	public int getAD_FP_DocumentLine_ID();
 
     /** Column name AD_Org_ID */
     public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
@@ -73,16 +104,18 @@ public interface I_LVE_FP_DocumentLine
 
 	public org.compiere.model.I_AD_Rule getAD_Rule() throws RuntimeException;
 
-    /** Column name AD_RuleProcessReturn_ID */
-    public static final String COLUMNNAME_AD_RuleProcessReturn_ID = "AD_RuleProcessReturn_ID";
+    /** Column name Code */
+    public static final String COLUMNNAME_Code = "Code";
 
-	/** Set Rule Process Return	  */
-	public void setAD_RuleProcessReturn_ID (int AD_RuleProcessReturn_ID);
+	/** Set Validation code.
+	  * Validation Code
+	  */
+	public void setCode (String Code);
 
-	/** Get Rule Process Return	  */
-	public int getAD_RuleProcessReturn_ID();
-
-	public org.compiere.model.I_AD_Rule getAD_RuleProcessReturn() throws RuntimeException;
+	/** Get Validation code.
+	  * Validation Code
+	  */
+	public String getCode();
 
     /** Column name Created */
     public static final String COLUMNNAME_Created = "Created";
@@ -113,34 +146,53 @@ public interface I_LVE_FP_DocumentLine
 	  */
 	public boolean isActive();
 
-    /** Column name IsNewCommand */
-    public static final String COLUMNNAME_IsNewCommand = "IsNewCommand";
+    /** Column name IsNewCmd */
+    public static final String COLUMNNAME_IsNewCmd = "IsNewCmd";
 
-	/** Set New Command	  */
-	public void setIsNewCommand (boolean IsNewCommand);
+	/** Set New Cmd	  */
+	public void setIsNewCmd (boolean IsNewCmd);
 
-	/** Get New Command	  */
-	public boolean isNewCommand();
+	/** Get New Cmd	  */
+	public boolean isNewCmd();
 
-    /** Column name LVE_FP_Document_ID */
-    public static final String COLUMNNAME_LVE_FP_Document_ID = "LVE_FP_Document_ID";
+    /** Column name MaxLength */
+    public static final String COLUMNNAME_MaxLength = "MaxLength";
 
-	/** Set FP Document	  */
-	public void setLVE_FP_Document_ID (int LVE_FP_Document_ID);
+	/** Set Maximum Length.
+	  * Maximum Length of Data
+	  */
+	public void setMaxLength (int MaxLength);
 
-	/** Get FP Document	  */
-	public int getLVE_FP_Document_ID();
+	/** Get Maximum Length.
+	  * Maximum Length of Data
+	  */
+	public int getMaxLength();
 
-	public org.spin.model.I_LVE_FP_Document getLVE_FP_Document() throws RuntimeException;
+    /** Column name Parse */
+    public static final String COLUMNNAME_Parse = "Parse";
 
-    /** Column name LVE_FP_DocumentLine_ID */
-    public static final String COLUMNNAME_LVE_FP_DocumentLine_ID = "LVE_FP_DocumentLine_ID";
+	/** Set Parse Statement.
+	  * Select if the SQL statement should be parsed based on terminating semi-colons.
+	  */
+	public void setParse (boolean Parse);
 
-	/** Set FP Document Line ID	  */
-	public void setLVE_FP_DocumentLine_ID (int LVE_FP_DocumentLine_ID);
+	/** Get Parse Statement.
+	  * Select if the SQL statement should be parsed based on terminating semi-colons.
+	  */
+	public boolean isParse();
 
-	/** Get FP Document Line ID	  */
-	public int getLVE_FP_DocumentLine_ID();
+    /** Column name Prefix */
+    public static final String COLUMNNAME_Prefix = "Prefix";
+
+	/** Set Prefix.
+	  * Prefix before the sequence number
+	  */
+	public void setPrefix (String Prefix);
+
+	/** Get Prefix.
+	  * Prefix before the sequence number
+	  */
+	public String getPrefix();
 
     /** Column name SeqNo */
     public static final String COLUMNNAME_SeqNo = "SeqNo";
@@ -156,6 +208,19 @@ public interface I_LVE_FP_DocumentLine
  lowest number comes first
 	  */
 	public int getSeqNo();
+
+    /** Column name Suffix */
+    public static final String COLUMNNAME_Suffix = "Suffix";
+
+	/** Set Suffix.
+	  * Suffix after the number
+	  */
+	public void setSuffix (String Suffix);
+
+	/** Get Suffix.
+	  * Suffix after the number
+	  */
+	public String getSuffix();
 
     /** Column name Updated */
     public static final String COLUMNNAME_Updated = "Updated";

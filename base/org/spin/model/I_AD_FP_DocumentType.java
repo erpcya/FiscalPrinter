@@ -20,24 +20,24 @@ import java.sql.Timestamp;
 import org.compiere.model.*;
 import org.compiere.util.KeyNamePair;
 
-/** Generated Interface for LVE_FiscalPrinter
+/** Generated Interface for AD_FP_DocumentType
  *  @author Adempiere (generated) 
  *  @version Release 3.8.0
  */
-public interface I_LVE_FiscalPrinter 
+public interface I_AD_FP_DocumentType 
 {
 
-    /** TableName=LVE_FiscalPrinter */
-    public static final String Table_Name = "LVE_FiscalPrinter";
+    /** TableName=AD_FP_DocumentType */
+    public static final String Table_Name = "AD_FP_DocumentType";
 
-    /** AD_Table_ID=54135 */
+    /** AD_Table_ID=54151 */
     public static final int Table_ID = MTable.getTable_ID(Table_Name);
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
 
-    /** AccessLevel = 3 - Client - Org 
+    /** AccessLevel = 6 - System - Client 
      */
-    BigDecimal accessLevel = BigDecimal.valueOf(3);
+    BigDecimal accessLevel = BigDecimal.valueOf(6);
 
     /** Load Meta Data */
 
@@ -48,6 +48,15 @@ public interface I_LVE_FiscalPrinter
 	  * Client/Tenant for this installation.
 	  */
 	public int getAD_Client_ID();
+
+    /** Column name AD_FP_DocumentType_ID */
+    public static final String COLUMNNAME_AD_FP_DocumentType_ID = "AD_FP_DocumentType_ID";
+
+	/** Set Fiscal Document Type	  */
+	public void setAD_FP_DocumentType_ID (int AD_FP_DocumentType_ID);
+
+	/** Get Fiscal Document Type	  */
+	public int getAD_FP_DocumentType_ID();
 
     /** Column name AD_Org_ID */
     public static final String COLUMNNAME_AD_Org_ID = "AD_Org_ID";
@@ -61,21 +70,6 @@ public interface I_LVE_FiscalPrinter
 	  * Organizational entity within client
 	  */
 	public int getAD_Org_ID();
-
-    /** Column name AD_Sequence_ID */
-    public static final String COLUMNNAME_AD_Sequence_ID = "AD_Sequence_ID";
-
-	/** Set Sequence.
-	  * Document Sequence
-	  */
-	public void setAD_Sequence_ID (int AD_Sequence_ID);
-
-	/** Get Sequence.
-	  * Document Sequence
-	  */
-	public int getAD_Sequence_ID();
-
-	public org.compiere.model.I_AD_Sequence getAD_Sequence() throws RuntimeException;
 
     /** Column name Created */
     public static final String COLUMNNAME_Created = "Created";
@@ -93,20 +87,18 @@ public interface I_LVE_FiscalPrinter
 	  */
 	public int getCreatedBy();
 
-    /** Column name FTA_SerialPortConfig_ID */
-    public static final String COLUMNNAME_FTA_SerialPortConfig_ID = "FTA_SerialPortConfig_ID";
+    /** Column name Description */
+    public static final String COLUMNNAME_Description = "Description";
 
-	/** Set Serial Port Configuration.
-	  * Serial Port Configuration example: COM1 or tty01, 9600...
+	/** Set Description.
+	  * Optional short description of the record
 	  */
-	public void setFTA_SerialPortConfig_ID (int FTA_SerialPortConfig_ID);
+	public void setDescription (String Description);
 
-	/** Get Serial Port Configuration.
-	  * Serial Port Configuration example: COM1 or tty01, 9600...
+	/** Get Description.
+	  * Optional short description of the record
 	  */
-	public int getFTA_SerialPortConfig_ID();
-
-	public org.spin.model.I_FTA_SerialPortConfig getFTA_SerialPortConfig() throws RuntimeException;
+	public String getDescription();
 
     /** Column name IsActive */
     public static final String COLUMNNAME_IsActive = "IsActive";
@@ -121,26 +113,6 @@ public interface I_LVE_FiscalPrinter
 	  */
 	public boolean isActive();
 
-    /** Column name LVE_FiscalPrinter_ID */
-    public static final String COLUMNNAME_LVE_FiscalPrinter_ID = "LVE_FiscalPrinter_ID";
-
-	/** Set Fiscal Printer ID	  */
-	public void setLVE_FiscalPrinter_ID (int LVE_FiscalPrinter_ID);
-
-	/** Get Fiscal Printer ID	  */
-	public int getLVE_FiscalPrinter_ID();
-
-    /** Column name LVE_FP_Device_ID */
-    public static final String COLUMNNAME_LVE_FP_Device_ID = "LVE_FP_Device_ID";
-
-	/** Set Device	  */
-	public void setLVE_FP_Device_ID (int LVE_FP_Device_ID);
-
-	/** Get Device	  */
-	public int getLVE_FP_Device_ID();
-
-	public org.spin.model.I_LVE_FP_Device getLVE_FP_Device() throws RuntimeException;
-
     /** Column name Name */
     public static final String COLUMNNAME_Name = "Name";
 
@@ -153,6 +125,19 @@ public interface I_LVE_FiscalPrinter
 	  * Alphanumeric identifier of the entity
 	  */
 	public String getName();
+
+    /** Column name Type */
+    public static final String COLUMNNAME_Type = "Type";
+
+	/** Set Type.
+	  * Type of Validation (SQL, Java Script, Java Language)
+	  */
+	public void setType (String Type);
+
+	/** Get Type.
+	  * Type of Validation (SQL, Java Script, Java Language)
+	  */
+	public String getType();
 
     /** Column name Updated */
     public static final String COLUMNNAME_Updated = "Updated";

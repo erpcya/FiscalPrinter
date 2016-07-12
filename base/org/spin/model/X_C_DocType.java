@@ -30,7 +30,7 @@ public class X_C_DocType extends PO implements I_C_DocType, I_Persistent
 	/**
 	 *
 	 */
-	private static final long serialVersionUID = 20160710L;
+	private static final long serialVersionUID = 20160712L;
 
     /** Standard Constructor */
     public X_C_DocType (Properties ctx, int C_DocType_ID, String trxName)
@@ -91,6 +91,31 @@ public class X_C_DocType extends PO implements I_C_DocType, I_Persistent
         .append(get_ID()).append("]");
       return sb.toString();
     }
+
+	public org.spin.model.I_AD_FP_DocumentType getAD_FP_DocumentType() throws RuntimeException
+    {
+		return (org.spin.model.I_AD_FP_DocumentType)MTable.get(getCtx(), org.spin.model.I_AD_FP_DocumentType.Table_Name)
+			.getPO(getAD_FP_DocumentType_ID(), get_TrxName());	}
+
+	/** Set Fiscal Document Type.
+		@param AD_FP_DocumentType_ID Fiscal Document Type	  */
+	public void setAD_FP_DocumentType_ID (int AD_FP_DocumentType_ID)
+	{
+		if (AD_FP_DocumentType_ID < 1) 
+			set_Value (COLUMNNAME_AD_FP_DocumentType_ID, null);
+		else 
+			set_Value (COLUMNNAME_AD_FP_DocumentType_ID, Integer.valueOf(AD_FP_DocumentType_ID));
+	}
+
+	/** Get Fiscal Document Type.
+		@return Fiscal Document Type	  */
+	public int getAD_FP_DocumentType_ID () 
+	{
+		Integer ii = (Integer)get_Value(COLUMNNAME_AD_FP_DocumentType_ID);
+		if (ii == null)
+			 return 0;
+		return ii.intValue();
+	}
 
 	public org.compiere.model.I_AD_PrintFormat getAD_PrintFormat() throws RuntimeException
     {
@@ -864,31 +889,6 @@ public class X_C_DocType extends PO implements I_C_DocType, I_Persistent
 			return "Y".equals(oo);
 		}
 		return false;
-	}
-
-	public org.spin.model.I_LVE_FP_Document getLVE_FP_Document() throws RuntimeException
-    {
-		return (org.spin.model.I_LVE_FP_Document)MTable.get(getCtx(), org.spin.model.I_LVE_FP_Document.Table_Name)
-			.getPO(getLVE_FP_Document_ID(), get_TrxName());	}
-
-	/** Set FP Document.
-		@param LVE_FP_Document_ID FP Document	  */
-	public void setLVE_FP_Document_ID (int LVE_FP_Document_ID)
-	{
-		if (LVE_FP_Document_ID < 1) 
-			set_Value (COLUMNNAME_LVE_FP_Document_ID, null);
-		else 
-			set_Value (COLUMNNAME_LVE_FP_Document_ID, Integer.valueOf(LVE_FP_Document_ID));
-	}
-
-	/** Get FP Document.
-		@return FP Document	  */
-	public int getLVE_FP_Document_ID () 
-	{
-		Integer ii = (Integer)get_Value(COLUMNNAME_LVE_FP_Document_ID);
-		if (ii == null)
-			 return 0;
-		return ii.intValue();
 	}
 
 	/** Set Name.
