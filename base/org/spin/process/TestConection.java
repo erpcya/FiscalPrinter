@@ -16,6 +16,10 @@
 
 package org.spin.process;
 
+import org.spin.model.MADDevice;
+import org.spin.model.MADFPDocument;
+import org.spin.util.FiscalDocumentHandler;
+
 
 /** Generated Process for (Test Conection)
  *  @author ADempiere (generated) 
@@ -35,6 +39,12 @@ public class TestConection extends TestConectionAbstract
 	@Override
 	protected String doIt() throws Exception
 	{
+		
+		MADFPDocument document = new MADFPDocument(getCtx(), 1000000, get_TrxName());
+		MADDevice device = new MADDevice(getCtx(), 1000000, get_TrxName());
+		FiscalDocumentHandler handler = new FiscalDocumentHandler(document, device);
+		handler.printDocument(null);
+		
 		/*MLVEFiscalPrinter m_FP = new MLVEFiscalPrinter(getCtx(), p_Record_ID, get_TrxName());
 		MLVEFPDevice m_FP_Device = (MLVEFPDevice) m_FP.getLVE_FP_Device();
 		String sPort = "";//= m_FP.getFTA_SerialPortConfig().getSerialPort();

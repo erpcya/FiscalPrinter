@@ -17,7 +17,10 @@
 package org.spin.model;
 
 import java.sql.ResultSet;
+import java.util.List;
 import java.util.Properties;
+
+import org.compiere.model.Query;
 
 /**
  * @author Dixon Martinez, dmartinez@erpcya.com, ERPCyA http://www.erpcya.com
@@ -30,31 +33,46 @@ public class MADFPDocument extends X_AD_FP_Document {
 	 * 
 	 */
 	private static final long serialVersionUID = -6503486615985958589L;
-
-	/**
-	 * *** Constructor ***
-	 * @author Dixon Martinez, dmartinez@erpcya.com, ERPCyA http://www.erpcya.com
-	 *		<li> FR [ 1 ] 
-	 *		@see 
-	 * @param ctx
-	 * @param AD_FP_Document_ID
-	 * @param trxName
-	 */
+	
 	public MADFPDocument(Properties ctx, int AD_FP_Document_ID, String trxName) {
 		super(ctx, AD_FP_Document_ID, trxName);
 	}
-
-	/**
-	 * *** Constructor ***
-	 * @author Dixon Martinez, dmartinez@erpcya.com, ERPCyA http://www.erpcya.com
-	 *		<li> FR [ 1 ] 
-	 *		@see 
-	 * @param ctx
-	 * @param rs
-	 * @param trxName
-	 */
+	
 	public MADFPDocument(Properties ctx, ResultSet rs, String trxName) {
 		super(ctx, rs, trxName);
 	}
 
+	/**	Lines of document	*/
+	private MADFPDocumentLine[] lines = null;
+	
+	/**
+	 * Get Lines
+	 * @return
+	 * @return MADFPDocumentLine[]
+	 */
+	public MADFPDocumentLine[] getLines() {
+		return getLines(false);
+	}
+	
+	/**
+	 * Get lines from the document
+	 * @return
+	 * @return MADFPDocumentLine[]
+	 */
+	public MADFPDocumentLine[] getLines(boolean reQuery) {
+		if(!reQuery
+				&& lines != null)
+			return lines;
+		//	Get list
+		List<MADFPDocumentLine> list = new Query(getCtx(), I_AD_FP_DocumentLine.Table_Name, 
+				I_AD_FP_DocumentLine.COLUMNNAME_AD_FP_Document_ID + "= ?", get_TrxName())
+			.setParameters(getAD_FP_Document_ID())
+			.setOnlyActiveRecords(true)
+			.setOrderBy(I_AD_FP_DocumentLine.COLUMNNAME_SeqNo)
+			.<MADFPDocumentLine>list();
+		//	
+		lines = list.toArray(new MADFPDocumentLine[list.size()]);
+		//	Return
+		return lines;
+	}
 }

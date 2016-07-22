@@ -16,60 +16,45 @@
  *****************************************************************************/
 package org.spin.util;
 
-import org.spin.model.MADDeviceConfig;
+import org.spin.model.MADDevice;
 
 /**
- * @author <UserName>, <MailName>@erpcya.com, ERPCyA http://www.erpcya.com
- *		<li> FR [  ] 
- *		@see 
+ * @author Yamel Senih, ysenih@erpcya.com, ERPCyA http://www.erpcya.com
+ *		<li> FR [ 2 ] Add Standard contract for fiscal printer
+ *		@see https://github.com/erpcya/FiscalPrinter/issues/2
  */
-public class FiscalPrinterBixolon extends DeviceTypeManagement {
-
+public abstract class FiscalPrinterHandler extends DeviceTypeHandler {
+	
+	public FiscalPrinterHandler(MADDevice device) {
+		super(device);
+	}
+	
 	/**
-	 * *** Constructor ***
-	 * @author <UserName>, <MailName>@erpcya.com, ERPCyA http://www.erpcya.com
-	 *		<li> FR [  ] 
-	 *		@see 
+	 * Print X Report
+	 * @throws Exception
+	 * @return void
 	 */
-	public FiscalPrinterBixolon() {
-	}
-
-	/* (non-Javadoc)
-	 * @see org.spin.util.DeviceTypeManagement#connect(org.spin.model.MADDeviceConfig)
+	public abstract void printXReport() throws Exception;
+	
+	/**
+	 * Print Z Report
+	 * @throws Exception
+	 * @return void
 	 */
-	@Override
-	public void connect(MADDeviceConfig config) {
-	}
-
-	/* (non-Javadoc)
-	 * @see org.spin.util.DeviceTypeManagement#close()
+	public abstract void printZReport() throws Exception;
+	
+	/**
+	 * Get Fiscal Printer object
+	 * @return
+	 * @return Object
 	 */
-	@Override
-	public void close() {
-	}
-
-	/* (non-Javadoc)
-	 * @see org.spin.util.DeviceTypeManagement#read(org.spin.model.MADDeviceConfig)
+	public abstract Object getFiscalPrinter();
+	
+	/**
+	 * Print a Command
+	 * @author Yamel Senih, ysenih@erpcya.com, ERPCyA http://www.erpcya.com 
+	 * @param cmd
+	 * @return void
 	 */
-	@Override
-	public Object read(MADDeviceConfig config) {
-		return null;
-	}
-
-	/* (non-Javadoc)
-	 * @see org.spin.util.DeviceTypeManagement#write(org.spin.model.MADDeviceConfig)
-	 */
-	@Override
-	public Object write(MADDeviceConfig config) {
-		return null;
-	}
-
-	/* (non-Javadoc)
-	 * @see org.spin.util.DeviceTypeManagement#isCheckOk()
-	 */
-	@Override
-	public boolean isCheckOk() {
-		return false;
-	}
-
+	public abstract void printCmd(String cmd) throws Exception;
 }
