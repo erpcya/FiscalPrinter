@@ -30,7 +30,7 @@ public class X_AD_FP_DocumentType extends PO implements I_AD_FP_DocumentType, I_
 	/**
 	 *
 	 */
-	private static final long serialVersionUID = 20160712L;
+	private static final long serialVersionUID = 20160723L;
 
     /** Standard Constructor */
     public X_AD_FP_DocumentType (Properties ctx, int AD_FP_DocumentType_ID, String trxName)

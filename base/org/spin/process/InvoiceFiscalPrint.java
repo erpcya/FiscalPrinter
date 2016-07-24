@@ -16,54 +16,34 @@
 
 package org.spin.process;
 
+import org.adempiere.exceptions.AdempiereException;
+import org.compiere.model.MInvoice;
 import org.spin.model.MADDevice;
 import org.spin.model.MADFPDocument;
 import org.spin.util.FiscalDocumentHandler;
 
-
-/** Generated Process for (Test Conection)
+/** Generated Process for (Print Invoices to Fiscal Printer)
  *  @author ADempiere (generated) 
  *  @version Release 3.8.0
  */
-public class TestConection extends TestConectionAbstract
-{
-	private int p_Record_ID = 0;
-	
+public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 	@Override
-	protected void prepare()
-	{
+	protected void prepare() {
 		super.prepare();
-		p_Record_ID = getRecord_ID();
 	}
 
 	@Override
-	protected String doIt() throws Exception
-	{
-		
-		MADFPDocument document = new MADFPDocument(getCtx(), 1000000, get_TrxName());
-		MADDevice device = new MADDevice(getCtx(), 1000000, get_TrxName());
-		FiscalDocumentHandler handler = new FiscalDocumentHandler(document, device);
-		handler.printDocument(null);
-		
-		/*MLVEFiscalPrinter m_FP = new MLVEFiscalPrinter(getCtx(), p_Record_ID, get_TrxName());
-		MLVEFPDevice m_FP_Device = (MLVEFPDevice) m_FP.getLVE_FP_Device();
-		String sPort = "";//= m_FP.getFTA_SerialPortConfig().getSerialPort();
-		String msg = "";
-		if(m_FP_Device.getClassname() != null) {
-			FiscalPrinterAbstract test = null;
-			Class<?> clazz = Class.forName(m_FP_Device.getClassname());
-			test = (FiscalPrinterAbstract) clazz.newInstance();
-			if(test != null) {
-				test.setPortName(sPort);
-				test.openPort();
-				test.checkFiscalPrinter();
-				test.readFPStatus();
-				test.sendFileCmd("./cmd.txt");
-				test.closePort();
-				msg = test.getMsg();
-			}
-		}
-		return msg;*/
-		return null;
+	protected String doIt() throws Exception {
+		if(getRecord_ID() == 0)
+			throw new AdempiereException("@C_Invoice_ID@ @NotFound@");
+		//	
+		MInvoice invoice = new MInvoice(getCtx(), getRecord_ID(), get_TrxName());
+		//	Get Device
+		MADDevice device = new MADDevice(getCtx(), 50000, get_TrxName());
+		MADFPDocument fiscalDocument = MADFPDocument.getFromDocumentType(getCtx(), invoice.getC_DocType_ID(), device.getAD_Device_ID());
+		FiscalDocumentHandler documentHandler = new FiscalDocumentHandler(fiscalDocument, device);
+		//	Print
+		documentHandler.printDocument(getRecord_ID());
+		return "";
 	}
 }

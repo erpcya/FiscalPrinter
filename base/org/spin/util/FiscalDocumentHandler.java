@@ -17,10 +17,15 @@
 package org.spin.util;
 
 import java.util.HashMap;
+import java.util.List;
+import java.util.Properties;
 
 import org.adempiere.exceptions.AdempiereException;
+import org.compiere.model.MColumn;
 import org.compiere.model.MRule;
+import org.compiere.model.MTable;
 import org.compiere.model.PO;
+import org.compiere.model.Query;
 import org.compiere.model.Scriptlet;
 import org.compiere.util.CLogger;
 import org.compiere.util.Env;
@@ -47,6 +52,8 @@ public class FiscalDocumentHandler {
 			throw new AdempiereException("@AD_Device_ID@ @NotFound@");
 		if(device.getAD_DeviceType_ID() != document.getAD_DeviceType_ID())
 			throw new AdempiereException("@AD_DeviceType_ID@ @NotMatched@");
+		//	Get Context
+		ctx = document.getCtx();
 		//	Get Handler
 		printerHandler = (FiscalPrinterHandler) device.getDeviceHandler();
 	}
@@ -61,6 +68,8 @@ public class FiscalDocumentHandler {
 	private FiscalPrinterHandler 	printerHandler;
 	/** the context for rules 	*/
 	private HashMap<String, Object> m_scriptCtx = new HashMap<String, Object>();
+	/**	Context					*/
+	private Properties 				ctx;
 	/**	Imports					*/
 	private static StringBuffer s_scriptImport = new StringBuffer(
 			 "import org.eevolution.model.*;\n" 
@@ -77,15 +86,33 @@ public class FiscalDocumentHandler {
 	 * Add parameters to script
 	 * @author Yamel Senih, ysenih@erpcya.com, ERPCyA http://www.erpcya.com
 	 * @param document
+	 * @param fDocument
 	 * @return void
 	 */
-	private void loadScriptValues(PO document) {
+	private void loadScriptValues(PO document, MADFPDocument fDocument) {
 		m_scriptCtx.clear();
 		m_scriptCtx.put("_DocumentHandler", this);
 		m_scriptCtx.put("_PrinterHandler", printerHandler);
-		m_scriptCtx.put("_FiscalDocument", fiscalDocument);
+		m_scriptCtx.put("_FiscalDocument", fDocument);
 		m_scriptCtx.put("_Device", device);
 		m_scriptCtx.put("_Document", document);
+	}
+	
+	/**
+	 * Print a document from record Identifier
+	 * @param recordId
+	 * @throws Exception
+	 * @return void
+	 */
+	public void printDocument(int recordId) throws Exception {
+		//	Valid Table
+		if(fiscalDocument.getAD_Table_ID() == 0)
+			throw new AdempiereException("@AD_Table_ID@ @NotFound@");
+		//	Get PO
+		MTable table = MTable.get(ctx, fiscalDocument.getAD_Table_ID());
+		PO document = table.getPO(recordId, fiscalDocument.get_TrxName());
+		//	Print Document
+		printDocument(document, fiscalDocument);
 	}
 	
 	/**
@@ -97,16 +124,21 @@ public class FiscalDocumentHandler {
 	 * @return void
 	 * @throws Exception 
 	 */
-	public void printDocument(PO document) throws Exception {
+	public void printDocument(PO document, MADFPDocument fDocument) throws Exception {
 		if(printerHandler == null)
+			return;
+		//	Validate fiscal Document
+		if(fDocument == null)
 			return;
 		//	Get handler
 		printerHandler.connect();
+		if(!printerHandler.isConnected())
+			return;
 		//	Set values to script
-		loadScriptValues(document);
+		loadScriptValues(document, fDocument);
 		//	
 		StringBuffer cmdBuffer = new StringBuffer();
-		for(MADFPDocumentLine line : fiscalDocument.getLines()) {
+		for(MADFPDocumentLine line : fDocument.getLines()) {
 			//	Print previous
 			if(line.isNewCmd()
 					&& cmdBuffer.length() > 0) {
@@ -114,6 +146,40 @@ public class FiscalDocumentHandler {
 				log.fine("Cmd[" + cmdBuffer + "]");
 				printerHandler.printCmd(cmdBuffer.toString());
 				cmdBuffer = new StringBuffer();
+			}
+			//	Child document
+			if(line.getAD_FP_DocumentChild_ID() != 0) {
+				//	Validate recursive reference
+				if(line.getAD_FP_DocumentChild_ID() != line.getAD_FP_Document_ID()) {
+					MADFPDocument childDocument = MADFPDocument.get(ctx, line.getAD_FP_DocumentChild_ID());
+					//	Validate Table
+					if(line.getAD_Column_ID() != 0
+							&& childDocument.getAD_Table_ID() != 0
+							&& document != null) {
+						//	Get Link Column
+						MColumn linkColumn = MColumn.get(ctx, line.getAD_Column_ID());
+						//	Get Child Table
+						MTable table = MTable.get(ctx, childDocument.getAD_Table_ID());
+						//	Where clause
+						String whereClause = table.getTableName() + "." + linkColumn.getColumnName() + " = ?";
+						//	log
+						log.fine("Child Where Clause[" + whereClause + "]");
+						List<PO> childrens = new Query(ctx, table, whereClause, document.get_TrxName())
+								.setParameters(document.get_Value(linkColumn.getColumnName()))
+								.list();
+						//	Iterate List
+						if(childrens != null
+								&& childrens.size() > 0) {
+							for(PO child : childrens) {
+								printDocument(child, childDocument);
+							}
+						}
+					}
+				} else {
+					log.warning("Line [" + line.toString() + "] Recursive reference");
+				}
+				//	Continue
+				continue;
 			}
 			//	Get values
 			String prefix = line.getPrefix();
@@ -131,7 +197,7 @@ public class FiscalDocumentHandler {
 			if(document != null
 					&& code != null
 					&& line.isParse()) {
-				code = Env.parseVariable(code, document, fiscalDocument.get_TrxName(), true);
+				code = Env.parseVariable(code, document, fDocument.get_TrxName(), true);
 			}
 			//	Valid null
 			if(code == null)
@@ -155,7 +221,7 @@ public class FiscalDocumentHandler {
 			printerHandler.printCmd(cmdBuffer.toString());
 		}
 		//	Close connection
-		printerHandler.close();
+//		printerHandler.close();
 	}
 	
 	/**

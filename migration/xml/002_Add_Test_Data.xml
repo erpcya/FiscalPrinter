@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Migrations>
+  <Migration EntityType="D" Name="LVE Fiscal Printer (Test Data)" ReleaseNo="" SeqNo="233">
+    <Step SeqNo="10" StepType="AD">
+      <PO AD_Table_ID="54141" Action="I" Record_ID="50001" Table="AD_DeviceType">
+        <Data AD_Column_ID="80783" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80790" Column="AD_DeviceType_ID">50001</Data>
+        <Data AD_Column_ID="80784" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80794" Column="Classname">org.spin.util.TFHKAFiscalPrinter</Data>
+        <Data AD_Column_ID="80786" Column="Created">2016-07-23 15:39:22.036</Data>
+        <Data AD_Column_ID="80788" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80793" Column="Description">Bixolon Fiscal Printer using The Factory HKA Library</Data>
+        <Data AD_Column_ID="80795" Column="DeviceType">PR</Data>
+        <Data AD_Column_ID="80785" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80792" Column="Name">Bixolon Fiscal Printer</Data>
+        <Data AD_Column_ID="80787" Column="Updated">2016-07-23 15:39:22.036</Data>
+        <Data AD_Column_ID="80789" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80791" Column="Value">FP</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="20" StepType="AD">
+      <PO AD_Table_ID="54155" Action="I" Record_ID="50001" Table="AD_DeviceType_Trl">
+        <Data AD_Column_ID="80958" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80968" Column="AD_DeviceType_ID">50001</Data>
+        <Data AD_Column_ID="80967" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="80959" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80961" Column="Created">2016-07-23 15:39:23.123</Data>
+        <Data AD_Column_ID="80963" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80966" Column="Description">Bixolon Fiscal Printer using The Factory HKA Library</Data>
+        <Data AD_Column_ID="80960" Column="IsActive">true</Data>
+        <Data AD_Column_ID="81036" Column="IsTranslated">false</Data>
+        <Data AD_Column_ID="80965" Column="Name">Bixolon Fiscal Printer</Data>
+        <Data AD_Column_ID="80962" Column="Updated">2016-07-23 15:39:23.123</Data>
+        <Data AD_Column_ID="80964" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="30" StepType="AD">
+      <PO AD_Table_ID="54155" Action="U" Record_ID="50001" Table="AD_DeviceType_Trl">
+        <Data AD_Column_ID="80968" Column="AD_DeviceType_ID" oldValue="50001">50001</Data>
+        <Data AD_Column_ID="80967" Column="AD_Language" oldValue="es_MX">es_MX</Data>
+        <Data AD_Column_ID="80966" Column="Description" oldValue="Bixolon Fiscal Printer using The Factory HKA Library">Impresora Fiscal Bixolon usando la Librería de The Factory HKA</Data>
+        <Data AD_Column_ID="80965" Column="Name" oldValue="Bixolon Fiscal Printer">Impresora Fiscal Bixolon</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="40" StepType="AD">
+      <PO AD_Table_ID="54146" Action="I" Record_ID="50002" Table="AD_DeviceAttributeSet">
+        <Data AD_Column_ID="80844" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80851" Column="AD_DeviceAttributeSet_ID">50002</Data>
+        <Data AD_Column_ID="80845" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80847" Column="Created">2016-07-23 15:40:33.221</Data>
+        <Data AD_Column_ID="80849" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80853" Column="Description" isNewNull="true"/>
+        <Data AD_Column_ID="80846" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80852" Column="Name">Serial Port (TFHKA)</Data>
+        <Data AD_Column_ID="80848" Column="Updated">2016-07-23 15:40:33.221</Data>
+        <Data AD_Column_ID="80850" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="50" StepType="AD">
+      <PO AD_Table_ID="54157" Action="I" Record_ID="50002" Table="AD_DeviceAttributeSet_Trl">
+        <Data AD_Column_ID="80980" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80987" Column="AD_DeviceAttributeSet_ID">50002</Data>
+        <Data AD_Column_ID="80988" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="80981" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80983" Column="Created">2016-07-23 15:40:34.025</Data>
+        <Data AD_Column_ID="80985" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80990" Column="Description" isNewNull="true"/>
+        <Data AD_Column_ID="80982" Column="IsActive">true</Data>
+        <Data AD_Column_ID="81034" Column="IsTranslated">false</Data>
+        <Data AD_Column_ID="80989" Column="Name">Serial Port (TFHKA)</Data>
+        <Data AD_Column_ID="80984" Column="Updated">2016-07-23 15:40:34.025</Data>
+        <Data AD_Column_ID="80986" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="60" StepType="AD">
+      <PO AD_Table_ID="54157" Action="U" Record_ID="50002" Table="AD_DeviceAttributeSet_Trl">
+        <Data AD_Column_ID="80987" Column="AD_DeviceAttributeSet_ID" oldValue="50002">50002</Data>
+        <Data AD_Column_ID="80988" Column="AD_Language" oldValue="es_MX">es_MX</Data>
+        <Data AD_Column_ID="80989" Column="Name" oldValue="Serial Port (TFHKA)">Puerto Serie (TFHKA)</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="70" StepType="AD">
+      <PO AD_Table_ID="54147" Action="I" Record_ID="50013" Table="AD_DeviceAttributeUse">
+        <Data AD_Column_ID="80854" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80862" Column="AD_DeviceAttribute_ID">50000</Data>
+        <Data AD_Column_ID="80863" Column="AD_DeviceAttributeSet_ID">50002</Data>
+        <Data AD_Column_ID="80861" Column="AD_DeviceAttributeUse_ID">50013</Data>
+        <Data AD_Column_ID="80855" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80857" Column="Created">2016-07-23 15:40:56.108</Data>
+        <Data AD_Column_ID="80859" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="81037" Column="DefaultValue" isNewNull="true"/>
+        <Data AD_Column_ID="80856" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80864" Column="IsMandatory">true</Data>
+        <Data AD_Column_ID="81038" Column="MaxValue">0</Data>
+        <Data AD_Column_ID="81039" Column="MinValue">0</Data>
+        <Data AD_Column_ID="80865" Column="SeqNo">10</Data>
+        <Data AD_Column_ID="80858" Column="Updated">2016-07-23 15:40:56.108</Data>
+        <Data AD_Column_ID="80860" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="80" StepType="AD">
+      <PO AD_Table_ID="54160" Action="I" Record_ID="50002" Table="AD_DeviceTypeSetUse">
+        <Data AD_Column_ID="81051" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="81060" Column="AD_DeviceAttributeSet_ID">50002</Data>
+        <Data AD_Column_ID="81059" Column="AD_DeviceType_ID">50001</Data>
+        <Data AD_Column_ID="81058" Column="AD_DeviceTypeSetUse_ID">50002</Data>
+        <Data AD_Column_ID="81052" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="81054" Column="Created">2016-07-23 15:41:08.966</Data>
+        <Data AD_Column_ID="81056" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="81053" Column="IsActive">true</Data>
+        <Data AD_Column_ID="81055" Column="Updated">2016-07-23 15:41:08.966</Data>
+        <Data AD_Column_ID="81057" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="90" StepType="AD">
+      <PO AD_Table_ID="54151" Action="I" Record_ID="50000" Table="AD_FP_DocumentType">
+        <Data AD_Column_ID="80905" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80912" Column="AD_FP_DocumentType_ID">50000</Data>
+        <Data AD_Column_ID="80906" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80908" Column="Created">2016-07-23 15:41:30.613</Data>
+        <Data AD_Column_ID="80910" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80915" Column="Description" isNewNull="true"/>
+        <Data AD_Column_ID="80907" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80914" Column="Name">Invoice Document</Data>
+        <Data AD_Column_ID="80916" Column="Type">D</Data>
+        <Data AD_Column_ID="80909" Column="Updated">2016-07-23 15:41:30.613</Data>
+        <Data AD_Column_ID="80911" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80913" Column="Value">Invoice</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="100" StepType="AD">
+      <PO AD_Table_ID="54152" Action="I" Record_ID="50000" Table="AD_FP_Cmd">
+        <Data AD_Column_ID="80917" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80924" Column="AD_FP_Cmd_ID">50000</Data>
+        <Data AD_Column_ID="80918" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80920" Column="Created">2016-07-23 15:42:18.84</Data>
+        <Data AD_Column_ID="80922" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80919" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80926" Column="Name">Business Partner Tax Identifier</Data>
+        <Data AD_Column_ID="80921" Column="Updated">2016-07-23 15:42:18.84</Data>
+        <Data AD_Column_ID="80923" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80925" Column="Value">BPTaxID</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="110" StepType="AD">
+      <PO AD_Table_ID="54152" Action="I" Record_ID="50001" Table="AD_FP_Cmd">
+        <Data AD_Column_ID="80917" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80924" Column="AD_FP_Cmd_ID">50001</Data>
+        <Data AD_Column_ID="80918" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80920" Column="Created">2016-07-23 15:42:40.703</Data>
+        <Data AD_Column_ID="80922" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80919" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80926" Column="Name">Business Partner Name</Data>
+        <Data AD_Column_ID="80921" Column="Updated">2016-07-23 15:42:40.703</Data>
+        <Data AD_Column_ID="80923" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80925" Column="Value">BPName</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="120" StepType="AD">
+      <PO AD_Table_ID="54152" Action="I" Record_ID="50002" Table="AD_FP_Cmd">
+        <Data AD_Column_ID="80917" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80924" Column="AD_FP_Cmd_ID">50002</Data>
+        <Data AD_Column_ID="80918" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80920" Column="Created">2016-07-23 15:42:50.492</Data>
+        <Data AD_Column_ID="80922" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80919" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80926" Column="Name">Line Reference</Data>
+        <Data AD_Column_ID="80921" Column="Updated">2016-07-23 15:42:50.492</Data>
+        <Data AD_Column_ID="80923" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80925" Column="Value">Line</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="130" StepType="AD">
+      <PO AD_Table_ID="54152" Action="I" Record_ID="50003" Table="AD_FP_Cmd">
+        <Data AD_Column_ID="80917" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80924" Column="AD_FP_Cmd_ID">50003</Data>
+        <Data AD_Column_ID="80918" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80920" Column="Created">2016-07-23 15:43:55.184</Data>
+        <Data AD_Column_ID="80922" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80919" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80926" Column="Name">Product Value</Data>
+        <Data AD_Column_ID="80921" Column="Updated">2016-07-23 15:43:55.184</Data>
+        <Data AD_Column_ID="80923" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80925" Column="Value">ProductValue</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="140" StepType="AD">
+      <PO AD_Table_ID="54152" Action="I" Record_ID="50004" Table="AD_FP_Cmd">
+        <Data AD_Column_ID="80917" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80924" Column="AD_FP_Cmd_ID">50004</Data>
+        <Data AD_Column_ID="80918" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80920" Column="Created">2016-07-23 15:44:05.566</Data>
+        <Data AD_Column_ID="80922" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80919" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80926" Column="Name">Product Name</Data>
+        <Data AD_Column_ID="80921" Column="Updated">2016-07-23 15:44:05.566</Data>
+        <Data AD_Column_ID="80923" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80925" Column="Value">ProductName</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="150" StepType="AD">
+      <PO AD_Table_ID="54152" Action="I" Record_ID="50005" Table="AD_FP_Cmd">
+        <Data AD_Column_ID="80917" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80924" Column="AD_FP_Cmd_ID">50005</Data>
+        <Data AD_Column_ID="80918" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80920" Column="Created">2016-07-23 15:44:13.309</Data>
+        <Data AD_Column_ID="80922" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80919" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80926" Column="Name">Quantity</Data>
+        <Data AD_Column_ID="80921" Column="Updated">2016-07-23 15:44:13.309</Data>
+        <Data AD_Column_ID="80923" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80925" Column="Value">Qty</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="160" StepType="AD">
+      <PO AD_Table_ID="54152" Action="I" Record_ID="50006" Table="AD_FP_Cmd">
+        <Data AD_Column_ID="80917" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80924" Column="AD_FP_Cmd_ID">50006</Data>
+        <Data AD_Column_ID="80918" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80920" Column="Created">2016-07-23 15:44:26.532</Data>
+        <Data AD_Column_ID="80922" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80919" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80926" Column="Name">Product Price</Data>
+        <Data AD_Column_ID="80921" Column="Updated">2016-07-23 15:44:26.532</Data>
+        <Data AD_Column_ID="80923" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80925" Column="Value">ProductPrice</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="170" StepType="AD">
+      <PO AD_Table_ID="54152" Action="I" Record_ID="50007" Table="AD_FP_Cmd">
+        <Data AD_Column_ID="80917" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80924" Column="AD_FP_Cmd_ID">50007</Data>
+        <Data AD_Column_ID="80918" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80920" Column="Created">2016-07-23 15:44:32.547</Data>
+        <Data AD_Column_ID="80922" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80919" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80926" Column="Name">Tax</Data>
+        <Data AD_Column_ID="80921" Column="Updated">2016-07-23 15:44:32.547</Data>
+        <Data AD_Column_ID="80923" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80925" Column="Value">Tax</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="180" StepType="AD">
+      <PO AD_Table_ID="54153" Action="I" Record_ID="50000" Table="AD_FP_Document">
+        <Data AD_Column_ID="80927" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80935" Column="AD_DeviceType_ID">50001</Data>
+        <Data AD_Column_ID="80934" Column="AD_FP_Document_ID">50000</Data>
+        <Data AD_Column_ID="80936" Column="AD_FP_DocumentType_ID">50000</Data>
+        <Data AD_Column_ID="80928" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="81061" Column="AD_Table_ID">516</Data>
+        <Data AD_Column_ID="80930" Column="Created">2016-07-23 15:47:38.812</Data>
+        <Data AD_Column_ID="80932" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80929" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80938" Column="Name">Invoice Document</Data>
+        <Data AD_Column_ID="80931" Column="Updated">2016-07-23 15:47:38.812</Data>
+        <Data AD_Column_ID="80933" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80937" Column="Value">Invoice</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="190" StepType="AD">
+      <PO AD_Table_ID="54154" Action="I" Record_ID="50000" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80939" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="81062" Column="AD_Column_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80948" Column="AD_FP_Cmd_ID">50000</Data>
+        <Data AD_Column_ID="81063" Column="AD_FP_DocumentChild_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80947" Column="AD_FP_Document_ID">50000</Data>
+        <Data AD_Column_ID="80946" Column="AD_FP_DocumentLine_ID">50000</Data>
+        <Data AD_Column_ID="80940" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80949" Column="AD_Rule_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80953" Column="Code">@BPTaxID@</Data>
+        <Data AD_Column_ID="80942" Column="Created">2016-07-23 15:48:08.759</Data>
+        <Data AD_Column_ID="80944" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80941" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80956" Column="IsNewCmd">false</Data>
+        <Data AD_Column_ID="80954" Column="MaxLength">0</Data>
+        <Data AD_Column_ID="80955" Column="Parse">true</Data>
+        <Data AD_Column_ID="80951" Column="Prefix">iR*</Data>
+        <Data AD_Column_ID="80950" Column="SeqNo">0</Data>
+        <Data AD_Column_ID="80952" Column="Suffix" isNewNull="true"/>
+        <Data AD_Column_ID="80943" Column="Updated">2016-07-23 15:48:08.759</Data>
+        <Data AD_Column_ID="80945" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="200" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50000" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80954" Column="MaxLength" oldValue="0">11</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="210" StepType="AD">
+      <PO AD_Table_ID="54154" Action="I" Record_ID="50001" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80939" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="81062" Column="AD_Column_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80948" Column="AD_FP_Cmd_ID">50001</Data>
+        <Data AD_Column_ID="81063" Column="AD_FP_DocumentChild_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80947" Column="AD_FP_Document_ID">50000</Data>
+        <Data AD_Column_ID="80946" Column="AD_FP_DocumentLine_ID">50001</Data>
+        <Data AD_Column_ID="80940" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80949" Column="AD_Rule_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80953" Column="Code">@Name@</Data>
+        <Data AD_Column_ID="80942" Column="Created">2016-07-23 15:48:55.296</Data>
+        <Data AD_Column_ID="80944" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80941" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80956" Column="IsNewCmd">true</Data>
+        <Data AD_Column_ID="80954" Column="MaxLength">40</Data>
+        <Data AD_Column_ID="80955" Column="Parse">true</Data>
+        <Data AD_Column_ID="80951" Column="Prefix">iS*</Data>
+        <Data AD_Column_ID="80950" Column="SeqNo">0</Data>
+        <Data AD_Column_ID="80952" Column="Suffix" isNewNull="true"/>
+        <Data AD_Column_ID="80943" Column="Updated">2016-07-23 15:48:55.296</Data>
+        <Data AD_Column_ID="80945" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="220" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50001" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80956" Column="IsNewCmd" oldValue="true">false</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="230" StepType="AD">
+      <PO AD_Table_ID="54152" Action="I" Record_ID="50008" Table="AD_FP_Cmd">
+        <Data AD_Column_ID="80917" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80924" Column="AD_FP_Cmd_ID">50008</Data>
+        <Data AD_Column_ID="80918" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80920" Column="Created">2016-07-23 15:50:40.923</Data>
+        <Data AD_Column_ID="80922" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80919" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80926" Column="Name">Business Partner Name 2</Data>
+        <Data AD_Column_ID="80921" Column="Updated">2016-07-23 15:50:40.923</Data>
+        <Data AD_Column_ID="80923" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80925" Column="Value">BPName2</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="240" StepType="AD">
+      <PO AD_Table_ID="54154" Action="I" Record_ID="50002" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80939" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="81062" Column="AD_Column_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80948" Column="AD_FP_Cmd_ID">50008</Data>
+        <Data AD_Column_ID="81063" Column="AD_FP_DocumentChild_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80947" Column="AD_FP_Document_ID">50000</Data>
+        <Data AD_Column_ID="80946" Column="AD_FP_DocumentLine_ID">50002</Data>
+        <Data AD_Column_ID="80940" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80949" Column="AD_Rule_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80953" Column="Code">@Name2@</Data>
+        <Data AD_Column_ID="80942" Column="Created">2016-07-23 15:51:08.025</Data>
+        <Data AD_Column_ID="80944" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80941" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80956" Column="IsNewCmd">false</Data>
+        <Data AD_Column_ID="80954" Column="MaxLength">40</Data>
+        <Data AD_Column_ID="80955" Column="Parse">true</Data>
+        <Data AD_Column_ID="80951" Column="Prefix">i00</Data>
+        <Data AD_Column_ID="80950" Column="SeqNo">0</Data>
+        <Data AD_Column_ID="80952" Column="Suffix" isNewNull="true"/>
+        <Data AD_Column_ID="80943" Column="Updated">2016-07-23 15:51:08.025</Data>
+        <Data AD_Column_ID="80945" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="250" StepType="AD">
+      <PO AD_Table_ID="54152" Action="I" Record_ID="50009" Table="AD_FP_Cmd">
+        <Data AD_Column_ID="80917" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80924" Column="AD_FP_Cmd_ID">50009</Data>
+        <Data AD_Column_ID="80918" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80920" Column="Created">2016-07-23 15:51:39.783</Data>
+        <Data AD_Column_ID="80922" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80919" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80926" Column="Name">Document Description</Data>
+        <Data AD_Column_ID="80921" Column="Updated">2016-07-23 15:51:39.783</Data>
+        <Data AD_Column_ID="80923" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80925" Column="Value">DocumentDescription</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="260" StepType="AD">
+      <PO AD_Table_ID="54154" Action="I" Record_ID="50003" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80939" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="81062" Column="AD_Column_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80948" Column="AD_FP_Cmd_ID">50009</Data>
+        <Data AD_Column_ID="81063" Column="AD_FP_DocumentChild_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80947" Column="AD_FP_Document_ID">50000</Data>
+        <Data AD_Column_ID="80946" Column="AD_FP_DocumentLine_ID">50003</Data>
+        <Data AD_Column_ID="80940" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80949" Column="AD_Rule_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80953" Column="Code">@Description@</Data>
+        <Data AD_Column_ID="80942" Column="Created">2016-07-23 15:52:22.684</Data>
+        <Data AD_Column_ID="80944" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80941" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80956" Column="IsNewCmd">false</Data>
+        <Data AD_Column_ID="80954" Column="MaxLength">40</Data>
+        <Data AD_Column_ID="80955" Column="Parse">true</Data>
+        <Data AD_Column_ID="80951" Column="Prefix">@</Data>
+        <Data AD_Column_ID="80950" Column="SeqNo">0</Data>
+        <Data AD_Column_ID="80952" Column="Suffix" isNewNull="true"/>
+        <Data AD_Column_ID="80943" Column="Updated">2016-07-23 15:52:22.684</Data>
+        <Data AD_Column_ID="80945" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="270" StepType="AD">
+      <PO AD_Table_ID="54153" Action="I" Record_ID="50001" Table="AD_FP_Document">
+        <Data AD_Column_ID="80927" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80935" Column="AD_DeviceType_ID">50001</Data>
+        <Data AD_Column_ID="80934" Column="AD_FP_Document_ID">50001</Data>
+        <Data AD_Column_ID="80936" Column="AD_FP_DocumentType_ID">50000</Data>
+        <Data AD_Column_ID="80928" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="81061" Column="AD_Table_ID">333</Data>
+        <Data AD_Column_ID="80930" Column="Created">2016-07-23 16:13:17.874</Data>
+        <Data AD_Column_ID="80932" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80929" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80938" Column="Name">Invoice Line</Data>
+        <Data AD_Column_ID="80931" Column="Updated">2016-07-23 16:13:17.874</Data>
+        <Data AD_Column_ID="80933" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80937" Column="Value">InvoiceLine</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="280" StepType="AD">
+      <PO AD_Table_ID="54154" Action="I" Record_ID="50004" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80939" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="81062" Column="AD_Column_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80948" Column="AD_FP_Cmd_ID">50005</Data>
+        <Data AD_Column_ID="81063" Column="AD_FP_DocumentChild_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80947" Column="AD_FP_Document_ID">50001</Data>
+        <Data AD_Column_ID="80946" Column="AD_FP_DocumentLine_ID">50004</Data>
+        <Data AD_Column_ID="80940" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80949" Column="AD_Rule_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80953" Column="Code" isNewNull="true"/>
+        <Data AD_Column_ID="80942" Column="Created">2016-07-23 16:26:50.386</Data>
+        <Data AD_Column_ID="80944" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80941" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80956" Column="IsNewCmd">false</Data>
+        <Data AD_Column_ID="80954" Column="MaxLength">8</Data>
+        <Data AD_Column_ID="80955" Column="Parse">true</Data>
+        <Data AD_Column_ID="80951" Column="Prefix" isNewNull="true"/>
+        <Data AD_Column_ID="80950" Column="SeqNo">0</Data>
+        <Data AD_Column_ID="80952" Column="Suffix" isNewNull="true"/>
+        <Data AD_Column_ID="80943" Column="Updated">2016-07-23 16:26:50.386</Data>
+        <Data AD_Column_ID="80945" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="290" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50004" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80948" Column="AD_FP_Cmd_ID" oldValue="50005">50007</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="300" StepType="AD">
+      <PO AD_Table_ID="54154" Action="I" Record_ID="50005" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80939" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="81062" Column="AD_Column_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80948" Column="AD_FP_Cmd_ID">50006</Data>
+        <Data AD_Column_ID="81063" Column="AD_FP_DocumentChild_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80947" Column="AD_FP_Document_ID">50001</Data>
+        <Data AD_Column_ID="80946" Column="AD_FP_DocumentLine_ID">50005</Data>
+        <Data AD_Column_ID="80940" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80949" Column="AD_Rule_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80953" Column="Code" isNewNull="true"/>
+        <Data AD_Column_ID="80942" Column="Created">2016-07-23 16:27:52.634</Data>
+        <Data AD_Column_ID="80944" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80941" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80956" Column="IsNewCmd">true</Data>
+        <Data AD_Column_ID="80954" Column="MaxLength">0</Data>
+        <Data AD_Column_ID="80955" Column="Parse">true</Data>
+        <Data AD_Column_ID="80951" Column="Prefix" isNewNull="true"/>
+        <Data AD_Column_ID="80950" Column="SeqNo">0</Data>
+        <Data AD_Column_ID="80952" Column="Suffix" isNewNull="true"/>
+        <Data AD_Column_ID="80943" Column="Updated">2016-07-23 16:27:52.634</Data>
+        <Data AD_Column_ID="80945" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="310" StepType="AD">
+      <PO AD_Table_ID="54154" Action="I" Record_ID="50006" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80939" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="81062" Column="AD_Column_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80948" Column="AD_FP_Cmd_ID">50004</Data>
+        <Data AD_Column_ID="81063" Column="AD_FP_DocumentChild_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80947" Column="AD_FP_Document_ID">50001</Data>
+        <Data AD_Column_ID="80946" Column="AD_FP_DocumentLine_ID">50006</Data>
+        <Data AD_Column_ID="80940" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80949" Column="AD_Rule_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80953" Column="Code" isNewNull="true"/>
+        <Data AD_Column_ID="80942" Column="Created">2016-07-23 16:28:20.81</Data>
+        <Data AD_Column_ID="80944" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80941" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80956" Column="IsNewCmd">false</Data>
+        <Data AD_Column_ID="80954" Column="MaxLength">150</Data>
+        <Data AD_Column_ID="80955" Column="Parse">true</Data>
+        <Data AD_Column_ID="80951" Column="Prefix" isNewNull="true"/>
+        <Data AD_Column_ID="80950" Column="SeqNo">0</Data>
+        <Data AD_Column_ID="80952" Column="Suffix" isNewNull="true"/>
+        <Data AD_Column_ID="80943" Column="Updated">2016-07-23 16:28:20.81</Data>
+        <Data AD_Column_ID="80945" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="320" StepType="AD">
+      <PO AD_Table_ID="54154" Action="I" Record_ID="50007" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80939" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="81062" Column="AD_Column_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80948" Column="AD_FP_Cmd_ID">50005</Data>
+        <Data AD_Column_ID="81063" Column="AD_FP_DocumentChild_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80947" Column="AD_FP_Document_ID">50001</Data>
+        <Data AD_Column_ID="80946" Column="AD_FP_DocumentLine_ID">50007</Data>
+        <Data AD_Column_ID="80940" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80949" Column="AD_Rule_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80953" Column="Code" isNewNull="true"/>
+        <Data AD_Column_ID="80942" Column="Created">2016-07-23 16:28:49.398</Data>
+        <Data AD_Column_ID="80944" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80941" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80956" Column="IsNewCmd">false</Data>
+        <Data AD_Column_ID="80954" Column="MaxLength">0</Data>
+        <Data AD_Column_ID="80955" Column="Parse">true</Data>
+        <Data AD_Column_ID="80951" Column="Prefix" isNewNull="true"/>
+        <Data AD_Column_ID="80950" Column="SeqNo">0</Data>
+        <Data AD_Column_ID="80952" Column="Suffix" isNewNull="true"/>
+        <Data AD_Column_ID="80943" Column="Updated">2016-07-23 16:28:49.398</Data>
+        <Data AD_Column_ID="80945" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="330" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50007" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80954" Column="MaxLength" oldValue="0">8</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="340" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50005" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80956" Column="IsNewCmd" oldValue="true">false</Data>
+        <Data AD_Column_ID="80954" Column="MaxLength" oldValue="0">10</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="350" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50004" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80954" Column="MaxLength" oldValue="8">1</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="360" StepType="AD">
+      <PO AD_Table_ID="54154" Action="I" Record_ID="50008" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80939" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="81062" Column="AD_Column_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80948" Column="AD_FP_Cmd_ID">50003</Data>
+        <Data AD_Column_ID="81063" Column="AD_FP_DocumentChild_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80947" Column="AD_FP_Document_ID">50001</Data>
+        <Data AD_Column_ID="80946" Column="AD_FP_DocumentLine_ID">50008</Data>
+        <Data AD_Column_ID="80940" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80949" Column="AD_Rule_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80953" Column="Code" isNewNull="true"/>
+        <Data AD_Column_ID="80942" Column="Created">2016-07-23 16:30:38.832</Data>
+        <Data AD_Column_ID="80944" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80941" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80956" Column="IsNewCmd">true</Data>
+        <Data AD_Column_ID="80954" Column="MaxLength">150</Data>
+        <Data AD_Column_ID="80955" Column="Parse">true</Data>
+        <Data AD_Column_ID="80951" Column="Prefix">|</Data>
+        <Data AD_Column_ID="80950" Column="SeqNo">0</Data>
+        <Data AD_Column_ID="80952" Column="Suffix">|</Data>
+        <Data AD_Column_ID="80943" Column="Updated">2016-07-23 16:30:38.833</Data>
+        <Data AD_Column_ID="80945" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="370" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50004" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80950" Column="SeqNo" oldValue="0">10</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="380" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50005" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80950" Column="SeqNo" oldValue="0">20</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="390" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50007" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80950" Column="SeqNo" oldValue="0">30</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="400" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50008" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80950" Column="SeqNo" oldValue="0">40</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="410" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50006" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80950" Column="SeqNo" oldValue="0">50</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="420" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50000" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80950" Column="SeqNo" oldValue="0">10</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="430" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50001" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80950" Column="SeqNo" oldValue="0">20</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="440" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50002" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80950" Column="SeqNo" oldValue="0">30</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="450" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50003" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80950" Column="SeqNo" oldValue="0">40</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="460" StepType="AD">
+      <PO AD_Table_ID="54154" Action="I" Record_ID="50009" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80939" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="81062" Column="AD_Column_ID">7454</Data>
+        <Data AD_Column_ID="80948" Column="AD_FP_Cmd_ID">50002</Data>
+        <Data AD_Column_ID="81063" Column="AD_FP_DocumentChild_ID">50001</Data>
+        <Data AD_Column_ID="80947" Column="AD_FP_Document_ID">50000</Data>
+        <Data AD_Column_ID="80946" Column="AD_FP_DocumentLine_ID">50009</Data>
+        <Data AD_Column_ID="80940" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80949" Column="AD_Rule_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80953" Column="Code" isNewNull="true"/>
+        <Data AD_Column_ID="80942" Column="Created">2016-07-23 16:31:39.131</Data>
+        <Data AD_Column_ID="80944" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80941" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80956" Column="IsNewCmd">true</Data>
+        <Data AD_Column_ID="80954" Column="MaxLength">0</Data>
+        <Data AD_Column_ID="80955" Column="Parse">true</Data>
+        <Data AD_Column_ID="80951" Column="Prefix" isNewNull="true"/>
+        <Data AD_Column_ID="80950" Column="SeqNo">0</Data>
+        <Data AD_Column_ID="80952" Column="Suffix" isNewNull="true"/>
+        <Data AD_Column_ID="80943" Column="Updated">2016-07-23 16:31:39.131</Data>
+        <Data AD_Column_ID="80945" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="470" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50009" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80950" Column="SeqNo" oldValue="0">50</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="480" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50008" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80956" Column="IsNewCmd" oldValue="true">false</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="490" StepType="AD">
+      <PO AD_Table_ID="284" Action="I" Record_ID="53882" Table="AD_Process">
+        <Data AD_Column_ID="5790" Column="AccessLevel">3</Data>
+        <Data AD_Column_ID="63488" Column="AD_Browse_ID" isNewNull="true"/>
+        <Data AD_Column_ID="2802" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="56515" Column="AD_Form_ID" isNewNull="true"/>
+        <Data AD_Column_ID="2803" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="7752" Column="AD_PrintFormat_ID" isNewNull="true"/>
+        <Data AD_Column_ID="2801" Column="AD_Process_ID">53882</Data>
+        <Data AD_Column_ID="4374" Column="AD_ReportView_ID" isNewNull="true"/>
+        <Data AD_Column_ID="11834" Column="AD_Workflow_ID" isNewNull="true"/>
+        <Data AD_Column_ID="4656" Column="Classname">org.spin.process.InvoiceFiscalPrint</Data>
+        <Data AD_Column_ID="57920" Column="CopyFromProcess" isNewNull="true"/>
+        <Data AD_Column_ID="2805" Column="Created">2016-07-23 16:45:19.662</Data>
+        <Data AD_Column_ID="2806" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="2810" Column="Description">Print Invoices to Fiscal Printer</Data>
+        <Data AD_Column_ID="6485" Column="EntityType">ECA02</Data>
+        <Data AD_Column_ID="78843" Column="GenerateClass">N</Data>
+        <Data AD_Column_ID="2811" Column="Help" isNewNull="true"/>
+        <Data AD_Column_ID="2804" Column="IsActive">true</Data>
+        <Data AD_Column_ID="12458" Column="IsBetaFunctionality">false</Data>
+        <Data AD_Column_ID="4214" Column="IsDirectPrint">false</Data>
+        <Data AD_Column_ID="3371" Column="IsReport">false</Data>
+        <Data AD_Column_ID="14084" Column="IsServerProcess">false</Data>
+        <Data AD_Column_ID="50182" Column="JasperReport" isNewNull="true"/>
+        <Data AD_Column_ID="2809" Column="Name">Print Invoices to Fiscal Printer</Data>
+        <Data AD_Column_ID="2813" Column="ProcedureName" isNewNull="true"/>
+        <Data AD_Column_ID="50181" Column="ShowHelp">Y</Data>
+        <Data AD_Column_ID="6652" Column="Statistic_Count">0</Data>
+        <Data AD_Column_ID="6653" Column="Statistic_Seconds">0</Data>
+        <Data AD_Column_ID="2807" Column="Updated">2016-07-23 16:45:19.662</Data>
+        <Data AD_Column_ID="2808" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="4023" Column="Value">C_Invoice_FiscalPrint</Data>
+        <Data AD_Column_ID="11563" Column="WorkflowValue" isNewNull="true"/>
+      </PO>
+    </Step>
+    <Step SeqNo="500" StepType="AD">
+      <PO AD_Table_ID="287" Action="I" Record_ID="0" Table="AD_Process_Trl">
+        <Data AD_Column_ID="2845" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="2844" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2846" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="2843" Column="AD_Process_ID">53882</Data>
+        <Data AD_Column_ID="2848" Column="Created">2016-07-23 16:45:20.895</Data>
+        <Data AD_Column_ID="2849" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="2853" Column="Description">Print Invoices to Fiscal Printer</Data>
+        <Data AD_Column_ID="2854" Column="Help" isNewNull="true"/>
+        <Data AD_Column_ID="2847" Column="IsActive">true</Data>
+        <Data AD_Column_ID="2855" Column="IsTranslated">false</Data>
+        <Data AD_Column_ID="2852" Column="Name">Print Invoices to Fiscal Printer</Data>
+        <Data AD_Column_ID="2850" Column="Updated">2016-07-23 16:45:20.895</Data>
+        <Data AD_Column_ID="2851" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="510" StepType="AD">
+      <PO AD_Table_ID="287" Action="U" Record_ID="0" Table="AD_Process_Trl">
+        <Data AD_Column_ID="2844" Column="AD_Language" oldValue="es_MX">es_MX</Data>
+        <Data AD_Column_ID="2843" Column="AD_Process_ID" oldValue="53882">53882</Data>
+        <Data AD_Column_ID="2853" Column="Description" oldValue="Print Invoices to Fiscal Printer">Imprimir Factura en Impresora Fiscal</Data>
+        <Data AD_Column_ID="2852" Column="Name" oldValue="Print Invoices to Fiscal Printer">Imprimir Factura en Impresora Fiscal</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="520" StepType="AD">
+      <PO AD_Table_ID="54142" Action="I" Record_ID="50000" Table="AD_Device">
+        <Data AD_Column_ID="80796" Column="AD_Client_ID">11</Data>
+        <Data AD_Column_ID="80803" Column="AD_Device_ID">50000</Data>
+        <Data AD_Column_ID="80804" Column="AD_DeviceType_ID">50001</Data>
+        <Data AD_Column_ID="80797" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80799" Column="Created">2016-07-23 20:12:45.962</Data>
+        <Data AD_Column_ID="80801" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80807" Column="Description" isNewNull="true"/>
+        <Data AD_Column_ID="80798" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80806" Column="Name">Bixolon SRP-270</Data>
+        <Data AD_Column_ID="80800" Column="Updated">2016-07-23 20:12:45.962</Data>
+        <Data AD_Column_ID="80802" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80805" Column="Value">BX</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="530" StepType="AD">
+      <PO AD_Table_ID="54148" Action="I" Record_ID="50000" Table="AD_DeviceConfig">
+        <Data AD_Column_ID="80866" Column="AD_Client_ID">11</Data>
+        <Data AD_Column_ID="80874" Column="AD_DeviceAttributeSet_ID">50002</Data>
+        <Data AD_Column_ID="80873" Column="AD_DeviceConfig_ID">50000</Data>
+        <Data AD_Column_ID="80875" Column="AD_DeviceType_ID">50001</Data>
+        <Data AD_Column_ID="80867" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80869" Column="Created">2016-07-23 20:13:19.796</Data>
+        <Data AD_Column_ID="80871" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80878" Column="Description" isNewNull="true"/>
+        <Data AD_Column_ID="80868" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80877" Column="Name">Configuración de Impresora Fiscal</Data>
+        <Data AD_Column_ID="80879" Column="Processing">false</Data>
+        <Data AD_Column_ID="80870" Column="Updated">2016-07-23 20:13:19.796</Data>
+        <Data AD_Column_ID="80872" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80876" Column="Value">FPC</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="540" StepType="AD">
+      <PO AD_Table_ID="54150" Action="I" Record_ID="50000" Table="AD_DeviceConfigUse">
+        <Data AD_Column_ID="80892" Column="AD_Client_ID">11</Data>
+        <Data AD_Column_ID="80901" Column="AD_DeviceConfig_ID">50000</Data>
+        <Data AD_Column_ID="80899" Column="AD_DeviceConfigUse_ID">50000</Data>
+        <Data AD_Column_ID="80900" Column="AD_Device_ID">50000</Data>
+        <Data AD_Column_ID="80893" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80903" Column="ConfigType">C</Data>
+        <Data AD_Column_ID="80895" Column="Created">2016-07-23 20:13:35.458</Data>
+        <Data AD_Column_ID="80897" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80902" Column="Description" isNewNull="true"/>
+        <Data AD_Column_ID="80894" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80896" Column="Updated">2016-07-23 20:13:35.458</Data>
+        <Data AD_Column_ID="80898" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="550" StepType="AD">
+      <PO AD_Table_ID="54152" Action="I" Record_ID="50010" Table="AD_FP_Cmd">
+        <Data AD_Column_ID="80917" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80924" Column="AD_FP_Cmd_ID">50010</Data>
+        <Data AD_Column_ID="80918" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80920" Column="Created">2016-07-23 21:26:42.071</Data>
+        <Data AD_Column_ID="80922" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80919" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80926" Column="Name">Total Lines</Data>
+        <Data AD_Column_ID="80921" Column="Updated">2016-07-23 21:26:42.071</Data>
+        <Data AD_Column_ID="80923" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80925" Column="Value">TotalLines</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="560" StepType="AD">
+      <PO AD_Table_ID="54154" Action="I" Record_ID="50010" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80939" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="81062" Column="AD_Column_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80948" Column="AD_FP_Cmd_ID">50010</Data>
+        <Data AD_Column_ID="81063" Column="AD_FP_DocumentChild_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80947" Column="AD_FP_Document_ID">50000</Data>
+        <Data AD_Column_ID="80946" Column="AD_FP_DocumentLine_ID">50010</Data>
+        <Data AD_Column_ID="80940" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80949" Column="AD_Rule_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80953" Column="Code">3</Data>
+        <Data AD_Column_ID="80942" Column="Created">2016-07-23 21:27:47.237</Data>
+        <Data AD_Column_ID="80944" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80941" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80956" Column="IsNewCmd">false</Data>
+        <Data AD_Column_ID="80954" Column="MaxLength">0</Data>
+        <Data AD_Column_ID="80955" Column="Parse">true</Data>
+        <Data AD_Column_ID="80951" Column="Prefix" isNewNull="true"/>
+        <Data AD_Column_ID="80950" Column="SeqNo">0</Data>
+        <Data AD_Column_ID="80952" Column="Suffix" isNewNull="true"/>
+        <Data AD_Column_ID="80943" Column="Updated">2016-07-23 21:27:47.238</Data>
+        <Data AD_Column_ID="80945" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="570" StepType="AD">
+      <PO AD_Table_ID="54152" Action="I" Record_ID="50011" Table="AD_FP_Cmd">
+        <Data AD_Column_ID="80917" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="80924" Column="AD_FP_Cmd_ID">50011</Data>
+        <Data AD_Column_ID="80918" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80920" Column="Created">2016-07-23 21:32:27.433</Data>
+        <Data AD_Column_ID="80922" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80919" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80926" Column="Name">End Document</Data>
+        <Data AD_Column_ID="80921" Column="Updated">2016-07-23 21:32:27.433</Data>
+        <Data AD_Column_ID="80923" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="80925" Column="Value">EndDocument</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="580" StepType="AD">
+      <PO AD_Table_ID="54154" Action="I" Record_ID="50011" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80939" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="81062" Column="AD_Column_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80948" Column="AD_FP_Cmd_ID">50011</Data>
+        <Data AD_Column_ID="81063" Column="AD_FP_DocumentChild_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80947" Column="AD_FP_Document_ID">50000</Data>
+        <Data AD_Column_ID="80946" Column="AD_FP_DocumentLine_ID">50011</Data>
+        <Data AD_Column_ID="80940" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="80949" Column="AD_Rule_ID" isNewNull="true"/>
+        <Data AD_Column_ID="80953" Column="Code">01</Data>
+        <Data AD_Column_ID="80942" Column="Created">2016-07-23 21:32:44.415</Data>
+        <Data AD_Column_ID="80944" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="80941" Column="IsActive">true</Data>
+        <Data AD_Column_ID="80956" Column="IsNewCmd">true</Data>
+        <Data AD_Column_ID="80954" Column="MaxLength">0</Data>
+        <Data AD_Column_ID="80955" Column="Parse">true</Data>
+        <Data AD_Column_ID="80951" Column="Prefix">1</Data>
+        <Data AD_Column_ID="80950" Column="SeqNo">0</Data>
+        <Data AD_Column_ID="80952" Column="Suffix" isNewNull="true"/>
+        <Data AD_Column_ID="80943" Column="Updated">2016-07-23 21:32:44.415</Data>
+        <Data AD_Column_ID="80945" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="590" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50010" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80950" Column="SeqNo" oldValue="0">60</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="600" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50011" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80950" Column="SeqNo" oldValue="0">70</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="610" StepType="AD">
+      <PO AD_Table_ID="54154" Action="U" Record_ID="50004" Table="AD_FP_DocumentLine">
+        <Data AD_Column_ID="80956" Column="IsNewCmd" oldValue="false">true</Data>
+      </PO>
+    </Step>
+  </Migration>
+</Migrations>

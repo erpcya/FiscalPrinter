@@ -44,8 +44,13 @@ public class TFHKAFiscalPrinter extends FiscalPrinterHandler {
 
 	@Override
 	public Object connect() throws Exception {
+		//	Validate connected
+		if(isConnected())
+			return true;
 		String port = getConfigValueAsString(X_AD_DeviceConfigUse.CONFIGTYPE_Connection, KEY_PORT);
-		return printer2.OpenFpctrl(port);
+		boolean isConnected = printer2.OpenFpctrl(port);
+		setIsConnected(isConnected);
+		return isConnected;
 	}
 
 	@Override

@@ -17,18 +17,18 @@
 package org.spin.process;
 
 import org.compiere.process.SvrProcess;
-/** Generated Process for (Test Conection)
+/** Generated Process for (Print Invoices to Fiscal Printer)
  *  @author ADempiere (generated) 
  *  @version Release 3.8.0
  */
-public abstract class TestConectionAbstract extends SvrProcess
+public abstract class InvoiceFiscalPrintAbstract extends SvrProcess
 {
 	/** Process Value 	*/
-	private static final String VALUE = "prc_TestConection";
+	private static final String VALUE = "C_Invoice_FiscalPrint";
 	/** Process Name 	*/
-	private static final String NAME = "Test Conection";
+	private static final String NAME = "Print Invoices to Fiscal Printer";
 	/** Process Id 	*/
-	private static final int ID = 1000000;
+	private static final int ID = 53882;
  
 
  

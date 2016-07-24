@@ -30,7 +30,7 @@ public class X_AD_FP_Cmd extends PO implements I_AD_FP_Cmd, I_Persistent
 	/**
 	 *
 	 */
-	private static final long serialVersionUID = 20160712L;
+	private static final long serialVersionUID = 20160723L;
 
     /** Standard Constructor */
     public X_AD_FP_Cmd (Properties ctx, int AD_FP_Cmd_ID, String trxName)

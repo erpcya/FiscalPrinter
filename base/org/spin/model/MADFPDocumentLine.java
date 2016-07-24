@@ -57,5 +57,9 @@ public class MADFPDocumentLine extends X_AD_FP_DocumentLine {
 	public MADFPDocumentLine(Properties ctx, ResultSet rs, String trxName) {
 		super(ctx, rs, trxName);
 	}
-
+	
+	@Override
+	public String toString() {
+		return getAD_FP_Cmd() + " - " + getSeqNo();
+	}
 }

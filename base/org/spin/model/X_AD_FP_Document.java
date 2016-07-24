@@ -30,7 +30,7 @@ public class X_AD_FP_Document extends PO implements I_AD_FP_Document, I_Persiste
 	/**
 	 *
 	 */
-	private static final long serialVersionUID = 20160712L;
+	private static final long serialVersionUID = 20160723L;
 
     /** Standard Constructor */
     public X_AD_FP_Document (Properties ctx, int AD_FP_Document_ID, String trxName)
@@ -150,6 +150,34 @@ public class X_AD_FP_Document extends PO implements I_AD_FP_Document, I_Persiste
     {
         return new KeyNamePair(get_ID(), String.valueOf(getAD_FP_DocumentType_ID()));
     }
+
+	public org.compiere.model.I_AD_Table getAD_Table() throws RuntimeException
+    {
+		return (org.compiere.model.I_AD_Table)MTable.get(getCtx(), org.compiere.model.I_AD_Table.Table_Name)
+			.getPO(getAD_Table_ID(), get_TrxName());	}
+
+	/** Set Table.
+		@param AD_Table_ID 
+		Database Table information
+	  */
+	public void setAD_Table_ID (int AD_Table_ID)
+	{
+		if (AD_Table_ID < 1) 
+			set_Value (COLUMNNAME_AD_Table_ID, null);
+		else 
+			set_Value (COLUMNNAME_AD_Table_ID, Integer.valueOf(AD_Table_ID));
+	}
+
+	/** Get Table.
+		@return Database Table information
+	  */
+	public int getAD_Table_ID () 
+	{
+		Integer ii = (Integer)get_Value(COLUMNNAME_AD_Table_ID);
+		if (ii == null)
+			 return 0;
+		return ii.intValue();
+	}
 
 	/** Set Name.
 		@param Name 

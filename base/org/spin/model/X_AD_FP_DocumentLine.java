@@ -30,7 +30,7 @@ public class X_AD_FP_DocumentLine extends PO implements I_AD_FP_DocumentLine, I_
 	/**
 	 *
 	 */
-	private static final long serialVersionUID = 20160712L;
+	private static final long serialVersionUID = 20160723L;
 
     /** Standard Constructor */
     public X_AD_FP_DocumentLine (Properties ctx, int AD_FP_DocumentLine_ID, String trxName)
@@ -76,6 +76,34 @@ public class X_AD_FP_DocumentLine extends PO implements I_AD_FP_DocumentLine, I_
       return sb.toString();
     }
 
+	public org.compiere.model.I_AD_Column getAD_Column() throws RuntimeException
+    {
+		return (org.compiere.model.I_AD_Column)MTable.get(getCtx(), org.compiere.model.I_AD_Column.Table_Name)
+			.getPO(getAD_Column_ID(), get_TrxName());	}
+
+	/** Set Column.
+		@param AD_Column_ID 
+		Column in the table
+	  */
+	public void setAD_Column_ID (int AD_Column_ID)
+	{
+		if (AD_Column_ID < 1) 
+			set_Value (COLUMNNAME_AD_Column_ID, null);
+		else 
+			set_Value (COLUMNNAME_AD_Column_ID, Integer.valueOf(AD_Column_ID));
+	}
+
+	/** Get Column.
+		@return Column in the table
+	  */
+	public int getAD_Column_ID () 
+	{
+		Integer ii = (Integer)get_Value(COLUMNNAME_AD_Column_ID);
+		if (ii == null)
+			 return 0;
+		return ii.intValue();
+	}
+
 	public org.spin.model.I_AD_FP_Cmd getAD_FP_Cmd() throws RuntimeException
     {
 		return (org.spin.model.I_AD_FP_Cmd)MTable.get(getCtx(), org.spin.model.I_AD_FP_Cmd.Table_Name)
@@ -96,6 +124,31 @@ public class X_AD_FP_DocumentLine extends PO implements I_AD_FP_DocumentLine, I_
 	public int getAD_FP_Cmd_ID () 
 	{
 		Integer ii = (Integer)get_Value(COLUMNNAME_AD_FP_Cmd_ID);
+		if (ii == null)
+			 return 0;
+		return ii.intValue();
+	}
+
+	public org.spin.model.I_AD_FP_Document getAD_FP_DocumentChild() throws RuntimeException
+    {
+		return (org.spin.model.I_AD_FP_Document)MTable.get(getCtx(), org.spin.model.I_AD_FP_Document.Table_Name)
+			.getPO(getAD_FP_DocumentChild_ID(), get_TrxName());	}
+
+	/** Set Fiscal Document Child.
+		@param AD_FP_DocumentChild_ID Fiscal Document Child	  */
+	public void setAD_FP_DocumentChild_ID (int AD_FP_DocumentChild_ID)
+	{
+		if (AD_FP_DocumentChild_ID < 1) 
+			set_Value (COLUMNNAME_AD_FP_DocumentChild_ID, null);
+		else 
+			set_Value (COLUMNNAME_AD_FP_DocumentChild_ID, Integer.valueOf(AD_FP_DocumentChild_ID));
+	}
+
+	/** Get Fiscal Document Child.
+		@return Fiscal Document Child	  */
+	public int getAD_FP_DocumentChild_ID () 
+	{
+		Integer ii = (Integer)get_Value(COLUMNNAME_AD_FP_DocumentChild_ID);
 		if (ii == null)
 			 return 0;
 		return ii.intValue();

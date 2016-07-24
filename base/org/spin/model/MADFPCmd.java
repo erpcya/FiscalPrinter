@@ -56,5 +56,10 @@ public class MADFPCmd extends X_AD_FP_Cmd {
 	public MADFPCmd(Properties ctx, ResultSet rs, String trxName) {
 		super(ctx, rs, trxName);
 	}
+	
+	@Override
+	public String toString() {
+		return getValue() + " - " + getName();
+	}
 
 }
