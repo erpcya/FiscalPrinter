@@ -17,9 +17,10 @@
 package org.spin.process;
 
 import org.adempiere.exceptions.AdempiereException;
+import org.compiere.model.MDocType;
 import org.compiere.model.MInvoice;
+import org.spin.model.I_AD_FP_Document;
 import org.spin.model.MADDevice;
-import org.spin.model.MADFPDocument;
 import org.spin.util.FiscalDocumentHandler;
 
 /** Generated Process for (Print Invoices to Fiscal Printer)
@@ -40,10 +41,11 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 		MInvoice invoice = new MInvoice(getCtx(), getRecord_ID(), get_TrxName());
 		//	Get Device
 		MADDevice device = new MADDevice(getCtx(), 50000, get_TrxName());
-		MADFPDocument fiscalDocument = MADFPDocument.getFromDocumentType(getCtx(), invoice.getC_DocType_ID(), device.getAD_Device_ID());
-		FiscalDocumentHandler documentHandler = new FiscalDocumentHandler(fiscalDocument, device);
+		FiscalDocumentHandler documentHandler = new FiscalDocumentHandler(device);
+		//	Get Document Type
+		MDocType docType = MDocType.get(getCtx(), invoice.getC_DocType_ID());
 		//	Print
-		documentHandler.printDocument(getRecord_ID());
+		documentHandler.printDocument(getRecord_ID(), docType.get_ValueAsInt(I_AD_FP_Document.COLUMNNAME_AD_FP_DocumentType_ID));
 		return "";
 	}
 }

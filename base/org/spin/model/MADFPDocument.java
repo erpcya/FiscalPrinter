@@ -20,7 +20,6 @@ import java.sql.ResultSet;
 import java.util.List;
 import java.util.Properties;
 
-import org.compiere.model.MDocType;
 import org.compiere.model.Query;
 import org.compiere.util.CCache;
 
@@ -83,17 +82,13 @@ public class MADFPDocument extends X_AD_FP_Document {
 	/**
 	 * Get Fiscal Document from Document Type
 	 * @param ctx
-	 * @param docTypeId
+	 * @param fiscalDocumentTypeId
 	 * @param deviceId
 	 * @return
 	 * @return MADFPDocument
 	 */
-	public static MADFPDocument getFromDocumentType(Properties ctx, int docTypeId, int deviceId) {
+	public static MADFPDocument getFromFiscalDocumentType(Properties ctx, int fiscalDocumentTypeId, int deviceId) {
 		//	Get Document Type
-		MDocType docType = MDocType.get(ctx, docTypeId);
-		if(docType == null)
-			return null;
-		//	Get Device Type
 		MADDevice device = MADDevice.get(ctx, deviceId);
 		if(device == null)
 			return null;
@@ -102,7 +97,7 @@ public class MADFPDocument extends X_AD_FP_Document {
 				+ "AND AD_FP_Document.AD_DeviceType_ID = ? "
 				+ "AND NOT EXISTS(SELECT 1 FROM AD_FP_DocumentLine dl "
 				+ "				WHERE dl.AD_FP_DocumentChild_ID = AD_FP_Document.AD_FP_Document_ID)", null)
-			.setParameters(docType.get_ValueAsInt(I_AD_FP_Document.COLUMNNAME_AD_FP_DocumentType_ID), 
+			.setParameters(fiscalDocumentTypeId, 
 					device.getAD_DeviceType_ID())
 			.setOnlyActiveRecords(true)
 			.<MADFPDocument>first();

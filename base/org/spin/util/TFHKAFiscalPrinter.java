@@ -31,11 +31,11 @@ public class TFHKAFiscalPrinter extends FiscalPrinterHandler {
 	
 	public TFHKAFiscalPrinter(MADDevice device) {
 		super(device);
-		printer2 = new Tfhka();
+		printer = new Tfhka();
 	}
 
 	/**	Printer			*/
-	private Tfhka printer2;
+	private Tfhka printer;
 	
 	@Override
 	public boolean isAvailable() throws Exception {
@@ -48,14 +48,14 @@ public class TFHKAFiscalPrinter extends FiscalPrinterHandler {
 		if(isConnected())
 			return true;
 		String port = getConfigValueAsString(X_AD_DeviceConfigUse.CONFIGTYPE_Connection, KEY_PORT);
-		boolean isConnected = printer2.OpenFpctrl(port);
+		boolean isConnected = printer.OpenFpctrl(port);
 		setIsConnected(isConnected);
 		return isConnected;
 	}
 
 	@Override
 	public void close() throws Exception {
-		printer2.CloseFpctrl();
+		printer.CloseFpctrl();
 	}
 
 	@Override
@@ -73,12 +73,12 @@ public class TFHKAFiscalPrinter extends FiscalPrinterHandler {
 		//	
 		String printValue = (String) value[0];
 		//	Write
-		return printer2.SendCmd(printValue);
+		return printer.SendCmd(printValue);
 	}
 
 	@Override
 	public boolean isCheckOk() {
-		return printer2.CheckFprinter();
+		return printer.CheckFprinter();
 	}
 
 	@Override
@@ -93,17 +93,17 @@ public class TFHKAFiscalPrinter extends FiscalPrinterHandler {
 
 	@Override
 	public void printXReport() throws Exception {
-		printer2.printXReport();
+		printer.printXReport();
 	}
 
 	@Override
 	public void printZReport() throws Exception {
-		printer2.printZReport();
+		printer.printZReport();
 	}
 
 	@Override
 	public Object getFiscalPrinter() {
-		return printer2;
+		return printer;
 	}
 
 	@Override

@@ -40,20 +40,14 @@ public class FiscalDocumentHandler {
 
 	/**
 	 * *** Constructor ***
-	 * @param document
 	 * @param device
 	 */
-	public FiscalDocumentHandler(MADFPDocument document, MADDevice device) {
-		this.fiscalDocument = document;
+	public FiscalDocumentHandler(MADDevice device) {
 		this.device = device;
-		if(document == null)
-			throw new AdempiereException("@AD_FP_Document_ID@ @NotFound@");
 		if(device == null)
 			throw new AdempiereException("@AD_Device_ID@ @NotFound@");
-		if(device.getAD_DeviceType_ID() != document.getAD_DeviceType_ID())
-			throw new AdempiereException("@AD_DeviceType_ID@ @NotMatched@");
 		//	Get Context
-		ctx = document.getCtx();
+		ctx = device.getCtx();
 		//	Get Handler
 		printerHandler = (FiscalPrinterHandler) device.getDeviceHandler();
 	}
@@ -104,7 +98,9 @@ public class FiscalDocumentHandler {
 	 * @throws Exception
 	 * @return void
 	 */
-	public void printDocument(int recordId) throws Exception {
+	public void printDocument(int recordId, int fiscalDocumentTypeId) throws Exception {
+		//	Load Document
+		loadFiscalDocument(fiscalDocumentTypeId);
 		//	Valid Table
 		if(fiscalDocument.getAD_Table_ID() == 0)
 			throw new AdempiereException("@AD_Table_ID@ @NotFound@");
@@ -112,7 +108,34 @@ public class FiscalDocumentHandler {
 		MTable table = MTable.get(ctx, fiscalDocument.getAD_Table_ID());
 		PO document = table.getPO(recordId, fiscalDocument.get_TrxName());
 		//	Print Document
+		if(printerHandler == null)
+			throw new AdempiereException("@AD_Device_ID@ @NotFound@");
+		//	Get handler
+		printerHandler.connect();
+		//	Verify Connection
+		if(!printerHandler.isConnected())
+			throw new AdempiereException("@AD_Device_ID@ @NotConnected@");
+		//	Verify Status
+		printerHandler.isCheckOk();
+		//	Print Document
 		printDocument(document, fiscalDocument);
+		//	Close
+		printerHandler.close();
+	}
+	
+	/**
+	 * Load Fiscal Document
+	 * @param fiscalDocumentTypeId
+	 * @return void
+	 */
+	private void loadFiscalDocument(int fiscalDocumentTypeId) {
+		fiscalDocument = MADFPDocument.getFromFiscalDocumentType(ctx, fiscalDocumentTypeId, device.getAD_Device_ID());
+		if(fiscalDocument == null)
+			throw new AdempiereException("@AD_FP_Document_ID@ @NotFound@");
+		if(device == null)
+			throw new AdempiereException("@AD_Device_ID@ @NotFound@");
+		if(device.getAD_DeviceType_ID() != fiscalDocument.getAD_DeviceType_ID())
+			throw new AdempiereException("@AD_DeviceType_ID@ @NotMatched@");
 	}
 	
 	/**
@@ -124,15 +147,9 @@ public class FiscalDocumentHandler {
 	 * @return void
 	 * @throws Exception 
 	 */
-	public void printDocument(PO document, MADFPDocument fDocument) throws Exception {
-		if(printerHandler == null)
-			return;
+	private void printDocument(PO document, MADFPDocument fDocument) throws Exception {
 		//	Validate fiscal Document
 		if(fDocument == null)
-			return;
-		//	Get handler
-		printerHandler.connect();
-		if(!printerHandler.isConnected())
 			return;
 		//	Set values to script
 		loadScriptValues(document, fDocument);
@@ -206,7 +223,7 @@ public class FiscalDocumentHandler {
 			if(line.getMaxLength() > 0
 					&& code.length() > line.getMaxLength()) {
 				log.warning("Value is to long [" + code + "], length [" + code.length() + "]");
-				code = code.substring(0, line.getMaxLength() - 1);
+				code = code.substring(0, line.getMaxLength());
 				log.warning("Truncated value [" + code + "], new length [" + code.length() + "]");
 			}
 			//	
@@ -220,8 +237,6 @@ public class FiscalDocumentHandler {
 			log.fine("Cmd[" + cmdBuffer + "]");
 			printerHandler.printCmd(cmdBuffer.toString());
 		}
-		//	Close connection
-//		printerHandler.close();
 	}
 	
 	/**
