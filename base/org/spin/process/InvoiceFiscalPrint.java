@@ -42,6 +42,10 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 			throw new AdempiereException("@C_Invoice_ID@ @NotFound@");
 		//	
 		MInvoice invoice = new MInvoice(getCtx(), getRecord_ID(), get_TrxName());
+		//	Validate Printing
+		if(invoice.get_ValueAsInt("AD_Device_ID") != 0
+				&& invoice.get_ValueAsString("FiscalDocumentNo") != null)
+			return "@C_Invoice_ID@ @Printed@";
 		//	Get Device
 		String iniValue = Ini.getProperty(FiscalPrinterHandler.INI_FISCAL_PRINTER_ID);
 		if(iniValue == null)
