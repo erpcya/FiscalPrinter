@@ -17,25 +17,35 @@
 package org.spin.process;
 
 import org.compiere.process.SvrProcess;
-/** Generated Process for (Print Invoices to Fiscal Printer)
+/** Generated Process for (Print Fiscal Report)
  *  @author ADempiere (generated) 
  *  @version Release 3.8.0
  */
-public abstract class InvoiceFiscalPrintAbstract extends SvrProcess
+public abstract class PrintFiscalReportAbstract extends SvrProcess
 {
 	/** Process Value 	*/
-	private static final String VALUE = "C_Invoice_FiscalPrint";
+	private static final String VALUE = "PrintFiscalReport";
 	/** Process Name 	*/
-	private static final String NAME = "Print Invoices to Fiscal Printer";
+	private static final String NAME = "Print Fiscal Report";
 	/** Process Id 	*/
-	private static final int ID = 53884;
+	private static final int ID = 53883;
  
+	/**	Parameter Name for AD_FP_DocumentType_ID	*/
+	public static final String AD_FP_DocumentType_ID = "AD_FP_DocumentType_ID";
 
+	/**	Parameter Value for fiscalDocumentTypeId	*/
+	private int fiscalDocumentTypeId;
  
 
 	@Override
 	protected void prepare()
 	{
+		fiscalDocumentTypeId = getParameterAsInt(AD_FP_DocumentType_ID);
+	}
+
+	/**	 Getter Parameter Value for fiscalDocumentTypeId	*/
+	protected int getFiscalDocumentTypeId() {
+		return fiscalDocumentTypeId;
 	}
 
 	/**	 Getter Parameter Value for Process ID	*/

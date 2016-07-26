@@ -17,20 +17,16 @@
 package org.spin.process;
 
 import org.adempiere.exceptions.AdempiereException;
-import org.compiere.model.MDocType;
-import org.compiere.model.MInvoice;
-import org.compiere.model.X_C_DocType;
 import org.compiere.util.Ini;
-import org.spin.model.I_AD_FP_Document;
 import org.spin.model.MADDevice;
 import org.spin.util.FiscalDocumentHandler;
 import org.spin.util.FiscalPrinterHandler;
 
-/** Generated Process for (Print Invoices to Fiscal Printer)
+/** Generated Process for (Print Fiscal Report)
  *  @author ADempiere (generated) 
  *  @version Release 3.8.0
  */
-public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
+public class PrintFiscalReport extends PrintFiscalReportAbstract {
 	@Override
 	protected void prepare() {
 		super.prepare();
@@ -38,10 +34,6 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 
 	@Override
 	protected String doIt() throws Exception {
-		if(getRecord_ID() == 0)
-			throw new AdempiereException("@C_Invoice_ID@ @NotFound@");
-		//	
-		MInvoice invoice = new MInvoice(getCtx(), getRecord_ID(), get_TrxName());
 		//	Get Device
 		String iniValue = Ini.getProperty(FiscalPrinterHandler.INI_FISCAL_PRINTER_ID);
 		if(iniValue == null)
@@ -56,34 +48,7 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 		//	
 		MADDevice device = new MADDevice(getCtx(), printerID, get_TrxName());
 		FiscalDocumentHandler documentHandler = new FiscalDocumentHandler(device);
-		//	Get Document Type
-		MDocType docType = MDocType.get(getCtx(), invoice.getC_DocType_ID());
-		//	Establish connection
-		documentHandler.connectPrinter();
-		//	Print
-		documentHandler.printDocument(getRecord_ID(), docType.get_ValueAsInt(I_AD_FP_Document.COLUMNNAME_AD_FP_DocumentType_ID));
-		//	Set Document Values
-		String fiscalDocumentNo = null;
-		if(docType.getDocBaseType().equals(X_C_DocType.DOCBASETYPE_ARInvoice)) {
-			if(invoice.get_ValueAsInt("DocAffected_ID") != 0) {
-				fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_DEBIT_MEMO);
-			} else {
-				fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_INVOICE);
-			}
-		} else if(docType.getDocBaseType().equals(X_C_DocType.DOCBASETYPE_ARCreditMemo)) {
-			fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_CREDIT_MEMO);
-		}
-		//	Close Connection
-		documentHandler.closePrinter();
-		//	Set Device
-		invoice.set_ValueOfColumn("AD_Device_ID", printerID);
-		//	Set
-		if(fiscalDocumentNo != null
-				&& fiscalDocumentNo.length() > 0) {
-			invoice.set_ValueOfColumn("FiscalDocumentNo", fiscalDocumentNo);
-		}
-		//	Save
-		invoice.saveEx();
-		return "";
+		documentHandler.printDocument(getFiscalDocumentTypeId());
+		return "Ok";
 	}
 }

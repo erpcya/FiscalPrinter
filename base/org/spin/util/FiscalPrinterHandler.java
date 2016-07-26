@@ -16,7 +16,11 @@
  *****************************************************************************/
 package org.spin.util;
 
+import java.util.HashMap;
+
 import org.spin.model.MADDevice;
+
+import tfhka.PrinterException;
 
 /**
  * @author Yamel Senih, ysenih@erpcya.com, ERPCyA http://www.erpcya.com
@@ -28,6 +32,18 @@ public abstract class FiscalPrinterHandler extends DeviceTypeHandler {
 	public FiscalPrinterHandler(MADDevice device) {
 		super(device);
 	}
+	
+	/**	Document Type	*/
+	public static final int 	DOCUMENT_TYPE_INVOICE = 0;
+	public static final int 	DOCUMENT_TYPE_CREDIT_MEMO = 1;
+	public static final int 	DOCUMENT_TYPE_DEBIT_MEMO = 2;
+	
+	/**	Ini Properties	*/
+	public static final String 	INI_FISCAL_PRINTER_NAME = "FiscalPrinter";
+	public static final String 	INI_FISCAL_PRINTER_ID = "FiscalPrinter_ID";
+	/**	Ctx Properties	*/
+	public static final String 	CTX_FISCAL_PRINTER_NAME = "#FiscalPrinter";
+	public static final String 	CTX_FISCAL_PRINTER_ID = "#FiscalPrinter_ID";
 	
 	/**
 	 * Print X Report
@@ -57,4 +73,34 @@ public abstract class FiscalPrinterHandler extends DeviceTypeHandler {
 	 * @return void
 	 */
 	public abstract void printCmd(String cmd) throws Exception;
+	
+	/**
+	 * Get Valid Code
+	 * @param code
+	 * @return
+	 * @return String
+	 */
+	public abstract String getValidCode(String code);
+	
+	/**
+	 * Get Last Document No for the Document
+	 * @param documentType
+	 * @return
+	 * @return String
+	 */
+	public abstract String getLastDocumentNo(int documentType) throws PrinterException;
+	
+	/**
+	 * Get Information from printer
+	 * @throws PrinterException
+	 * @return String
+	 */
+	public abstract String getPrinterInfo() throws PrinterException;
+	
+	/**
+	 * Get Information from printer as key values
+	 * @throws PrinterException
+	 * @return HashMap<String,Object>
+	 */
+	public abstract HashMap<String, Object> getPrinterInfoValues() throws PrinterException;
 }
