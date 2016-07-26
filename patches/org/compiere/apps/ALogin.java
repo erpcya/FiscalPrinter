@@ -330,7 +330,7 @@ public final class ALogin extends CDialog
 		defaultPanel.add(printerField,        new GridBagConstraints(1, 5, 1, 1, 1.0, 0.0
 			,GridBagConstraints.WEST, GridBagConstraints.HORIZONTAL, new Insets(0, 0, 12, 12), 0, 0));
 		//	Fiscal Printer
-		fiscalPrinterLabel.setText("Printer");
+		fiscalPrinterLabel.setText("Fiscal Printer");
 		fiscalPrinterLabel.setHorizontalAlignment(SwingConstants.RIGHT);
 		fiscalPrinterLabel.setLabelFor(fiscalPrinterField);
 		
@@ -1001,6 +1001,9 @@ public final class ALogin extends CDialog
 		dateLabel.setText(res.getString("Date"));
 		warehouseLabel.setText(res.getString("Warehouse"));
 		printerLabel.setText(res.getString("Printer"));
+		//	Fiscal Printer
+		fiscalPrinterLabel.setText(res.getString("FiscalPrinter"));
+		//	End
 		defaultPanel.setToolTipText(res.getString("Defaults"));
 		connectionPanel.setToolTipText(res.getString("Connection"));
 		//
