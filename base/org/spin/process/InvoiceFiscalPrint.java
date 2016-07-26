@@ -61,7 +61,7 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 		//	Establish connection
 		documentHandler.connectPrinter();
 		//	Print
-		documentHandler.printDocument(getRecord_ID(), docType.get_ValueAsInt(I_AD_FP_Document.COLUMNNAME_AD_FP_DocumentType_ID));
+		documentHandler.printDocument(getRecord_ID(), docType.get_ValueAsInt(I_AD_FP_Document.COLUMNNAME_AD_FP_DocumentType_ID), getProcessInfo());
 		//	Set Document Values
 		String fiscalDocumentNo = null;
 		if(docType.getDocBaseType().equals(X_C_DocType.DOCBASETYPE_ARInvoice)) {
@@ -84,6 +84,6 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 		}
 		//	Save
 		invoice.saveEx();
-		return "";
+		return "Ok";
 	}
 }

@@ -48,7 +48,7 @@ public class PrintFiscalReport extends PrintFiscalReportAbstract {
 		//	
 		MADDevice device = new MADDevice(getCtx(), printerID, get_TrxName());
 		FiscalDocumentHandler documentHandler = new FiscalDocumentHandler(device);
-		documentHandler.printDocument(getFiscalDocumentTypeId());
+		documentHandler.printDocument(getFiscalDocumentTypeId(), getProcessInfo());
 		return "Ok";
 	}
 }

@@ -29,10 +29,7 @@ public abstract class InvoiceFiscalPrintAbstract extends SvrProcess
 	private static final String NAME = "Print Invoices to Fiscal Printer";
 	/** Process Id 	*/
 	private static final int ID = 53884;
- 
-
- 
-
+	
 	@Override
 	protected void prepare()
 	{
