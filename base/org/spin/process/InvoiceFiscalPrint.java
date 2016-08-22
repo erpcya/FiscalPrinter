@@ -64,30 +64,36 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 		MDocType docType = MDocType.get(getCtx(), invoice.getC_DocType_ID());
 		//	Establish connection
 		documentHandler.connectPrinter();
-		//	Print
-		documentHandler.printDocument(getRecord_ID(), docType.get_ValueAsInt(I_AD_FP_Document.COLUMNNAME_AD_FP_DocumentType_ID), getProcessInfo());
-		//	Set Document Values
-		String fiscalDocumentNo = null;
-		if(docType.getDocBaseType().equals(X_C_DocType.DOCBASETYPE_ARInvoice)) {
-			if(invoice.get_ValueAsInt("DocAffected_ID") != 0) {
-				fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_DEBIT_MEMO);
-			} else {
-				fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_INVOICE);
+		try {
+			//	Print
+			documentHandler.printDocument(getRecord_ID(), docType.get_ValueAsInt(I_AD_FP_Document.COLUMNNAME_AD_FP_DocumentType_ID), getProcessInfo());
+			//	Set Document Values
+			String fiscalDocumentNo = null;
+			if(docType.getDocBaseType().equals(X_C_DocType.DOCBASETYPE_ARInvoice)) {
+				if(invoice.get_ValueAsInt("DocAffected_ID") != 0) {
+					fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_DEBIT_MEMO);
+				} else {
+					fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_INVOICE);
+				}
+			} else if(docType.getDocBaseType().equals(X_C_DocType.DOCBASETYPE_ARCreditMemo)) {
+				fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_CREDIT_MEMO);
 			}
-		} else if(docType.getDocBaseType().equals(X_C_DocType.DOCBASETYPE_ARCreditMemo)) {
-			fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_CREDIT_MEMO);
+			//	Set Device
+			invoice.set_ValueOfColumn("AD_Device_ID", printerID);
+			//	Set
+			if(fiscalDocumentNo != null
+					&& fiscalDocumentNo.length() > 0) {
+				invoice.set_ValueOfColumn("FiscalDocumentNo", fiscalDocumentNo);
+			}
+			//	Save
+			invoice.saveEx();
+		} catch(Exception e) {
+			throw e;
+		} finally {
+			//	Close Connection
+			documentHandler.closePrinter();
 		}
-		//	Close Connection
-		documentHandler.closePrinter();
-		//	Set Device
-		invoice.set_ValueOfColumn("AD_Device_ID", printerID);
-		//	Set
-		if(fiscalDocumentNo != null
-				&& fiscalDocumentNo.length() > 0) {
-			invoice.set_ValueOfColumn("FiscalDocumentNo", fiscalDocumentNo);
-		}
-		//	Save
-		invoice.saveEx();
+		//	Ok
 		return "Ok";
 	}
 }
