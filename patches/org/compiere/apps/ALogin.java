@@ -853,6 +853,8 @@ public final class ALogin extends CDialog
 		//
 		m_comboActive = false;
 		orgComboChanged();
+		//	Load Fiscal Printer
+		loadFiscalPrinter();
 	}	//	clientComboChanged
 
 	/**
@@ -897,11 +899,16 @@ public final class ALogin extends CDialog
 	private void loadFiscalPrinter() {
 		if (fiscalPrinterField.getItemCount() > 0)
 			fiscalPrinterField.removeAllItems();
+		//	Get client
+		KeyNamePair client = (KeyNamePair) clientCombo.getSelectedItem();
+		if (client == null || m_comboActive)
+			return;
 		//	
 		MADDevice[] devices = DeviceTypeHandler.getDevices(m_ctx, X_AD_DeviceType.DEVICETYPE_Printer, 
 				"EXISTS(SELECT 1 "
-				+ "FROM AD_FP_Document d "
-				+ "WHERE d.AD_DeviceType_ID = AD_Device.AD_DeviceType_ID)", false);
+				+ "	FROM AD_FP_Document d "
+				+ "	WHERE d.AD_DeviceType_ID = AD_Device.AD_DeviceType_ID)"
+				+ "AND AD_Device.AD_Client_ID = " + client.getKey(), false);
 		//	Load
 		if(devices != null
 				&& devices.length > 0) {
