@@ -20,7 +20,6 @@ import org.adempiere.exceptions.AdempiereException;
 import org.compiere.model.MDocType;
 import org.compiere.model.MInvoice;
 import org.compiere.model.X_C_DocType;
-import org.compiere.util.Ini;
 import org.spin.model.I_AD_FP_Document;
 import org.spin.model.MADDevice;
 import org.spin.util.FiscalDocumentHandler;
@@ -47,18 +46,10 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 				&& invoice.get_ValueAsString("FiscalDocumentNo") != null)
 			return "@C_Invoice_ID@ @Printed@";
 		//	Get Device
-		String iniValue = Ini.getProperty(FiscalPrinterHandler.INI_FISCAL_PRINTER_ID);
-		if(iniValue == null)
+		if(getFiscalPrinterId() == 0)
 			throw new AdempiereException("@AD_Device_ID@ @NotFound@");
-		//	Device
-		int printerID = 0;
-		try {
-			printerID = Integer.parseInt(iniValue);
-		} catch(Exception e) {
-			throw new AdempiereException("@AD_Device_ID@ @NotFound@");
-		}
 		//	
-		MADDevice device = new MADDevice(getCtx(), printerID, get_TrxName());
+		MADDevice device = new MADDevice(getCtx(), getFiscalPrinterId(), get_TrxName());
 		FiscalDocumentHandler documentHandler = new FiscalDocumentHandler(device);
 		//	Get Document Type
 		MDocType docType = MDocType.get(getCtx(), invoice.getC_DocType_ID());
@@ -79,7 +70,7 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 				fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_CREDIT_MEMO);
 			}
 			//	Set Device
-			invoice.set_ValueOfColumn("AD_Device_ID", printerID);
+			invoice.set_ValueOfColumn("AD_Device_ID", getFiscalPrinterId());
 			//	Set
 			if(fiscalDocumentNo != null
 					&& fiscalDocumentNo.length() > 0) {

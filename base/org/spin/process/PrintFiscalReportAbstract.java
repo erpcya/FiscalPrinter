@@ -32,20 +32,30 @@ public abstract class PrintFiscalReportAbstract extends SvrProcess
  
 	/**	Parameter Name for AD_FP_DocumentType_ID	*/
 	public static final String AD_FP_DocumentType_ID = "AD_FP_DocumentType_ID";
+	/**	Parameter Name for AD_Device_ID	*/
+	public static final String AD_Device_ID = "AD_Device_ID";
 
 	/**	Parameter Value for fiscalDocumentTypeId	*/
 	private int fiscalDocumentTypeId;
+	/**	Parameter Value for fiscalPrinterId	*/
+	private int fiscalPrinterId;
  
 
 	@Override
 	protected void prepare()
 	{
 		fiscalDocumentTypeId = getParameterAsInt(AD_FP_DocumentType_ID);
+		fiscalPrinterId = getParameterAsInt(AD_Device_ID);
 	}
 
 	/**	 Getter Parameter Value for fiscalDocumentTypeId	*/
 	protected int getFiscalDocumentTypeId() {
 		return fiscalDocumentTypeId;
+	}
+
+	/**	 Getter Parameter Value for fiscalPrinterId	*/
+	protected int getFiscalPrinterId() {
+		return fiscalPrinterId;
 	}
 
 	/**	 Getter Parameter Value for Process ID	*/

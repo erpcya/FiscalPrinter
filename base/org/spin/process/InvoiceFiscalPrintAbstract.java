@@ -29,10 +29,23 @@ public abstract class InvoiceFiscalPrintAbstract extends SvrProcess
 	private static final String NAME = "Print Invoices to Fiscal Printer";
 	/** Process Id 	*/
 	private static final int ID = 53884;
-	
+ 
+	/**	Parameter Name for AD_Device_ID	*/
+	public static final String AD_Device_ID = "AD_Device_ID";
+
+	/**	Parameter Value for fiscalPrinterId	*/
+	private int fiscalPrinterId;
+ 
+
 	@Override
 	protected void prepare()
 	{
+		fiscalPrinterId = getParameterAsInt(AD_Device_ID);
+	}
+
+	/**	 Getter Parameter Value for fiscalPrinterId	*/
+	protected int getFiscalPrinterId() {
+		return fiscalPrinterId;
 	}
 
 	/**	 Getter Parameter Value for Process ID	*/

@@ -323,9 +323,9 @@ public class FiscalDocumentHandler {
 			//	Add to buffer
 			if(line.getMaxLength() > 0
 					&& code.length() > line.getMaxLength()) {
-				log.warning("Value is to long [" + code + "], length [" + code.length() + "]");
+				log.warning("Value is to long [" + code + "], length [" + code.length() + "] Code=" + code + ", Prefix=" + prefix + ", Suffix=" + suffix);
 				code = code.substring(0, line.getMaxLength());
-				log.warning("Truncated value [" + code + "], new length [" + code.length() + "]");
+				log.warning("Truncated value [" + code + "], new length [" + code.length() + "] Code=" + code + ", Prefix=" + prefix + ", Suffix=" + suffix);
 			}
 			//	Replace code
 			code = printerHandler.getValidCode(code);

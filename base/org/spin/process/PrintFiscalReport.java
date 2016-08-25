@@ -17,10 +17,8 @@
 package org.spin.process;
 
 import org.adempiere.exceptions.AdempiereException;
-import org.compiere.util.Ini;
 import org.spin.model.MADDevice;
 import org.spin.util.FiscalDocumentHandler;
-import org.spin.util.FiscalPrinterHandler;
 
 /** Generated Process for (Print Fiscal Report)
  *  @author ADempiere (generated) 
@@ -35,18 +33,11 @@ public class PrintFiscalReport extends PrintFiscalReportAbstract {
 	@Override
 	protected String doIt() throws Exception {
 		//	Get Device
-		String iniValue = Ini.getProperty(FiscalPrinterHandler.INI_FISCAL_PRINTER_ID);
-		if(iniValue == null)
+		//	Get Device
+		if(getFiscalPrinterId() == 0)
 			throw new AdempiereException("@AD_Device_ID@ @NotFound@");
-		//	Device
-		int printerID = 0;
-		try {
-			printerID = Integer.parseInt(iniValue);
-		} catch(Exception e) {
-			throw new AdempiereException("@AD_Device_ID@ @NotFound@");
-		}
 		//	
-		MADDevice device = new MADDevice(getCtx(), printerID, get_TrxName());
+		MADDevice device = new MADDevice(getCtx(), getFiscalPrinterId(), get_TrxName());
 		FiscalDocumentHandler documentHandler = new FiscalDocumentHandler(device);
 		documentHandler.printDocument(getFiscalDocumentTypeId(), getProcessInfo());
 		return "Ok";
