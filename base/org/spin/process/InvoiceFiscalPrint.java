@@ -45,6 +45,9 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 		if(invoice.get_ValueAsInt("AD_Device_ID") != 0
 				&& invoice.get_ValueAsString("FiscalDocumentNo") != null)
 			return "@C_Invoice_ID@ @Printed@";
+		//	Validate is Paid
+		if(!invoice.isPaid())
+			return "@C_Invoice_ID@ @No@ @IsPaid@";
 		//	Get Device
 		if(getFiscalPrinterId() == 0)
 			throw new AdempiereException("@AD_Device_ID@ @NotFound@");

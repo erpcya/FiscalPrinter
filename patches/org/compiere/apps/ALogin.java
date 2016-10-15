@@ -903,28 +903,32 @@ public final class ALogin extends CDialog
 		KeyNamePair client = (KeyNamePair) clientCombo.getSelectedItem();
 		if (client == null || m_comboActive)
 			return;
-		//	
-		MADDevice[] devices = DeviceTypeHandler.getDevices(m_ctx, X_AD_DeviceType.DEVICETYPE_Printer, 
-				"EXISTS(SELECT 1 "
-				+ "	FROM AD_FP_Document d "
-				+ "	WHERE d.AD_DeviceType_ID = AD_Device.AD_DeviceType_ID)"
-				+ "AND AD_Device.AD_Client_ID = " + client.getKey(), false);
-		//	Load
-		if(devices != null
-				&& devices.length > 0) {
-			//  initial warehouse
-			KeyNamePair iniValue = null;
-			//	Get Default
-			String iniDefault = Ini.getProperty(FiscalPrinterHandler.INI_FISCAL_PRINTER_NAME);
-			for(MADDevice device : devices) {
-				KeyNamePair pair = new KeyNamePair(device.getAD_Device_ID(), device.getName());
-				fiscalPrinterField.addItem(pair);
-				if (device.getName().equals(iniDefault))
-					iniValue = pair;
+		try {
+			//	
+			MADDevice[] devices = DeviceTypeHandler.getDevices(m_ctx, X_AD_DeviceType.DEVICETYPE_Printer, 
+					"EXISTS(SELECT 1 "
+					+ "	FROM AD_FP_Document d "
+					+ "	WHERE d.AD_DeviceType_ID = AD_Device.AD_DeviceType_ID)"
+					+ "AND AD_Device.AD_Client_ID = " + client.getKey(), false);
+			//	Load
+			if(devices != null
+					&& devices.length > 0) {
+				//  initial warehouse
+				KeyNamePair iniValue = null;
+				//	Get Default
+				String iniDefault = Ini.getProperty(FiscalPrinterHandler.INI_FISCAL_PRINTER_NAME);
+				for(MADDevice device : devices) {
+					KeyNamePair pair = new KeyNamePair(device.getAD_Device_ID(), device.getName());
+					fiscalPrinterField.addItem(pair);
+					if (device.getName().equals(iniDefault))
+						iniValue = pair;
+				}
+				//	Set Default
+				if (iniValue != null)
+					fiscalPrinterField.setSelectedItem(iniValue);
 			}
-			//	Set Default
-			if (iniValue != null)
-				fiscalPrinterField.setSelectedItem(iniValue);
+		} catch(Exception e) {
+			log.severe(e.getLocalizedMessage());
 		}
 	}
 	
