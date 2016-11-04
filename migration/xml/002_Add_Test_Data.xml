@@ -949,7 +949,7 @@ result = value;</Data>
     <Step DBType="Postgres" Parse="N" SeqNo="790" StepType="SQL">
       <SQLStatement>CREATE OR REPLACE VIEW RV_FP_InvoiceLine AS
 SELECT il.AD_Client_ID, il.AD_Org_ID, il.Created, il.CreatedBy, il.Updated, il.UpdatedBy, il.IsActive, il.C_InvoiceLine_ID, 
-il.C_Invoice_ID, il.C_Tax_ID, il.QtyInvoiced, il.PriceActual, 
+il.C_Invoice_ID, il.C_Tax_ID, il.QtyInvoiced, il.PriceList AS PriceActual, 
 p.Value, COALESCE(p.Name, c.Name, il.Description) AS Name,
 ROUND((il.PriceList - il.PriceActual), 2) DiscountAmt
 FROM C_InvoiceLine il
