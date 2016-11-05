@@ -951,7 +951,7 @@ result = value;</Data>
 SELECT il.AD_Client_ID, il.AD_Org_ID, il.Created, il.CreatedBy, il.Updated, il.UpdatedBy, il.IsActive, il.C_InvoiceLine_ID, 
 il.C_Invoice_ID, il.C_Tax_ID, il.QtyInvoiced, il.PriceList AS PriceActual, 
 p.Value, COALESCE(p.Name, c.Name, il.Description) AS Name,
-ROUND((il.PriceList - il.PriceActual), 2) DiscountAmt
+(ROUND((il.PriceList - il.PriceActual), 2) * il.QtyInvoiced) DiscountAmt
 FROM C_InvoiceLine il
 LEFT JOIN M_Product p ON(p.M_Product_ID = il.M_Product_ID)
 LEFT JOIN C_Charge c ON(c.C_Charge_ID = il.C_Charge_ID)</SQLStatement>
@@ -4569,7 +4569,7 @@ if(discountAmt == null) {
   result = null;
 } else {
   String value = String.format("%.2f", new Object[]{discountAmt}).replace(".", "").replace(",", "");
-  value = String.format("%1$" + _FiscalDocumentLine.getMaxLength() + "s", new Object[]{value}).replace(" ", "0");
+  value = String.format("%1$" + 9 + "s", new Object[]{value}).replace(" ", "0");
   result = value;
 }</Data>
         <Data AD_Column_ID="54250" Column="Updated">2016-08-24 23:18:05.234</Data>
