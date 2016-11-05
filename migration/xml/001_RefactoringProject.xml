@@ -9264,7 +9264,7 @@ EXISTS(SELECT 1
 		FROM AD_Device dv 
 		INNER JOIN AD_FP_Document doc ON(doc.AD_DeviceType_ID = dv.AD_DeviceType_ID)
 		WHERE doc.AD_FP_DocumentType_ID = AD_FP_DocumentType.AD_FP_DocumentType_ID
-		AND dv.AD_Device_ID = @#FiscalPrinter_ID@)</Data>
+		AND dv.AD_Device_ID = @AD_Device_ID@)</Data>
       </PO>
     </Step>
     <Step SeqNo="4980" StepType="AD">
@@ -9275,7 +9275,7 @@ EXISTS(SELECT 1
 		FROM AD_Device dv 
 		INNER JOIN AD_FP_Document doc ON(doc.AD_DeviceType_ID = dv.AD_DeviceType_ID)
 		WHERE doc.AD_FP_DocumentType_ID = AD_FP_DocumentType.AD_FP_DocumentType_ID
-		AND dv.AD_Device_ID = @#FiscalPrinter_ID@)</Data>
+		AND dv.AD_Device_ID = @AD_Device_ID@)</Data>
       </PO>
     </Step>
     <Step SeqNo="4990" StepType="AD">
