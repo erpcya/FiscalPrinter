@@ -78,6 +78,7 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 			if(fiscalDocumentNo != null
 					&& fiscalDocumentNo.length() > 0) {
 				invoice.set_ValueOfColumn("FiscalDocumentNo", fiscalDocumentNo);
+				invoice.setDocumentNo(fiscalDocumentNo);
 			}
 			//	Save
 			invoice.saveEx();
