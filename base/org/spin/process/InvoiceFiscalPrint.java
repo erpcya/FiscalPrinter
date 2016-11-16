@@ -13,7 +13,6 @@
  * For the text or an alternative of this public license, you may reach us    *
  * or via info@adempiere.net or http://www.adempiere.net/license.html         *
  *****************************************************************************/
-
 package org.spin.process;
 
 import org.adempiere.exceptions.AdempiereException;
