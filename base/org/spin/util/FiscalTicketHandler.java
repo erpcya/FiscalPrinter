@@ -71,7 +71,7 @@ public class FiscalTicketHandler extends POSTicketHandler {
 	}
 
 	@Override
-	public void showMessage() {
+	public void showMessage(String message) {
 		//	
 	}
 }
