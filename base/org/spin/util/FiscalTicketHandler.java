@@ -47,9 +47,19 @@ public class FiscalTicketHandler extends POSTicketHandler {
 	public void printTicket() {
 		//	Get Device
 		int deviceId = (Integer) Env.getContextAsInt(getPOS().getCtx(), FiscalPrinterHandler.CTX_FISCAL_PRINTER_ID);
+		ProcessInfo info = new ProcessInfo(null, 0);
+		info.setTransactionName(getPOS().get_TrxName());
 		if(!getPOS().isInvoiced()) {
 			//print standard document
-			ReportCtl.startDocumentPrint(ReportEngine.ORDER, getPOS().getC_Order_ID(), false);
+			ReportCtl.startDocumentPrint(
+					ReportEngine.ORDER, 
+					null, 
+					getPOS().getC_Order_ID(), 
+					null, 
+					getPOS().getWindowNo(), 
+					false, 
+					null, 
+					info);
 		} else {
 			for (MInvoice invoice :  getPOS().getOrder().getInvoices()) {
 				//	Print Each Invoice
@@ -57,7 +67,7 @@ public class FiscalTicketHandler extends POSTicketHandler {
 					      .process(InvoiceFiscalPrint.getProcessId())
 					      .withParameter(MADDevice.COLUMNNAME_AD_Device_ID, deviceId)
 					      .withRecordId(MInvoice.Table_ID, invoice.getC_Invoice_ID())
-					      .execute();
+					      .execute(getPOS().get_TrxName());
 				//	
 				if(processInfo.isError())
 					throw new AdempierePOSException(processInfo.getSummary());

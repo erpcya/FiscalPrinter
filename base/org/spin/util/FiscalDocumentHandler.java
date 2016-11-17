@@ -71,6 +71,8 @@ public class FiscalDocumentHandler {
 	private HashMap<String, Object> m_scriptCtx = new HashMap<String, Object>();
 	/**	Context					*/
 	private Properties 				ctx;
+	/**	Transaction Name		*/
+	private String 					trxName;
 	/**	Handle Connection		*/
 	private boolean 				handleConnection = true;
 	/**	Imports					*/
@@ -84,6 +86,16 @@ public class FiscalDocumentHandler {
 			+"import java.util.*;\n" 
 			+"import org.spin.model.*;\n" 
 			+"import org.spin.util.*;\n");
+	
+	/**
+	 * Set Transaction Name
+	 * @author Yamel Senih, ysenih@erpcya.com, ERPCyA http://www.erpcya.com
+	 * @param trxName
+	 * @return void
+	 */
+	public void set_TrxName(String trxName) {
+		this.trxName = trxName;
+	}
 	
 	/**
 	 * Add parameters to script
@@ -123,7 +135,7 @@ public class FiscalDocumentHandler {
 				throw new AdempiereException("@AD_Table_ID@ @NotFound@");
 			//	Get PO
 			MTable table = MTable.get(ctx, fiscalDocument.getAD_Table_ID());
-			po = table.getPO(recordId, fiscalDocument.get_TrxName());
+			po = table.getPO(recordId, trxName);
 			//	Valid Document
 			if(po == null)
 				throw new AdempiereException("@Record_ID@ @NotFound@");
@@ -270,7 +282,7 @@ public class FiscalDocumentHandler {
 						String whereClause = table.getTableName() + "." + linkColumn.getColumnName() + " = ?";
 						//	log
 						log.fine("Child Where Clause[" + whereClause + "]");
-						List<PO> childrens = new Query(ctx, table, whereClause, po.get_TrxName())
+						List<PO> childrens = new Query(ctx, table, whereClause, trxName)
 								.setParameters(po.get_Value(linkColumn.getColumnName()))
 								.list();
 						//	Iterate List
@@ -304,18 +316,18 @@ public class FiscalDocumentHandler {
 					&& line.isParse()) {
 				//	For PO
 				if(po != null) {
-					code = Env.parseVariable(code, po, fDocument.get_TrxName(), false);
+					code = Env.parseVariable(code, po, trxName, false);
 				}
 				//	For Info
 				if(info != null) {
-					code = parseVariable(code, info, fDocument.get_TrxName(), false);
+					code = parseVariable(code, info, trxName, false);
 				}
 			}
 			//	Parse from process
 			if(info != null
 					&& code != null
 					&& line.isParse()) {
-				code = Env.parseVariable(code, po, fDocument.get_TrxName(), false);
+				code = Env.parseVariable(code, po, trxName, false);
 			}
 			//	Valid null
 			if(code == null)

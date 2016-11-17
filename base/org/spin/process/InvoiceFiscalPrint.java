@@ -46,7 +46,7 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 			return "@C_Invoice_ID@ @Printed@";
 		//	Validate is Paid
 		if(!invoice.isPaid())
-			return "@C_Invoice_ID@ @No@ @IsPaid@";
+			throw new AdempiereException("@C_Invoice_ID@ @No@ @IsPaid@");
 		//	Get Device
 		if(getFiscalPrinterId() == 0)
 			throw new AdempiereException("@AD_Device_ID@ @NotFound@");
@@ -55,6 +55,8 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 		FiscalDocumentHandler documentHandler = new FiscalDocumentHandler(device);
 		//	Get Document Type
 		MDocType docType = MDocType.get(getCtx(), invoice.getC_DocType_ID());
+		//	Set Transaction Name
+		documentHandler.set_TrxName(get_TrxName());
 		//	Establish connection
 		documentHandler.connectPrinter();
 		try {
@@ -77,7 +79,7 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 			if(fiscalDocumentNo != null
 					&& fiscalDocumentNo.length() > 0) {
 				invoice.set_ValueOfColumn("FiscalDocumentNo", fiscalDocumentNo);
-				invoice.setDocumentNo(fiscalDocumentNo);
+//				invoice.setDocumentNo(fiscalDocumentNo);
 			}
 			//	Save
 			invoice.saveEx();
