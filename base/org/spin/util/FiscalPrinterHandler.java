@@ -16,6 +16,7 @@
  *****************************************************************************/
 package org.spin.util;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import org.spin.model.MADDevice;
@@ -31,6 +32,8 @@ public abstract class FiscalPrinterHandler extends DeviceTypeHandler {
 	
 	public FiscalPrinterHandler(MADDevice device) {
 		super(device);
+		//	Instance Stack
+		stackCmd = new ArrayList<String>();
 	}
 	
 	/**	Document Type	*/
@@ -44,7 +47,8 @@ public abstract class FiscalPrinterHandler extends DeviceTypeHandler {
 	/**	Ctx Properties	*/
 	public static final String 	CTX_FISCAL_PRINTER_NAME = "#FiscalPrinter";
 	public static final String 	CTX_FISCAL_PRINTER_ID = "#FiscalPrinter_ID";
-	
+	/**	Stack			*/
+	private ArrayList<String> stackCmd = null;
 	/**
 	 * Print X Report
 	 * @throws Exception
@@ -73,6 +77,35 @@ public abstract class FiscalPrinterHandler extends DeviceTypeHandler {
 	 * @return void
 	 */
 	public abstract void printCmd(String cmd) throws Exception;
+	
+	/**
+	 * Add a Command to stack
+	 * @author Yamel Senih, ysenih@erpcya.com, ERPCyA http://www.erpcya.com 
+	 * @param cmd
+	 * @return void
+	 */
+	public void addCmd(String cmd) throws Exception {
+		//	Add command
+		stackCmd.add(cmd);
+	}
+	
+	/**
+	 * Print a stack Command if exists
+	 * @author Yamel Senih, ysenih@erpcya.com, ERPCyA http://www.erpcya.com 
+	 * @param cmd
+	 * @return void
+	 */
+	public void printStackCmd() throws Exception {
+		if(stackCmd.size() == 0) {
+			return;
+		}
+		//	If exist data
+		for(String cmd : stackCmd) {
+			printCmd(cmd);
+		}
+		//	Clear stack
+		stackCmd = new ArrayList<String>();
+	}
 	
 	/**
 	 * Get Valid Code

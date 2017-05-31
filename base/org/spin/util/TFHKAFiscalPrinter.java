@@ -127,7 +127,7 @@ public class TFHKAFiscalPrinter extends FiscalPrinterHandler {
 		//	Replace
 		if(code != null
 				&& code.length() > 0) {
-			return code.replaceAll("[+^:&áàäéèëíìïóòöúùuñÁÀÄÉÈËÍÌÏÓÒÖÚÙÜÑçÇ$#]","");
+			return code.replaceAll("[+^:&áàäéèëíìïóòöúùñÁÀÄÉÈËÍÌÏÓÒÖÚÙÜÑçÇ$#]","");
 		}
 		return null;
 	}

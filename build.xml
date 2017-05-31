@@ -26,8 +26,11 @@
   	        </fileset>
   	<fileset dir="${DeviceManagement.trunk}/packages/DeviceManagement/lib">
     <include name="*.jar"/>
-  </fileset>
+  	</fileset>
   	<fileset dir="${adempiere.trunk}/lib">
+      <include name="*.jar"/>
+    </fileset>
+    <fileset dir="${adempiere.trunk}/packages">
       <include name="*.jar"/>
     </fileset>
     <fileset dir="${adempiere.trunk}/zkwebui/WEB-INF/lib">

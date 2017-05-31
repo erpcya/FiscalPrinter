@@ -145,6 +145,8 @@ public class FiscalDocumentHandler {
 			connect();
 		//	Print Document
 		printDocument(po, info, fiscalDocument);
+		//	Print stack
+		printerHandler.printStackCmd();
 		//	Close
 		if(handleConnection)
 			printerHandler.close();
@@ -262,7 +264,7 @@ public class FiscalDocumentHandler {
 					&& cmdBuffer.length() > 0) {
 				//	log
 				log.fine("Cmd[" + cmdBuffer + "]");
-				printerHandler.printCmd(cmdBuffer.toString());
+				printerHandler.addCmd(cmdBuffer.toString());
 				cmdBuffer = new StringBuffer();
 			}
 			//	Child document
@@ -353,7 +355,7 @@ public class FiscalDocumentHandler {
 		if(cmdBuffer.length() > 0) {
 			//	log
 			log.fine("Cmd[" + cmdBuffer + "]");
-			printerHandler.printCmd(cmdBuffer.toString());
+			printerHandler.addCmd(cmdBuffer.toString());
 		}
 	}
 	
