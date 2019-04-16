@@ -5,7 +5,7 @@
 	<classpathentry kind="lib" path="lib/jssc.jar"/>
 	<classpathentry kind="lib" path="lib/TfhkaJava.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/DeviceManagement"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/adempiere_380"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/adempiereFork"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

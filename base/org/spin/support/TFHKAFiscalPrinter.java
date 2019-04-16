@@ -14,7 +14,7 @@
  * All Rights Reserved.                                                       *
  * Contributor(s): Yamel Senih www.erpcya.com                                 *
  *****************************************************************************/
-package org.spin.util;
+package org.spin.support;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -22,6 +22,7 @@ import java.util.HashMap;
 
 import org.spin.model.MADDevice;
 import org.spin.model.X_AD_DeviceConfigUse;
+import org.spin.util.FiscalPrinterHandler;
 
 import tfhka.PrinterException;
 import tfhka.ve.S1PrinterData;

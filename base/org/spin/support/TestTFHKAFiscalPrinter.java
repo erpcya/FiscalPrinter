@@ -14,7 +14,7 @@
  * All Rights Reserved.                                                       *
  * Contributor(s): Yamel Senih www.erpcya.com                                 *
  *****************************************************************************/
-package org.spin.util;
+package org.spin.support;
 import tfhka.ve.Tfhka;
 
 
@@ -22,7 +22,7 @@ import tfhka.ve.Tfhka;
  * Add for testing
  * @author Yamel Senih, ysenih@erpcya.com, ERPCyA http://www.erpcya.com
  */
-public class TestFiscalPrinter {
+public class TestTFHKAFiscalPrinter {
 	public static void main ( String[] args ) {
         try {
         	Tfhka printer = new Tfhka();
