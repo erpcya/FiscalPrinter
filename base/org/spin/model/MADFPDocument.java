@@ -22,6 +22,7 @@ import java.util.Properties;
 
 import org.compiere.model.Query;
 import org.compiere.util.CCache;
+import org.spin.model.MADDevice;
 
 /**
  * @author Dixon Martinez, dmartinez@erpcya.com, ERPCyA http://www.erpcya.com

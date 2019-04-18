@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Migrations>
-  <Migration EntityType="D" Name="LVE Fiscal Printer" ReleaseNo="" SeqNo="380">
+  <Migration EntityType="D" Name="ECA05 Fiscal Printer" ReleaseNo="" SeqNo="380">
     <Comments>Add Model Validator for Fiscal Printer</Comments>
     <Step SeqNo="10" StepType="AD">
       <PO AD_Table_ID="53014" Action="I" Record_ID="50026" Table="AD_ModelValidator">
@@ -10,7 +10,7 @@
         <Data AD_Column_ID="53255" Column="Created">2016-11-15 21:40:12.218</Data>
         <Data AD_Column_ID="53256" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="53261" Column="Description" isNewNull="true"/>
-        <Data AD_Column_ID="53263" Column="EntityType">ECA02</Data>
+        <Data AD_Column_ID="53263" Column="EntityType">ECA05</Data>
         <Data AD_Column_ID="53262" Column="Help" isNewNull="true"/>
         <Data AD_Column_ID="53259" Column="IsActive">true</Data>
         <Data AD_Column_ID="53264" Column="ModelValidationClass">org.spin.model.FiscalPrinterModelValidator</Data>
