@@ -16,6 +16,10 @@
 
 package org.spin.process;
 
+import java.math.BigDecimal;
+import java.util.logging.Level;
+
+import org.compiere.process.ProcessInfoParameter;
 import org.compiere.process.SvrProcess;
 /** Generated Process for (Print Invoices to Fiscal Printer)
  *  @author ADempiere (generated) 
@@ -40,7 +44,19 @@ public abstract class InvoiceFiscalPrintAbstract extends SvrProcess
 	@Override
 	protected void prepare()
 	{
-		fiscalPrinterId = getParameterAsInt(AD_Device_ID);
+//		fiscalPrinterId = getParameterAsInt(AD_Device_ID);
+		
+		ProcessInfoParameter[] para = getParameter();
+		for (int i = 0; i < para.length; i++)
+		{
+			String name = para[i].getParameterName();
+			if (para[i].getParameter() == null)
+				;
+			else if (name.equals(AD_Device_ID))
+				fiscalPrinterId = ((BigDecimal)para[i].getParameter()).intValue();
+			else
+				log.log(Level.SEVERE, "Unknown Parameter: " + name);
+		}
 	}
 
 	/**	 Getter Parameter Value for fiscalPrinterId	*/

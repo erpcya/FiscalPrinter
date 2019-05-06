@@ -17,6 +17,7 @@
  *****************************************************************************/
 package org.spin.util;
 
+import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.text.MessageFormat;
 import java.text.SimpleDateFormat;
@@ -34,6 +35,7 @@ import org.compiere.model.PO;
 import org.compiere.model.Query;
 import org.compiere.model.Scriptlet;
 import org.compiere.process.ProcessInfo;
+import org.compiere.process.ProcessInfoParameter;
 import org.compiere.util.CLogger;
 import org.compiere.util.DB;
 import org.compiere.util.Env;
@@ -407,7 +409,19 @@ public class FiscalDocumentHandler {
 					outStr.append("@"+token+"@");
 			} else if (info != null) {
 				//take from po
-				Object v = info.getParameter(token);
+				Object v = null;
+				ProcessInfoParameter[] para = info.getParameter();
+				for (int z = 0; z < para.length; z++)
+				{
+					String name = para[z].getParameterName();
+					if (para[z].getParameter() == null)
+						;
+					else if (name.equals(token))
+						v = para[z].getParameter();
+					else
+						log.log(Level.SEVERE, "Unknown Parameter: " + name);
+				}
+				
 				if (v != null) {
 					if (format != null && format.length() > 0) {
 						if (v instanceof Integer && token.endsWith("_ID")) {

@@ -23,7 +23,7 @@ import java.util.Properties;
 import javax.xml.transform.sax.TransformerHandler;
 
 import org.adempiere.pipo.PackOut;
-import org.adempiere.pipo.handler.GenericPOHandler;
+//import org.adempiere.pipo.handler.GenericPOHandler;
 import org.compiere.model.I_AD_Column;
 import org.compiere.model.I_AD_Element;
 import org.compiere.model.I_AD_Field;
@@ -47,13 +47,14 @@ import org.spin.model.MADFPDocument;
 import org.spin.model.MADFPDocumentLine;
 import org.xml.sax.SAXException;
 
-public class FiscalPrinterElementHandler extends GenericPOHandler {
+public class FiscalPrinterElementHandler //extends GenericPOHandler 
+{
 	public void create(Properties ctx, TransformerHandler document) throws SAXException {
 		int deviceTypeId = Env.getContextAsInt(ctx, "AD_DeviceType_ID");
 		PackOut packOut = (PackOut) ctx.get("PackOutProcess");
 		if(packOut == null ) {
 			packOut = new PackOut();
-			packOut.setLocalContext(ctx);
+//			packOut.setLocalContext(ctx);
 		}
 		MADDeviceType deviceType = new MADDeviceType(ctx, deviceTypeId, null);
 		//	Exclude tables
@@ -71,25 +72,25 @@ public class FiscalPrinterElementHandler extends GenericPOHandler {
 		for(MADDeviceTypeSetUse deviceTypeAttributeSetUse : deviceTypeAttributeSetUseList) {
 			//	Attribute set
 			MADDeviceAttributeSet attributeSet = new MADDeviceAttributeSet(ctx, deviceTypeAttributeSetUse.getAD_DeviceAttributeSet_ID(), null);
-			packOut.createGenericPO(document, attributeSet, true, tablesToExclude);
+//			packOut.createGenericPO(document, attributeSet, true, tablesToExclude);
 			//	Get List from Attribute Set
 			List<MADDeviceAttributeUse> deviceAttributeUseList = new Query(ctx, I_AD_DeviceAttributeUse.Table_Name, I_AD_DeviceAttributeUse.COLUMNNAME_AD_DeviceAttributeSet_ID + " = ?", null)
 					.setParameters(attributeSet.getAD_DeviceAttributeSet_ID())
 					.list();
 			for(MADDeviceAttributeUse deviceAttributeUse : deviceAttributeUseList) {
 				MADDeviceAttribute attribute = new MADDeviceAttribute(ctx, deviceAttributeUse.getAD_DeviceAttribute_ID(), null);
-				packOut.createGenericPO(document, attribute, true, tablesToExclude);
+//				packOut.createGenericPO(document, attribute, true, tablesToExclude);
 				//	Get Values
 				List<MADDeviceAttributeValue> deviceAttributeValueList = new Query(ctx, I_AD_DeviceAttributeValue.Table_Name, I_AD_DeviceAttributeValue.COLUMNNAME_AD_DeviceAttribute_ID + " = ?", null)
 						.setParameters(attribute.getAD_DeviceAttribute_ID())
 						.list();
 				for(MADDeviceAttributeValue deviceAttributeValue : deviceAttributeValueList) {
-					packOut.createGenericPO(document, deviceAttributeValue, true, tablesToExclude);
+//					packOut.createGenericPO(document, deviceAttributeValue, true, tablesToExclude);
 				}
-				packOut.createGenericPO(document, deviceAttributeUse, true, tablesToExclude);
+//				packOut.createGenericPO(document, deviceAttributeUse, true, tablesToExclude);
 			}
 			//	
-			packOut.createGenericPO(document, deviceTypeAttributeSetUse, true, tablesToExclude);
+//			packOut.createGenericPO(document, deviceTypeAttributeSetUse, true, tablesToExclude);
 		}
 		//	For Fiscal Documents
 		List<MADFPDocument> fiscalDocumentList = new Query(ctx, I_AD_FP_Document.Table_Name, I_AD_FP_Document.COLUMNNAME_AD_DeviceType_ID + " = ?", null)
@@ -97,13 +98,13 @@ public class FiscalPrinterElementHandler extends GenericPOHandler {
 				.list();
 		//	
 		for(MADFPDocument fiscalDocument : fiscalDocumentList) {
-			packOut.createGenericPO(document, fiscalDocument, true, tablesToExclude);
+//			packOut.createGenericPO(document, fiscalDocument, true, tablesToExclude);
 			//	Get Lines
 			List<MADFPDocumentLine> fiscalDocumentLineList = new Query(ctx, I_AD_FP_DocumentLine.Table_Name, I_AD_FP_DocumentLine.COLUMNNAME_AD_FP_Document_ID + " = ?", null)
 					.setParameters(fiscalDocument.getAD_FP_Document_ID())
 					.list();
 			for(MADFPDocumentLine fiscalDocumentLine : fiscalDocumentLineList) {
-				packOut.createGenericPO(document, fiscalDocumentLine, true, tablesToExclude);
+//				packOut.createGenericPO(document, fiscalDocumentLine, true, tablesToExclude);
 			}
 		}
 	}

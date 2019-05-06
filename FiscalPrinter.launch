@@ -2,7 +2,7 @@
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <stringAttribute key="bad_container_name" value="\arhipac-f"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/adempiereFork/base/src/org/compiere/Adempiere.java"/>
+<listEntry value="/adempiere_370_Fork/base/src/org/compiere/Adempiere.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
@@ -15,8 +15,7 @@
 <listEntry value="org.eclipse.debug.ui.launchGroup.debug"/>
 <listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk8"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.compiere.Adempiere"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="FiscalPrinter"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="LVE-Fiscal-Printer"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-DPropertyFile=/opt/Development/ADempiere_Properties/FiscalPrinter.properties&#10;-DADEMPIERE_HOME=/Applications/Adempiere&#10;-Xms512M&#10;-Xmx512M&#10;-Dorg.adempiere.server.embedded=true"/>
 </launchConfiguration>

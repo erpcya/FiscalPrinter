@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <jardesc>
     <jar path="FiscalPrinter/packages/FiscalPrinter/lib/FiscalPrinter.jar"/>
-    <options buildIfNeeded="true" compress="true" descriptionLocation="/FiscalPrinter/FiscalPrinter.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/LVE-Fiscal-Printer/FiscalPrinter.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
     <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
     <selectedProjects/>
     <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
@@ -11,17 +11,19 @@
         </sealing>
     </manifest>
     <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
-        <file path="/FiscalPrinter/README.md"/>
-        <javaElement handleIdentifier="=FiscalPrinter/base"/>
-        <file path="/FiscalPrinter/FiscalPrinter (Generate Model).launch"/>
-        <file path="/FiscalPrinter/cmd.txt"/>
-        <javaElement handleIdentifier="=FiscalPrinter/patches"/>
-        <file path="/FiscalPrinter/FiscalPrinter.launch"/>
-        <file path="/FiscalPrinter/.gitignore"/>
-        <file path="/FiscalPrinter/build.properties"/>
-        <file path="/FiscalPrinter/.project"/>
-        <file path="/FiscalPrinter/serialdemo.properties"/>
-        <file path="/FiscalPrinter/build.xml"/>
-        <file path="/FiscalPrinter/.classpath"/>
+        <file path="/LVE-Fiscal-Printer/.classpath"/>
+        <file path="/LVE-Fiscal-Printer/serialdemo.properties"/>
+        <file path="/LVE-Fiscal-Printer/build.properties"/>
+        <file path="/LVE-Fiscal-Printer/build.xml"/>
+        <folder path="/LVE-Fiscal-Printer/lib"/>
+        <file path="/LVE-Fiscal-Printer/FiscalPrinter.jardesc"/>
+        <javaElement handleIdentifier="=LVE-Fiscal-Printer/base"/>
+        <file path="/LVE-Fiscal-Printer/cmd.txt"/>
+        <file path="/LVE-Fiscal-Printer/FiscalPrinter (Generate Model).launch"/>
+        <javaElement handleIdentifier="=LVE-Fiscal-Printer/patches"/>
+        <file path="/LVE-Fiscal-Printer/.gitignore"/>
+        <file path="/LVE-Fiscal-Printer/.project"/>
+        <file path="/LVE-Fiscal-Printer/FiscalPrinter.launch"/>
+        <file path="/LVE-Fiscal-Printer/README.md"/>
     </selectedElements>
 </jardesc>

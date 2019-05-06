@@ -3,9 +3,8 @@
 	<classpathentry kind="src" path="base"/>
 	<classpathentry kind="src" path="patches"/>
 	<classpathentry kind="lib" path="lib/jssc.jar"/>
-	<classpathentry kind="lib" path="lib/TfhkaJava.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/DeviceManagement"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/adempiereFork"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk6"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/adempiere_370_Fork"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

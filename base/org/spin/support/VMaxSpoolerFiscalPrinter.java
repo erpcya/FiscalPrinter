@@ -33,8 +33,6 @@ import org.spin.model.MADDevice;
 import org.spin.model.X_AD_DeviceConfigUse;
 import org.spin.util.FiscalPrinterHandler;
 
-import tfhka.PrinterException;
-
 /**
  * VMax printer support from spooler application. See: http://www.elepos.com.ve/eleposveweb/index.htm
  * Note that spooler only work for Microsoft Windows OS
@@ -185,7 +183,7 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 	}
 
 	@Override
-	public String getLastDocumentNo(int documentType) throws PrinterException {
+	public String getLastDocumentNo(int documentType) throws Exception {
 		int startIndext = lastSpoolerLog.lastIndexOf(DOCUMENT_NO_FLAG) + DOCUMENT_NO_FLAG.length();
 		if(startIndext > 0) {
 			int endIndex = startIndext + DOCUMENT_NO_LENGTH;
@@ -201,7 +199,7 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 	public String toString() {
 		try {
 			return getPrinterInfo();
-		} catch (PrinterException e) {
+		} catch (Exception e) {
 			
 		}
 		//	Default
@@ -209,13 +207,13 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 	}
 
 	@Override
-	public String getPrinterInfo() throws PrinterException {
+	public String getPrinterInfo() throws Exception {
 		return lastSpoolerLog.toString();
 	}
 
 	@Override
 	public HashMap<String, Object> getPrinterInfoValues()
-			throws PrinterException {
+			throws Exception {
 		HashMap<String, Object> values = new HashMap<String, Object>();
 		//	Return
 		return values;
