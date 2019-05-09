@@ -1186,7 +1186,7 @@ INNER JOIN C_Country c ON(c.C_Country_ID = l.C_Country_ID)
 LEFT JOIN C_Region r ON(r.C_Region_ID = l.C_Region_ID)
 LEFT JOIN C_City ct ON(ct.C_City_ID = l.C_City_ID)
 LEFT JOIN AD_User u ON(u.AD_User_ID = i.SalesRep_ID)
-LEFT JOIN C_Invoice da ON(da.C_Invoice_ID = i.Reversal_ID)
+LEFT JOIN C_Invoice da ON(da.C_Invoice_ID = i.DocAffected_ID)
 LEFT JOIN AD_Device de ON(de.AD_Device_ID = da.AD_Device_ID)</SQLStatement>
       <RollbackStatement>DROP VIEW RV_FP_Invoice</RollbackStatement>
     </Step>
