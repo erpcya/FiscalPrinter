@@ -40,9 +40,9 @@ public abstract class PrintFiscalReportAbstract extends SvrProcess
 	public static final String AD_Device_ID = "AD_Device_ID";
 
 	/**	Parameter Value for fiscalDocumentTypeId	*/
-	private int fiscalDocumentTypeId;
+	private int fPDocumentTypeId;
 	/**	Parameter Value for fiscalPrinterId	*/
-	private int fiscalPrinterId;
+	private int deviceId;
  
 
 	@Override
@@ -56,9 +56,9 @@ public abstract class PrintFiscalReportAbstract extends SvrProcess
 			if (para[i].getParameter() == null)
 				;
 			else if (name.equals(AD_FP_DocumentType_ID))
-				fiscalDocumentTypeId = ((BigDecimal)para[i].getParameter()).intValue();
+				fPDocumentTypeId = ((BigDecimal)para[i].getParameter()).intValue();
 			else if (name.equals(AD_Device_ID))
-				fiscalPrinterId = ((BigDecimal)para[i].getParameter()).intValue();
+				deviceId = ((BigDecimal)para[i].getParameter()).intValue();
 			else
 				log.log(Level.SEVERE, "Unknown Parameter: " + name);
 		}
@@ -66,13 +66,13 @@ public abstract class PrintFiscalReportAbstract extends SvrProcess
 	}
 
 	/**	 Getter Parameter Value for fiscalDocumentTypeId	*/
-	protected int getFiscalDocumentTypeId() {
-		return fiscalDocumentTypeId;
+	protected int getFPDocumentTypeId() {
+		return fPDocumentTypeId;
 	}
 
 	/**	 Getter Parameter Value for fiscalPrinterId	*/
-	protected int getFiscalPrinterId() {
-		return fiscalPrinterId;
+	protected int getDeviceId() {
+		return deviceId;
 	}
 
 	/**	 Getter Parameter Value for Process ID	*/
