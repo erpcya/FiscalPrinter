@@ -17,6 +17,9 @@
 
 package org.spin.process;
 
+import java.util.logging.Level;
+
+import org.compiere.process.ProcessInfoParameter;
 import org.compiere.process.SvrProcess;
 
 /** Generated Process for (Setup Fiscal Printer)
@@ -41,8 +44,21 @@ public abstract class SetupFiscalPrinterAbstract extends SvrProcess {
 
 	@Override
 	protected void prepare() {
-		deviceId = getParameterAsInt(AD_DEVICE_ID);
-		fPDocumentTypeId = getParameterAsInt(AD_FP_DOCUMENTTYPE_ID);
+//		deviceId = getParameterAsInt(AD_DEVICE_ID);
+//		fPDocumentTypeId = getParameterAsInt(AD_FP_DOCUMENTTYPE_ID);
+		ProcessInfoParameter[] para = getParameter();
+		for (int i = 0; i < para.length; i++)
+		{
+			String name = para[i].getParameterName();
+			if (para[i].getParameter() == null)
+				;
+			else if (name.equals(AD_DEVICE_ID))
+				deviceId = (para[i].getParameterAsInt());
+			else if (name.equals(AD_FP_DOCUMENTTYPE_ID))
+				fPDocumentTypeId = (para[i].getParameterAsInt());
+			else
+				log.log(Level.SEVERE, "Unknown Parameter: " + name);
+		}
 	}
 
 	/**	 Getter Parameter Value for Fiscal Printer	*/

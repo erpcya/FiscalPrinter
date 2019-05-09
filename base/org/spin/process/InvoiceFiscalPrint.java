@@ -17,10 +17,13 @@
  *****************************************************************************/
 package org.spin.process;
 
+import java.math.BigDecimal;
+
 import org.adempiere.exceptions.AdempiereException;
 import org.compiere.model.MDocType;
 import org.compiere.model.MInvoice;
 import org.compiere.model.X_C_DocType;
+import org.compiere.util.Env;
 import org.spin.model.I_AD_FP_Document;
 import org.spin.model.MADDevice;
 import org.spin.util.FiscalDocumentHandler;
@@ -47,8 +50,14 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 				&& invoice.get_ValueAsString("FiscalDocumentNo") != null)
 			return "@C_Invoice_ID@ @Printed@";
 		//	Validate is Paid
-		if(!invoice.isPaid())
-			throw new AdempiereException("@C_Invoice_ID@ @No@ @IsPaid@");
+//		if(!invoice.isPaid())
+//			throw new AdempiereException("@C_Invoice_ID@ @No@ @IsPaid@");
+		
+
+		//	Validates GrandTotal > 0
+		if (invoice.getGrandTotal().compareTo(Env.ZERO) < 0)
+			return "@C_Invoice_ID@ @GrandTotal@ < 0";
+		
 		//	Get Device
 		if(getFiscalPrinterId() == 0)
 			throw new AdempiereException("@AD_Device_ID@ @NotFound@");

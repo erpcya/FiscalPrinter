@@ -43,9 +43,7 @@ public abstract class InvoiceFiscalPrintAbstract extends SvrProcess
 
 	@Override
 	protected void prepare()
-	{
-//		fiscalPrinterId = getParameterAsInt(AD_Device_ID);
-		
+	{		
 		ProcessInfoParameter[] para = getParameter();
 		for (int i = 0; i < para.length; i++)
 		{
@@ -53,7 +51,7 @@ public abstract class InvoiceFiscalPrintAbstract extends SvrProcess
 			if (para[i].getParameter() == null)
 				;
 			else if (name.equals(AD_Device_ID))
-				fiscalPrinterId = ((BigDecimal)para[i].getParameter()).intValue();
+				fiscalPrinterId = (para[i].getParameterAsInt());
 			else
 				log.log(Level.SEVERE, "Unknown Parameter: " + name);
 		}
