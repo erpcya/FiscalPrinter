@@ -16,12 +16,14 @@
  *****************************************************************************/
 package org.spin.model;
 
+import org.adempiere.exceptions.AdempiereException;
 import org.adempiere.util.ProcessUtil;
 import org.compiere.apps.IProcessParameter;
 import org.compiere.apps.ProcessCtl;
 import org.compiere.apps.ProcessParameterPanel;
 import org.compiere.model.I_C_Invoice;
 import org.compiere.model.MClient;
+import org.compiere.model.MDocType;
 import org.compiere.model.MInOut;
 import org.compiere.model.MInvoice;
 import org.compiere.model.MOrder;
@@ -108,30 +110,41 @@ public class FiscalPrinterModelValidator implements ModelValidator {
 			log.fine(" TIMING_AFTER_COMPLETE");
 			if(po.get_TableName().equals(I_C_Invoice.Table_Name)) {
 				MInvoice invoice = (MInvoice) po;
+
+				MDocType docType = MDocType.get(invoice.getCtx(), invoice.getC_DocType_ID());
+
+				int docTypeId = docType.get_ValueAsInt(I_AD_FP_Document.COLUMNNAME_AD_FP_DocumentType_ID);
+
+				if (docTypeId  <= 0) {
+					return null;
+				}
+				
 				// Create instance parameters. I e the parameters you want to send to the process.
 				ProcessInfoParameter deviceId = new ProcessInfoParameter("AD_Device_ID", Env.getContextAsInt(Env.getCtx(), "FiscalPrinter_ID"), "","","");
 
 				ProcessInfoParameter [] parameters = new ProcessInfoParameter[] {deviceId};
 				// Create a process info instance. This is a composite class containing the parameters.
-				
+
 				String processName = "Print Invoices to Fiscal Printer";
 				int AD_Proces_ID = 53884;
-				
+
 				//	Create Trx
 				Trx trx = Trx.get(invoice.get_TrxName(), false);
 				//	Create Process Info
 				ProcessInfo pi_PrintInvoice = new ProcessInfo(processName, AD_Proces_ID);
-				
+
 				MPInstance pi = new MPInstance(Env.getCtx(), AD_Proces_ID, invoice.getC_Invoice_ID());
-				
+
 				pi_PrintInvoice.setAD_PInstance_ID(pi.getAD_PInstance_ID());
 				//	Add Parameters
 				pi_PrintInvoice.setParameter(parameters);
 				pi_PrintInvoice.setRecord_ID(invoice.getC_Invoice_ID());
 				
+				pi.saveEx(invoice.get_TrxName());
+
 				//	Execute Process
-				ProcessUtil.startJavaProcess(Env.getCtx(), pi_PrintInvoice, trx, true);
-				
+				ProcessUtil.startJavaProcess(Env.getCtx(), pi_PrintInvoice, trx, false);
+
 				log.info("Starting process " + processName);			
 			}
 		}

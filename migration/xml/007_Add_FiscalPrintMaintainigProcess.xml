@@ -5,7 +5,6 @@
     <Step SeqNo="10" StepType="AD">
       <PO AD_Table_ID="284" Action="I" Record_ID="54226" Table="AD_Process">
         <Data AD_Column_ID="4374" Column="AD_ReportView_ID" isNewNull="true"/>
-        <Data AD_Column_ID="84383" Column="UUID">fbe24abe-71e8-11e9-9b0d-f3cf025eeb3e</Data>
         <Data AD_Column_ID="4656" Column="Classname">org.spin.process.SetupFiscalPrinter</Data>
         <Data AD_Column_ID="2811" Column="Help" isNewNull="true"/>
         <Data AD_Column_ID="12458" Column="IsBetaFunctionality">false</Data>
@@ -35,7 +34,6 @@
         <Data AD_Column_ID="56515" Column="AD_Form_ID" isNewNull="true"/>
         <Data AD_Column_ID="5790" Column="AccessLevel">3</Data>
         <Data AD_Column_ID="14084" Column="IsServerProcess">false</Data>
-        <Data AD_Column_ID="78843" Column="GenerateClass">N</Data>
         <Data AD_Column_ID="7752" Column="AD_PrintFormat_ID" isNewNull="true"/>
       </PO>
     </Step>
@@ -54,7 +52,6 @@
         <Data AD_Column_ID="2844" Column="AD_Language">es_MX</Data>
         <Data AD_Column_ID="2843" Column="AD_Process_ID">54226</Data>
         <Data AD_Column_ID="2849" Column="CreatedBy">100</Data>
-        <Data AD_Column_ID="84387" Column="UUID">02b8a75c-71e9-11e9-9b31-17f8328daab7</Data>
       </PO>
     </Step>
     <Step SeqNo="30" StepType="AD">
@@ -90,7 +87,6 @@
         <Data AD_Column_ID="3741" Column="ValueMin" isNewNull="true"/>
         <Data AD_Column_ID="3739" Column="DefaultValue">@#FiscalPrinter_ID@</Data>
         <Data AD_Column_ID="56300" Column="DisplayLogic" isNewNull="true"/>
-        <Data AD_Column_ID="81287" Column="IsInfoOnly">false</Data>
         <Data AD_Column_ID="2814" Column="AD_Process_Para_ID">56902</Data>
         <Data AD_Column_ID="2815" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2816" Column="AD_Org_ID">0</Data>
@@ -104,7 +100,6 @@
         <Data AD_Column_ID="2821" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="2828" Column="AD_Reference_Value_ID" isNewNull="true"/>
         <Data AD_Column_ID="7729" Column="AD_Element_ID">58964</Data>
-        <Data AD_Column_ID="84385" Column="UUID">822114fc-71e9-11e9-9b4f-cbccdc3be2e7</Data>
       </PO>
     </Step>
     <Step SeqNo="60" StepType="AD">
@@ -122,7 +117,6 @@
         <Data AD_Column_ID="2837" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="2832" Column="AD_Language">es_MX</Data>
         <Data AD_Column_ID="2839" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="84386" Column="UUID">825ba04a-71e9-11e9-9b72-535ed7731129</Data>
       </PO>
     </Step>
     <Step SeqNo="70" StepType="AD">
@@ -156,7 +150,6 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="7715" Column="EntityType">ECA05</Data>
         <Data AD_Column_ID="587" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="585" Column="CreatedBy">100</Data>
-        <Data AD_Column_ID="84460" Column="UUID">f06a72a0-71e9-11e9-9e88-ef957faf9680</Data>
       </PO>
     </Step>
     <Step SeqNo="100" StepType="AD">
@@ -178,7 +171,6 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="3741" Column="ValueMin" isNewNull="true"/>
         <Data AD_Column_ID="3739" Column="DefaultValue">-1</Data>
         <Data AD_Column_ID="56300" Column="DisplayLogic" isNewNull="true"/>
-        <Data AD_Column_ID="81287" Column="IsInfoOnly">false</Data>
         <Data AD_Column_ID="2814" Column="AD_Process_Para_ID">56903</Data>
         <Data AD_Column_ID="2815" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2816" Column="AD_Org_ID">0</Data>
@@ -192,7 +184,6 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="2821" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="2828" Column="AD_Reference_Value_ID" isNewNull="true"/>
         <Data AD_Column_ID="7729" Column="AD_Element_ID">58975</Data>
-        <Data AD_Column_ID="84385" Column="UUID">f9fe3cde-71e9-11e9-9e99-fb440f84d9f5</Data>
       </PO>
     </Step>
     <Step SeqNo="110" StepType="AD">
@@ -210,7 +201,6 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="2837" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="2832" Column="AD_Language">es_MX</Data>
         <Data AD_Column_ID="2839" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="84386" Column="UUID">fa3acbe0-71e9-11e9-9ebc-0faf22b1716c</Data>
       </PO>
     </Step>
     <Step SeqNo="120" StepType="AD">
@@ -243,7 +233,6 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="4621" Column="AD_Form_ID" isNewNull="true"/>
         <Data AD_Column_ID="602" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="3375" Column="AD_Process_ID">54226</Data>
-        <Data AD_Column_ID="84344" Column="UUID">28173d5a-71ea-11e9-9ecf-9b7e555321cf</Data>
       </PO>
     </Step>
     <Step SeqNo="140" StepType="AD">
@@ -260,12 +249,10 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="638" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="245" Column="AD_Menu_ID">54452</Data>
         <Data AD_Column_ID="246" Column="AD_Language">es_MX</Data>
-        <Data AD_Column_ID="84345" Column="UUID">285b5094-71ea-11e9-9eea-4381e1c1a000</Data>
       </PO>
     </Step>
     <Step SeqNo="150" StepType="AD">
       <PO AD_Table_ID="452" Action="I" Record_ID="54452" Table="AD_TreeNodeMM">
-        <Data AD_Column_ID="84442" Column="UUID">2891606c-71ea-11e9-9ef9-4f85838d6e20</Data>
         <Data AD_Column_ID="6150" Column="IsActive">true</Data>
         <Data AD_Column_ID="6153" Column="Updated">2019-05-08 19:06:52.837</Data>
         <Data AD_Column_ID="6151" Column="Created">2019-05-08 19:06:52.837</Data>
@@ -281,8 +268,8 @@ EXISTS(SELECT 1
     </Step>
     <Step SeqNo="160" StepType="AD">
       <PO AD_Table_ID="452" Action="U" Record_ID="54452" Table="AD_TreeNodeMM">
-        <Data AD_Column_ID="6161" Column="Node_ID" oldValue="54452">54452</Data>
         <Data AD_Column_ID="6155" Column="Parent_ID" oldValue="0">54090</Data>
+        <Data AD_Column_ID="6161" Column="Node_ID" oldValue="54452">54452</Data>
         <Data AD_Column_ID="6157" Column="SeqNo" oldValue="999">1</Data>
         <Data AD_Column_ID="6160" Column="AD_Tree_ID" oldValue="10">10</Data>
       </PO>

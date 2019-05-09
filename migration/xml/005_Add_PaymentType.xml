@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Migrations>
   <Migration EntityType="D" Name="Add Payment Type" ReleaseNo="" SeqNo="234">
-    <Step DBType="Postgres" Parse="N" SeqNo="0" StepType="SQL">
+    <Step DBType="Postgres" SeqNo="0" StepType="SQL">
       <SQLStatement>CREATE OR REPLACE VIEW RV_FP_PaymentType AS
 SELECT i.AD_Client_ID, i.AD_Org_ID, i.IsActive, i.CreatedBy, i.Created, i.Updated, i.UpdatedBy, i.C_Invoice_ID,
 COALESCE(p.TenderType, 'X') TenderType, COALESCE(SUM(al.Amount), i.GrandTotal) PayAmt
@@ -21,11 +21,8 @@ p.TenderType</SQLStatement>
         <Data AD_Column_ID="726" Column="IsSecurityEnabled">false</Data>
         <Data AD_Column_ID="6125" Column="IsView">true</Data>
         <Data AD_Column_ID="108" Column="LoadSeq">0</Data>
-        <Data AD_Column_ID="78180" Column="IsDocument">false</Data>
         <Data AD_Column_ID="4196" Column="IsHighVolume">false</Data>
-        <Data AD_Column_ID="80143" Column="IsIgnoreMigration">false</Data>
         <Data AD_Column_ID="354" Column="AccessLevel">6</Data>
-        <Data AD_Column_ID="65574" Column="ACTriggerLength">0</Data>
         <Data AD_Column_ID="355" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="356" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="100" Column="AD_Table_ID">54169</Data>
@@ -82,11 +79,9 @@ p.TenderType</SQLStatement>
         <Data AD_Column_ID="119" Column="IsKey">false</Data>
         <Data AD_Column_ID="124" Column="IsMandatory">true</Data>
         <Data AD_Column_ID="120" Column="IsParent">false</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
         <Data AD_Column_ID="6244" Column="IsSelectionColumn">false</Data>
         <Data AD_Column_ID="6483" Column="IsSyncDatabase" isNewNull="true"/>
         <Data AD_Column_ID="125" Column="IsTranslated">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="359" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="109" Column="AD_Column_ID">81313</Data>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">102</Data>
@@ -132,7 +127,6 @@ p.TenderType</SQLStatement>
     </Step>
     <Step SeqNo="50" StepType="AD">
       <PO AD_Table_ID="101" Action="I" Record_ID="81314" Table="AD_Column">
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="359" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="109" Column="AD_Column_ID">81314</Data>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">113</Data>
@@ -163,7 +157,6 @@ p.TenderType</SQLStatement>
         <Data AD_Column_ID="119" Column="IsKey">false</Data>
         <Data AD_Column_ID="124" Column="IsMandatory">true</Data>
         <Data AD_Column_ID="120" Column="IsParent">false</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
         <Data AD_Column_ID="6244" Column="IsSelectionColumn">false</Data>
         <Data AD_Column_ID="6483" Column="IsSyncDatabase" isNewNull="true"/>
         <Data AD_Column_ID="125" Column="IsTranslated">false</Data>
@@ -197,7 +190,6 @@ p.TenderType</SQLStatement>
     </Step>
     <Step SeqNo="70" StepType="AD">
       <PO AD_Table_ID="101" Action="I" Record_ID="81315" Table="AD_Column">
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="359" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="109" Column="AD_Column_ID">81315</Data>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">348</Data>
@@ -231,7 +223,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="119" Column="IsKey">false</Data>
         <Data AD_Column_ID="124" Column="IsMandatory">true</Data>
         <Data AD_Column_ID="120" Column="IsParent">false</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
         <Data AD_Column_ID="6244" Column="IsSelectionColumn">false</Data>
         <Data AD_Column_ID="6483" Column="IsSyncDatabase" isNewNull="true"/>
         <Data AD_Column_ID="125" Column="IsTranslated">false</Data>
@@ -265,7 +256,9 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="90" StepType="AD">
       <PO AD_Table_ID="101" Action="I" Record_ID="81316" Table="AD_Column">
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
+        <Data AD_Column_ID="124" Column="IsMandatory">true</Data>
+        <Data AD_Column_ID="120" Column="IsParent">false</Data>
+        <Data AD_Column_ID="6244" Column="IsSelectionColumn">false</Data>
         <Data AD_Column_ID="359" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="109" Column="AD_Column_ID">81316</Data>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">245</Data>
@@ -294,10 +287,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="128" Column="IsEncrypted">N</Data>
         <Data AD_Column_ID="126" Column="IsIdentifier">false</Data>
         <Data AD_Column_ID="119" Column="IsKey">false</Data>
-        <Data AD_Column_ID="124" Column="IsMandatory">true</Data>
-        <Data AD_Column_ID="120" Column="IsParent">false</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
-        <Data AD_Column_ID="6244" Column="IsSelectionColumn">false</Data>
         <Data AD_Column_ID="6483" Column="IsSyncDatabase" isNewNull="true"/>
         <Data AD_Column_ID="125" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="3360" Column="IsUpdateable">true</Data>
@@ -331,7 +320,6 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="110" StepType="AD">
       <PO AD_Table_ID="101" Action="I" Record_ID="81317" Table="AD_Column">
         <Data AD_Column_ID="117" Column="DefaultValue" isNewNull="true"/>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="359" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="109" Column="AD_Column_ID">81317</Data>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">607</Data>
@@ -361,7 +349,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="119" Column="IsKey">false</Data>
         <Data AD_Column_ID="124" Column="IsMandatory">true</Data>
         <Data AD_Column_ID="120" Column="IsParent">false</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
         <Data AD_Column_ID="6244" Column="IsSelectionColumn">false</Data>
         <Data AD_Column_ID="6483" Column="IsSyncDatabase" isNewNull="true"/>
         <Data AD_Column_ID="125" Column="IsTranslated">false</Data>
@@ -395,7 +382,6 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="130" StepType="AD">
       <PO AD_Table_ID="101" Action="I" Record_ID="81318" Table="AD_Column">
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="359" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="109" Column="AD_Column_ID">81318</Data>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">246</Data>
@@ -426,7 +412,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="119" Column="IsKey">false</Data>
         <Data AD_Column_ID="124" Column="IsMandatory">true</Data>
         <Data AD_Column_ID="120" Column="IsParent">false</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
         <Data AD_Column_ID="6244" Column="IsSelectionColumn">false</Data>
         <Data AD_Column_ID="6483" Column="IsSyncDatabase" isNewNull="true"/>
         <Data AD_Column_ID="125" Column="IsTranslated">false</Data>
@@ -460,7 +445,6 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="150" StepType="AD">
       <PO AD_Table_ID="101" Action="I" Record_ID="81319" Table="AD_Column">
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="359" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="109" Column="AD_Column_ID">81319</Data>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">608</Data>
@@ -491,7 +475,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="119" Column="IsKey">false</Data>
         <Data AD_Column_ID="124" Column="IsMandatory">true</Data>
         <Data AD_Column_ID="120" Column="IsParent">false</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
         <Data AD_Column_ID="6244" Column="IsSelectionColumn">false</Data>
         <Data AD_Column_ID="6483" Column="IsSyncDatabase" isNewNull="true"/>
         <Data AD_Column_ID="125" Column="IsTranslated">false</Data>
@@ -552,7 +535,6 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="180" StepType="AD">
       <PO AD_Table_ID="101" Action="I" Record_ID="81320" Table="AD_Column">
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="359" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="109" Column="AD_Column_ID">81320</Data>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">1008</Data>
@@ -583,7 +565,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="119" Column="IsKey">false</Data>
         <Data AD_Column_ID="124" Column="IsMandatory">false</Data>
         <Data AD_Column_ID="120" Column="IsParent">false</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
         <Data AD_Column_ID="6244" Column="IsSelectionColumn">false</Data>
         <Data AD_Column_ID="6483" Column="IsSyncDatabase" isNewNull="true"/>
         <Data AD_Column_ID="125" Column="IsTranslated">false</Data>
@@ -617,7 +598,6 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="200" StepType="AD">
       <PO AD_Table_ID="101" Action="I" Record_ID="81321" Table="AD_Column">
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="359" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="109" Column="AD_Column_ID">81321</Data>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">1441</Data>
@@ -648,7 +628,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="119" Column="IsKey">false</Data>
         <Data AD_Column_ID="124" Column="IsMandatory">false</Data>
         <Data AD_Column_ID="120" Column="IsParent">false</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
         <Data AD_Column_ID="6244" Column="IsSelectionColumn">false</Data>
         <Data AD_Column_ID="6483" Column="IsSyncDatabase" isNewNull="true"/>
         <Data AD_Column_ID="125" Column="IsTranslated">false</Data>
@@ -682,7 +661,6 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="220" StepType="AD">
       <PO AD_Table_ID="101" Action="I" Record_ID="81322" Table="AD_Column">
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="359" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="109" Column="AD_Column_ID">81322</Data>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">1477</Data>
@@ -713,7 +691,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="119" Column="IsKey">false</Data>
         <Data AD_Column_ID="124" Column="IsMandatory">false</Data>
         <Data AD_Column_ID="120" Column="IsParent">false</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
         <Data AD_Column_ID="6244" Column="IsSelectionColumn">false</Data>
         <Data AD_Column_ID="6483" Column="IsSyncDatabase" isNewNull="true"/>
         <Data AD_Column_ID="125" Column="IsTranslated">false</Data>
