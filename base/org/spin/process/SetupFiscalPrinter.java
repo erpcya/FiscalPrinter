@@ -1,8 +1,9 @@
 /******************************************************************************
  * Product: ADempiere ERP & CRM Smart Business Solution                       *
- * Copyright (C) 2006-2016 ADempiere Foundation, All Rights Reserved.         *
+ * Copyright (C) 2006-2017 ADempiere Foundation, All Rights Reserved.         *
  * This program is free software, you can redistribute it and/or modify it    *
  * under the terms version 2 of the GNU General Public License as published   *
+ * or (at your option) any later version.										*
  * by the Free Software Foundation. This program is distributed in the hope   *
  * that it will be useful, but WITHOUT ANY WARRANTY, without even the implied *
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.           *
@@ -20,11 +21,11 @@ import org.adempiere.exceptions.AdempiereException;
 import org.spin.model.MADDevice;
 import org.spin.util.FiscalDocumentHandler;
 
-/** Generated Process for (Print Fiscal Report)
+/** Generated Process for (Setup Fiscal Printer)
  *  @author ADempiere (generated) 
- *  @version Release 3.8.0
+ *  @version Release 3.9.2
  */
-public class PrintFiscalReport extends PrintFiscalReportAbstract {
+public class SetupFiscalPrinter extends SetupFiscalPrinterAbstract {
 	@Override
 	protected void prepare() {
 		super.prepare();

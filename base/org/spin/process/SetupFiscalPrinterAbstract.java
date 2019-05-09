@@ -19,17 +19,17 @@ package org.spin.process;
 
 import org.compiere.process.SvrProcess;
 
-/** Generated Process for (Print Fiscal Report)
+/** Generated Process for (Setup Fiscal Printer)
  *  @author ADempiere (generated) 
  *  @version Release 3.9.2
  */
-public abstract class PrintFiscalReportAbstract extends SvrProcess {
+public abstract class SetupFiscalPrinterAbstract extends SvrProcess {
 	/** Process Value 	*/
-	private static final String VALUE_FOR_PROCESS = "PrintFiscalReport";
+	private static final String VALUE_FOR_PROCESS = "SetupFiscalPrinter";
 	/** Process Name 	*/
-	private static final String NAME_FOR_PROCESS = "Print Fiscal Report";
+	private static final String NAME_FOR_PROCESS = "Setup Fiscal Printer";
 	/** Process Id 	*/
-	private static final int ID_FOR_PROCESS = 53883;
+	private static final int ID_FOR_PROCESS = 54226;
 	/**	Parameter Name for Fiscal Printer	*/
 	public static final String AD_DEVICE_ID = "AD_Device_ID";
 	/**	Parameter Name for Fiscal Document Type	*/
