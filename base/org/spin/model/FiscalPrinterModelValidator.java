@@ -105,18 +105,17 @@ public class FiscalPrinterModelValidator implements ModelValidator {
 					return Msg.parseTranslation(Env.getCtx(), "@C_Invoice_ID@ @IsPrinted@");
 				}
 			}
-		}
-		if(timing == TIMING_AFTER_COMPLETE) {
+		} else if(timing == TIMING_AFTER_COMPLETE) {
 			log.fine(" TIMING_AFTER_COMPLETE");
 			if(po.get_TableName().equals(I_C_Invoice.Table_Name)) {
 				MInvoice invoice = (MInvoice) po;
 
-				MDocType docType = MDocType.get(invoice.getCtx(), invoice.getC_DocType_ID());
+				MDocType docType = MDocType.get(invoice.getCtx(), invoice.getC_DocTypeTarget_ID());
 
 				int docTypeId = docType.get_ValueAsInt(I_AD_FP_Document.COLUMNNAME_AD_FP_DocumentType_ID);
 
 				if (docTypeId  <= 0) {
-					return null;
+					return "";
 				}
 				
 				// Create instance parameters. I e the parameters you want to send to the process.
