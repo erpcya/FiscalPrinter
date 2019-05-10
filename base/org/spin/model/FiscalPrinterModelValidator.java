@@ -132,7 +132,7 @@ public class FiscalPrinterModelValidator implements ModelValidator {
 		if (fiscalDocumentTypeId  <= 0) {
 			return;
 		}
-		if (invoice.getGrandTotal().compareTo(Env.ZERO) < 0) {
+		if (invoice.getGrandTotal().compareTo(Env.ZERO) <= 0) {
 			throw new AdempiereException("@C_Invoice_ID@ @GrandTotal@ < 0");
 		}
 		//	Validate Printing
