@@ -33,6 +33,7 @@ import org.compiere.model.ModelValidationEngine;
 import org.compiere.model.ModelValidator;
 import org.compiere.model.PO;
 import org.compiere.model.Query;
+import org.compiere.model.X_C_DocType;
 import org.compiere.model.X_C_Invoice;
 import org.compiere.model.X_C_PaySelection;
 import org.compiere.print.ReportCtl;
@@ -46,6 +47,8 @@ import org.compiere.util.Msg;
 import org.compiere.util.Trx;
 import org.spin.model.I_AD_Device;
 import org.spin.process.InvoiceFiscalPrint;
+import org.spin.util.FiscalDocumentHandler;
+import org.spin.util.FiscalPrinterHandler;
 
 /**
  * @author Yamel Senih, ysenih@erpcya.com, ERPCyA http://www.erpcya.com
@@ -109,42 +112,77 @@ public class FiscalPrinterModelValidator implements ModelValidator {
 			log.fine(" TIMING_AFTER_COMPLETE");
 			if(po.get_TableName().equals(I_C_Invoice.Table_Name)) {
 				MInvoice invoice = (MInvoice) po;
-
-				MDocType docType = MDocType.get(invoice.getCtx(), invoice.getC_DocTypeTarget_ID());
-
-				int docTypeId = docType.get_ValueAsInt(I_AD_FP_Document.COLUMNNAME_AD_FP_DocumentType_ID);
-
-				if (docTypeId  <= 0) {
-					return "";
-				}
-				
-				// Create instance parameters. I e the parameters you want to send to the process.
-				ProcessInfoParameter deviceId = new ProcessInfoParameter("AD_Device_ID", Env.getContextAsInt(Env.getCtx(), "FiscalPrinter_ID"), "","","");
-
-				ProcessInfoParameter [] parameters = new ProcessInfoParameter[] {deviceId};
-				// Create a process info instance. This is a composite class containing the parameters.
-
-				//	Create Trx
-				Trx trx = Trx.get(invoice.get_TrxName(), false);
-				//	Create Process Info
-				ProcessInfo pi_PrintInvoice = new ProcessInfo(InvoiceFiscalPrint.getProcessName(), InvoiceFiscalPrint.getProcessId());
-
-				MPInstance pi = new MPInstance(Env.getCtx(), InvoiceFiscalPrint.getProcessId(), invoice.getC_Invoice_ID());
-
-				pi_PrintInvoice.setAD_PInstance_ID(pi.getAD_PInstance_ID());
-				//	Add Parameters
-				pi_PrintInvoice.setParameter(parameters);
-				pi_PrintInvoice.setRecord_ID(invoice.getC_Invoice_ID());
-				
-				pi.saveEx(invoice.get_TrxName());
-
-				//	Execute Process
-				ProcessUtil.startJavaProcess(Env.getCtx(), pi_PrintInvoice, trx, false);
-
-				log.info("Starting process " + InvoiceFiscalPrint.getProcessName());			
+				sendDocumentToPrinter(invoice);			
 			}
 		}
 		return null;
+	}
+	
+	/**
+	 * Send document to printer
+	 * @author Yamel Senih, ysenih@erpcya.com, ERPCyA http://www.erpcya.com
+	 * @param invoice
+	 * @return void
+	 */
+	private void sendDocumentToPrinter(MInvoice invoice) {
+		MDocType documentType = MDocType.get(invoice.getCtx(), invoice.getC_DocTypeTarget_ID());
+		int fiscalDocumentTypeId = documentType.get_ValueAsInt(I_AD_FP_Document.COLUMNNAME_AD_FP_DocumentType_ID);
+		if (fiscalDocumentTypeId  <= 0) {
+			return;
+		}
+		if (invoice.getGrandTotal().compareTo(Env.ZERO) < 0) {
+			throw new AdempiereException("@C_Invoice_ID@ @GrandTotal@ < 0");
+		}
+		//	Validate Printing
+		if(invoice.get_ValueAsInt("AD_Device_ID") != 0
+				&& invoice.get_ValueAsString("FiscalDocumentNo") != null) {
+			return;
+		}
+		//	Validates GrandTotal > 0
+		//	Get Device
+		int fiscalPrinterId = invoice.get_ValueAsInt("AD_Device_ID");
+		if(fiscalPrinterId == 0) {
+			fiscalPrinterId = Env.getContextAsInt(invoice.getCtx(), "FiscalPrinter_ID");
+		}
+		if(fiscalPrinterId == 0) {
+			throw new AdempiereException("@AD_Device_ID@ @NotFound@");
+		}
+		//	
+		MADDevice device = new MADDevice(invoice.getCtx(), fiscalPrinterId, invoice.get_TrxName());
+		FiscalDocumentHandler documentHandler = new FiscalDocumentHandler(device);
+		//	Set Transaction Name
+		documentHandler.set_TrxName(invoice.get_TrxName());
+		try {
+			//	Establish connection
+			documentHandler.connectPrinter();
+			//	Print
+			documentHandler.printDocument(invoice.getC_Invoice_ID(), documentType.get_ValueAsInt(I_AD_FP_Document.COLUMNNAME_AD_FP_DocumentType_ID));
+			//	Set Document Values
+			String fiscalDocumentNo = null;
+			if(documentType.getDocBaseType().equals(X_C_DocType.DOCBASETYPE_ARInvoice)) {
+				if(invoice.get_ValueAsInt("DocAffected_ID") != 0) {
+					fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_DEBIT_MEMO);
+				} else {
+					fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_INVOICE);
+				}
+			} else if(documentType.getDocBaseType().equals(X_C_DocType.DOCBASETYPE_ARCreditMemo)) {
+				fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_CREDIT_MEMO);
+			}
+			//	Set Device
+			invoice.set_ValueOfColumn("AD_Device_ID", fiscalPrinterId);
+			//	Set
+			if(fiscalDocumentNo != null
+					&& fiscalDocumentNo.length() > 0) {
+				invoice.set_ValueOfColumn("FiscalDocumentNo", fiscalDocumentNo);
+				invoice.setDocumentNo(fiscalDocumentNo);
+			}
+			//	Save
+			invoice.saveEx();
+			//	Close Connection
+			documentHandler.closePrinter();
+		} catch(Exception e) {
+			throw new AdempiereException(e);
+		}
 	}
 
 }
