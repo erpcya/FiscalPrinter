@@ -5,7 +5,6 @@
     <Step SeqNo="10" StepType="AD">
       <PO AD_Table_ID="100" Action="I" Record_ID="54151" Table="AD_Table">
         <Data AD_Column_ID="354" Column="AccessLevel">6</Data>
-        <Data AD_Column_ID="65574" Column="ACTriggerLength">0</Data>
         <Data AD_Column_ID="355" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="356" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="100" Column="AD_Table_ID">54151</Data>
@@ -22,9 +21,7 @@
         <Data AD_Column_ID="59135" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="8564" Column="IsChangeLog">false</Data>
         <Data AD_Column_ID="727" Column="IsDeleteable">true</Data>
-        <Data AD_Column_ID="78180" Column="IsDocument">false</Data>
         <Data AD_Column_ID="4196" Column="IsHighVolume">false</Data>
-        <Data AD_Column_ID="80143" Column="IsIgnoreMigration">false</Data>
         <Data AD_Column_ID="726" Column="IsSecurityEnabled">false</Data>
         <Data AD_Column_ID="6125" Column="IsView">false</Data>
         <Data AD_Column_ID="108" Column="LoadSeq">0</Data>
@@ -43,7 +40,7 @@
         <Data AD_Column_ID="12724" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12718" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12719" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12715" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12715" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12716" Column="Name">Fiscal Document Type</Data>
         <Data AD_Column_ID="12720" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12723" Column="Updated">2016-07-12 11:44:39.579</Data>
@@ -96,9 +93,7 @@
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">102</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="40" StepType="AD">
@@ -112,7 +107,7 @@
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80905</Data>
         <Data AD_Column_ID="12957" Column="Name">Client</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:44:41.818</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:44:41.818</Data>
       </PO>
     </Step>
@@ -161,14 +156,12 @@
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">113</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="60" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="80906" Table="AD_Column_Trl">
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
@@ -229,9 +222,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">348</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="80" StepType="AD">
@@ -244,7 +235,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12957" Column="Name">Active</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:44:47.069</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80907</Data>
       </PO>
@@ -294,16 +285,14 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">245</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="100" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="80908" Table="AD_Column_Trl">
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80908</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
@@ -359,9 +348,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">607</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="120" StepType="AD">
@@ -372,7 +359,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12957" Column="Name">Updated</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:44:50.947</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:44:50.947</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80909</Data>
@@ -424,9 +411,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">246</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="140" StepType="AD">
@@ -439,7 +424,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:44:52.896</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:44:52.896</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12957" Column="Name">Created By</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80910</Data>
       </PO>
@@ -489,9 +474,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">608</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="160" StepType="AD">
@@ -501,7 +484,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12957" Column="Name">Updated By</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80911</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:44:54.858</Data>
@@ -538,7 +521,7 @@ There are two reasons for de-activating and not deleting records:
       <PO AD_Table_ID="277" Action="I" Record_ID="58975" Table="AD_Element_Trl">
         <Data AD_Column_ID="2639" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2637" Column="AD_Element_ID">58975</Data>
-        <Data AD_Column_ID="2638" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2638" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="2640" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="2643" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="2647" Column="Description" isNewNull="true"/>
@@ -601,9 +584,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">58975</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="200" StepType="AD">
@@ -613,7 +594,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80912</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:44:58.336</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:44:58.336</Data>
@@ -694,9 +675,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">620</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="230" StepType="AD">
@@ -708,7 +687,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:50:35.144</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:50:35.144</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80913</Data>
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
@@ -759,9 +738,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">469</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="250" StepType="AD">
@@ -773,7 +750,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:50:56.327</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80914</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:50:56.327</Data>
@@ -829,9 +806,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">275</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="280" StepType="AD">
@@ -843,7 +818,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80915</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:51:13.875</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:51:13.875</Data>
@@ -872,7 +847,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
       <PO AD_Table_ID="126" Action="I" Record_ID="0" Table="AD_Reference_Trl">
         <Data AD_Column_ID="669" Column="Updated">2016-07-12 11:52:32.793</Data>
         <Data AD_Column_ID="1202" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="279" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="279" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1203" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="278" Column="AD_Reference_ID">53847</Data>
         <Data AD_Column_ID="668" Column="CreatedBy">100</Data>
@@ -913,7 +888,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="1215" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="336" Column="AD_Ref_List_ID">54768</Data>
         <Data AD_Column_ID="338" Column="Name">Report</Data>
-        <Data AD_Column_ID="337" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="337" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1216" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="707" Column="Created">2016-07-12 11:53:02.93</Data>
         <Data AD_Column_ID="708" Column="CreatedBy">100</Data>
@@ -943,7 +918,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
       <PO AD_Table_ID="136" Action="I" Record_ID="0" Table="AD_Ref_List_Trl">
         <Data AD_Column_ID="709" Column="Updated">2016-07-12 11:53:12.048</Data>
         <Data AD_Column_ID="1215" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="337" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="337" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1216" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="336" Column="AD_Ref_List_ID">54769</Data>
         <Data AD_Column_ID="708" Column="CreatedBy">100</Data>
@@ -987,7 +962,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="1216" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="707" Column="Created">2016-07-12 11:53:27.108</Data>
         <Data AD_Column_ID="338" Column="Name">Process</Data>
-        <Data AD_Column_ID="337" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="337" Column="AD_Language">es_VE</Data>
       </PO>
     </Step>
     <Step SeqNo="370" StepType="AD">
@@ -1056,9 +1031,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">600</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="410" StepType="AD">
@@ -1071,7 +1044,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="12957" Column="Name">Type</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:53:59.102</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:53:59.102</Data>
       </PO>
@@ -1149,7 +1122,6 @@ If you leave the search key empty, the system automatically creates a numeric nu
     <Step SeqNo="560" StepType="AD">
       <PO AD_Table_ID="100" Action="I" Record_ID="54152" Table="AD_Table">
         <Data AD_Column_ID="354" Column="AccessLevel">4</Data>
-        <Data AD_Column_ID="65574" Column="ACTriggerLength">0</Data>
         <Data AD_Column_ID="355" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="356" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="100" Column="AD_Table_ID">54152</Data>
@@ -1166,9 +1138,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="59135" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="8564" Column="IsChangeLog">false</Data>
         <Data AD_Column_ID="727" Column="IsDeleteable">true</Data>
-        <Data AD_Column_ID="78180" Column="IsDocument">false</Data>
         <Data AD_Column_ID="4196" Column="IsHighVolume">false</Data>
-        <Data AD_Column_ID="80143" Column="IsIgnoreMigration">false</Data>
         <Data AD_Column_ID="726" Column="IsSecurityEnabled">false</Data>
         <Data AD_Column_ID="6125" Column="IsView">false</Data>
         <Data AD_Column_ID="108" Column="LoadSeq">0</Data>
@@ -1188,7 +1158,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="12724" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12716" Column="Name">Fiscal Command</Data>
         <Data AD_Column_ID="12718" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="12715" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12715" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12714" Column="AD_Table_ID">54152</Data>
         <Data AD_Column_ID="12723" Column="Updated">2016-07-12 11:55:22.887</Data>
         <Data AD_Column_ID="12721" Column="IsActive">true</Data>
@@ -1240,9 +1210,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">102</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="590" StepType="AD">
@@ -1255,7 +1223,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="12957" Column="Name">Client</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:55:25.404</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:55:25.404</Data>
       </PO>
@@ -1305,9 +1273,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">113</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="610" StepType="AD">
@@ -1317,7 +1283,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80918</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:55:27.304</Data>
@@ -1373,9 +1339,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">348</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="630" StepType="AD">
@@ -1385,7 +1349,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:55:30.636</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12957" Column="Name">Active</Data>
@@ -1438,9 +1402,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">245</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="650" StepType="AD">
@@ -1448,7 +1410,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80920</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:55:33.188</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
@@ -1503,9 +1465,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">607</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="670" StepType="AD">
@@ -1518,7 +1478,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:55:35.56</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:55:35.56</Data>
       </PO>
@@ -1568,9 +1528,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">246</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="690" StepType="AD">
@@ -1578,7 +1536,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80922</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12957" Column="Name">Created By</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
@@ -1633,14 +1591,12 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">608</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="710" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="80923" Table="AD_Column_Trl">
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12957" Column="Name">Updated By</Data>
@@ -1683,7 +1639,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="2646" Column="Name">Fiscal Command ID</Data>
         <Data AD_Column_ID="2639" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2637" Column="AD_Element_ID">58976</Data>
-        <Data AD_Column_ID="2638" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2638" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="2640" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="2643" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="2647" Column="Description" isNewNull="true"/>
@@ -1745,9 +1701,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">58976</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="750" StepType="AD">
@@ -1757,7 +1711,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:55:45.777</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:55:45.777</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80924</Data>
@@ -1838,9 +1792,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">620</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="780" StepType="AD">
@@ -1848,7 +1800,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80925</Data>
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:56:18.557</Data>
@@ -1903,9 +1855,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">469</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="800" StepType="AD">
@@ -1913,7 +1863,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="12957" Column="Name">Name</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80926</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
@@ -1969,7 +1919,6 @@ If you leave the search key empty, the system automatically creates a numeric nu
     <Step SeqNo="870" StepType="AD">
       <PO AD_Table_ID="100" Action="I" Record_ID="54153" Table="AD_Table">
         <Data AD_Column_ID="354" Column="AccessLevel">4</Data>
-        <Data AD_Column_ID="65574" Column="ACTriggerLength">0</Data>
         <Data AD_Column_ID="355" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="356" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="100" Column="AD_Table_ID">54153</Data>
@@ -1986,9 +1935,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="59135" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="8564" Column="IsChangeLog">false</Data>
         <Data AD_Column_ID="727" Column="IsDeleteable">true</Data>
-        <Data AD_Column_ID="78180" Column="IsDocument">false</Data>
         <Data AD_Column_ID="4196" Column="IsHighVolume">false</Data>
-        <Data AD_Column_ID="80143" Column="IsIgnoreMigration">false</Data>
         <Data AD_Column_ID="726" Column="IsSecurityEnabled">false</Data>
         <Data AD_Column_ID="6125" Column="IsView">false</Data>
         <Data AD_Column_ID="108" Column="LoadSeq">0</Data>
@@ -2010,7 +1957,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="12718" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12719" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12716" Column="Name">Fiscal Document</Data>
-        <Data AD_Column_ID="12715" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12715" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12720" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12723" Column="Updated">2016-07-12 11:58:38.367</Data>
       </PO>
@@ -2060,9 +2007,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">102</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="900" StepType="AD">
@@ -2072,7 +2017,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80927</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:58:40.2</Data>
@@ -2125,9 +2070,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">113</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="920" StepType="AD">
@@ -2137,7 +2080,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12957" Column="Name">Organization</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:58:42.301</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:58:42.301</Data>
@@ -2193,9 +2136,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">348</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="940" StepType="AD">
@@ -2205,7 +2146,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:58:44.005</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12957" Column="Name">Active</Data>
@@ -2258,9 +2199,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">245</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="960" StepType="AD">
@@ -2274,7 +2213,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 11:58:46.19</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80930</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:58:46.19</Data>
       </PO>
     </Step>
@@ -2323,9 +2262,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">607</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="980" StepType="AD">
@@ -2333,7 +2270,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80931</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
@@ -2388,9 +2325,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">246</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1000" StepType="AD">
@@ -2398,7 +2333,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80932</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12957" Column="Name">Created By</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
@@ -2453,9 +2388,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">608</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1020" StepType="AD">
@@ -2464,7 +2397,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80933</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:58:52.069</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
@@ -2502,7 +2435,7 @@ There are two reasons for de-activating and not deleting records:
       <PO AD_Table_ID="277" Action="I" Record_ID="58977" Table="AD_Element_Trl">
         <Data AD_Column_ID="2639" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2637" Column="AD_Element_ID">58977</Data>
-        <Data AD_Column_ID="2638" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2638" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="2640" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="2643" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="2647" Column="Description" isNewNull="true"/>
@@ -2565,9 +2498,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">58977</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1060" StepType="AD">
@@ -2576,7 +2507,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12957" Column="Name">Fiscal Document ID</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80934</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 11:58:56.271</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
@@ -2678,14 +2609,12 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">58963</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1120" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="80935" Table="AD_Column_Trl">
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
@@ -2748,9 +2677,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">58975</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1150" StepType="AD">
@@ -2758,7 +2685,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80936</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 12:00:56.915</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
@@ -2820,9 +2747,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">620</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1180" StepType="AD">
@@ -2835,7 +2760,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 12:01:43.759</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 12:01:43.759</Data>
       </PO>
@@ -2885,9 +2810,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">469</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1200" StepType="AD">
@@ -2895,7 +2818,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80938</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 12:01:59.658</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
@@ -2908,7 +2831,6 @@ If you leave the search key empty, the system automatically creates a numeric nu
     <Step SeqNo="1210" StepType="AD">
       <PO AD_Table_ID="100" Action="I" Record_ID="54154" Table="AD_Table">
         <Data AD_Column_ID="354" Column="AccessLevel">4</Data>
-        <Data AD_Column_ID="65574" Column="ACTriggerLength">0</Data>
         <Data AD_Column_ID="355" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="356" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="100" Column="AD_Table_ID">54154</Data>
@@ -2925,9 +2847,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="59135" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="8564" Column="IsChangeLog">false</Data>
         <Data AD_Column_ID="727" Column="IsDeleteable">true</Data>
-        <Data AD_Column_ID="78180" Column="IsDocument">false</Data>
         <Data AD_Column_ID="4196" Column="IsHighVolume">false</Data>
-        <Data AD_Column_ID="80143" Column="IsIgnoreMigration">false</Data>
         <Data AD_Column_ID="726" Column="IsSecurityEnabled">false</Data>
         <Data AD_Column_ID="6125" Column="IsView">false</Data>
         <Data AD_Column_ID="108" Column="LoadSeq">0</Data>
@@ -2943,7 +2863,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
       <PO AD_Table_ID="746" Action="I" Record_ID="0" Table="AD_Table_Trl">
         <Data AD_Column_ID="12723" Column="Updated">2016-07-12 12:02:18.99</Data>
         <Data AD_Column_ID="12719" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12715" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12715" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12720" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12714" Column="AD_Table_ID">54154</Data>
         <Data AD_Column_ID="12717" Column="CreatedBy">100</Data>
@@ -2999,15 +2919,13 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">102</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1240" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="80939" Table="AD_Column_Trl">
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80939</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
@@ -3064,16 +2982,14 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">113</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1260" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="80940" Table="AD_Column_Trl">
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80940</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
@@ -3132,9 +3048,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">348</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1280" StepType="AD">
@@ -3142,7 +3056,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 12:02:24.663</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 12:02:24.663</Data>
@@ -3197,9 +3111,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">245</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1300" StepType="AD">
@@ -3207,7 +3119,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80942</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 12:02:26.65</Data>
@@ -3262,16 +3174,14 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">607</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1320" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="80943" Table="AD_Column_Trl">
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80943</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
@@ -3327,9 +3237,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">246</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1340" StepType="AD">
@@ -3340,7 +3248,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12957" Column="Name">Created By</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80944</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 12:02:30.661</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
@@ -3392,9 +3300,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">608</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1360" StepType="AD">
@@ -3403,7 +3309,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80945</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 12:02:32.739</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
@@ -3441,7 +3347,7 @@ There are two reasons for de-activating and not deleting records:
       <PO AD_Table_ID="277" Action="I" Record_ID="58978" Table="AD_Element_Trl">
         <Data AD_Column_ID="2639" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2637" Column="AD_Element_ID">58978</Data>
-        <Data AD_Column_ID="2638" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2638" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="2640" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="2647" Column="Description" isNewNull="true"/>
         <Data AD_Column_ID="2641" Column="IsActive">true</Data>
@@ -3504,9 +3410,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">58978</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1400" StepType="AD">
@@ -3520,7 +3424,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12957" Column="Name">Fiscal Document Line ID</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 12:02:36.754</Data>
       </PO>
     </Step>
@@ -3625,14 +3529,12 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">58977</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1470" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="80947" Table="AD_Column_Trl">
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 12:04:10.286</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
@@ -3696,9 +3598,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">58976</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1500" StepType="AD">
@@ -3709,7 +3609,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 12:04:47.465</Data>
@@ -3761,15 +3661,13 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">53332</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1520" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="80949" Table="AD_Column_Trl">
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80949</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
@@ -3826,9 +3724,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">566</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1540" StepType="AD">
@@ -3840,7 +3736,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80950</Data>
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 12:05:22.779</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12957" Column="Name">Sequence</Data>
@@ -3891,9 +3787,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">516</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1560" StepType="AD">
@@ -3902,7 +3796,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 12:05:37.572</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12957" Column="Name">Prefix</Data>
@@ -3956,9 +3850,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">579</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1580" StepType="AD">
@@ -3968,7 +3860,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 12:05:44.847</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80952</Data>
@@ -4021,14 +3913,12 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">227</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1600" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="80953" Table="AD_Column_Trl">
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 12:05:50.098</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
@@ -4086,15 +3976,13 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">2812</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1620" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="80954" Table="AD_Column_Trl">
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
@@ -4151,9 +4039,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">57639</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1640" StepType="AD">
@@ -4166,7 +4052,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80955</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-12 12:06:31.645</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 12:06:31.645</Data>
       </PO>
@@ -4198,7 +4084,7 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="1660" StepType="AD">
       <PO AD_Table_ID="277" Action="I" Record_ID="58979" Table="AD_Element_Trl">
-        <Data AD_Column_ID="2638" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2638" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="2637" Column="AD_Element_ID">58979</Data>
         <Data AD_Column_ID="2649" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="2640" Column="AD_Org_ID">0</Data>
@@ -4271,9 +4157,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">58979</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1690" StepType="AD">
@@ -4281,7 +4165,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80956</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12957" Column="Name">New Cmd</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
@@ -4336,16 +4220,14 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">58975</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="1710" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="80957" Table="AD_Column_Trl">
         <Data AD_Column_ID="12960" Column="Created">2016-07-12 12:08:22.633</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">80957</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
@@ -4378,11 +4260,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -4393,7 +4273,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 12:11:45.136</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -4410,7 +4289,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79561</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="286" Column="Name">Fiscal Document Type</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="674" Column="Updated">2016-07-12 12:11:46.296</Data>
@@ -4451,7 +4330,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="308" Column="Description" isNewNull="true"/>
         <Data AD_Column_ID="310" Column="Name">Fiscal Document Type</Data>
         <Data AD_Column_ID="1211" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="307" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="307" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1212" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="306" Column="AD_Window_ID">53490</Data>
         <Data AD_Column_ID="698" Column="CreatedBy">100</Data>
@@ -4514,7 +4393,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="651" Column="IsActive">true</Data>
         <Data AD_Column_ID="655" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1198" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="265" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="265" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="269" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="1199" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="266" Column="Name">Fiscal Document Type</Data>
@@ -4548,11 +4427,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -4563,7 +4440,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 12:13:54.177</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -4576,7 +4452,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79563</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-12 12:13:55.342</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
@@ -4611,11 +4487,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">false</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -4626,7 +4500,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 12:13:55.701</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -4641,7 +4514,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79564</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="674" Column="Updated">2016-07-12 12:13:57.494</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-12 12:13:57.494</Data>
@@ -4671,11 +4544,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -4686,7 +4557,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 12:13:57.857</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -4695,7 +4565,7 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="1870" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79565" Table="AD_Field_Trl">
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-12 12:13:58.983</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
@@ -4731,11 +4601,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">false</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">false</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -4746,7 +4614,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 12:13:59.389</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -4759,7 +4626,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="286" Column="Name">Fiscal Document Type</Data>
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79566</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-12 12:14:00.631</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
@@ -4791,11 +4658,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -4806,7 +4671,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 12:14:01.046</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -4820,7 +4684,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79567</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="674" Column="Updated">2016-07-12 12:14:02.273</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="287" Column="Description">Alphanumeric identifier of the entity</Data>
@@ -4851,11 +4715,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -4866,7 +4728,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 12:14:02.639</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -4880,7 +4741,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79568</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="674" Column="Updated">2016-07-12 12:14:04.196</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="286" Column="Name">Organization</Data>
@@ -4912,11 +4773,9 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -4927,7 +4786,6 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 12:14:04.592</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -4936,7 +4794,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
     <Step SeqNo="1950" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79569" Table="AD_Field_Trl">
         <Data AD_Column_ID="284" Column="AD_Field_ID">79569</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="287" Column="Description">Search key for the record in the format required - must be unique</Data>
@@ -4953,6 +4811,9 @@ If you leave the search key empty, the system automatically creates a numeric nu
     </Step>
     <Step SeqNo="1960" StepType="AD">
       <PO AD_Table_ID="107" Action="I" Record_ID="79570" Table="AD_Field">
+        <Data AD_Column_ID="184" Column="IsHeading">false</Data>
+        <Data AD_Column_ID="15013" Column="IsMandatory" isNewNull="true"/>
+        <Data AD_Column_ID="2007" Column="IsReadOnly">false</Data>
         <Data AD_Column_ID="383" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="174" Column="AD_Column_ID">80916</Data>
         <Data AD_Column_ID="5375" Column="AD_FieldGroup_ID" isNewNull="true"/>
@@ -4973,22 +4834,16 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
-        <Data AD_Column_ID="184" Column="IsHeading">false</Data>
-        <Data AD_Column_ID="15013" Column="IsMandatory" isNewNull="true"/>
-        <Data AD_Column_ID="2007" Column="IsReadOnly">false</Data>
         <Data AD_Column_ID="183" Column="IsSameLine">false</Data>
         <Data AD_Column_ID="168" Column="Name">Type</Data>
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 12:14:06.714</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -4997,7 +4852,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
     <Step SeqNo="1970" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79570" Table="AD_Field_Trl">
         <Data AD_Column_ID="284" Column="AD_Field_ID">79570</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="287" Column="Description">Type of Validation (SQL, Java Script, Java Language)</Data>
@@ -5108,7 +4963,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
     <Step SeqNo="2120" StepType="AD">
       <PO AD_Table_ID="132" Action="I" Record_ID="0" Table="AD_Window_Trl">
         <Data AD_Column_ID="1211" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="307" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="307" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1212" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="306" Column="AD_Window_ID">53491</Data>
         <Data AD_Column_ID="698" Column="CreatedBy">100</Data>
@@ -5177,7 +5032,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="651" Column="IsActive">true</Data>
         <Data AD_Column_ID="655" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1198" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="265" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="265" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="654" Column="Updated">2016-07-12 14:55:01.231</Data>
         <Data AD_Column_ID="268" Column="Help" isNewNull="true"/>
         <Data AD_Column_ID="652" Column="Created">2016-07-12 14:55:01.231</Data>
@@ -5212,11 +5067,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -5227,7 +5080,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:55:03.383</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -5236,7 +5088,7 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="2170" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79571" Table="AD_Field_Trl">
         <Data AD_Column_ID="284" Column="AD_Field_ID">79571</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="289" Column="IsTranslated">false</Data>
@@ -5275,11 +5127,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">false</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -5290,7 +5140,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:55:06.185</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -5300,7 +5149,7 @@ There are two reasons for de-activating and not deleting records:
       <PO AD_Table_ID="127" Action="I" Record_ID="79572" Table="AD_Field_Trl">
         <Data AD_Column_ID="288" Column="Help">A Client is a company or a legal entity. You cannot share data between Clients. Tenant is a synonym for Client.</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79572</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="287" Column="Description">Client/Tenant for this installation.</Data>
@@ -5335,11 +5184,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">false</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">false</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -5350,7 +5197,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:55:08.129</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -5363,7 +5209,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="674" Column="Updated">2016-07-12 14:55:09.827</Data>
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79573</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-12 14:55:09.827</Data>
         <Data AD_Column_ID="289" Column="IsTranslated">false</Data>
@@ -5395,11 +5241,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -5410,7 +5254,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:55:10.275</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -5427,7 +5270,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79574</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-12 14:55:12.356</Data>
         <Data AD_Column_ID="288" Column="Help">The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</Data>
@@ -5455,11 +5298,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -5470,7 +5311,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:55:12.696</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -5478,7 +5318,7 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="2250" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79575" Table="AD_Field_Trl">
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="671" Column="IsActive">true</Data>
         <Data AD_Column_ID="289" Column="IsTranslated">false</Data>
@@ -5516,11 +5356,9 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -5531,7 +5369,6 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:55:14.665</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -5540,7 +5377,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
     <Step SeqNo="2270" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79576" Table="AD_Field_Trl">
         <Data AD_Column_ID="284" Column="AD_Field_ID">79576</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-12 14:55:15.985</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
@@ -5611,6 +5448,9 @@ If you leave the search key empty, the system automatically creates a numeric nu
     </Step>
     <Step SeqNo="2380" StepType="AD">
       <PO AD_Table_ID="105" Action="I" Record_ID="53492" Table="AD_Window">
+        <Data AD_Column_ID="6769" Column="IsSOTrx">false</Data>
+        <Data AD_Column_ID="156" Column="Name">Fiscal Document</Data>
+        <Data AD_Column_ID="4198" Column="Processing">false</Data>
         <Data AD_Column_ID="375" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="6403" Column="AD_Color_ID" isNewNull="true"/>
         <Data AD_Column_ID="6404" Column="AD_Image_ID" isNewNull="true"/>
@@ -5624,9 +5464,6 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="568" Column="IsActive">true</Data>
         <Data AD_Column_ID="12457" Column="IsBetaFunctionality">false</Data>
         <Data AD_Column_ID="9766" Column="IsDefault">false</Data>
-        <Data AD_Column_ID="6769" Column="IsSOTrx">false</Data>
-        <Data AD_Column_ID="156" Column="Name">Fiscal Document</Data>
-        <Data AD_Column_ID="4198" Column="Processing">false</Data>
         <Data AD_Column_ID="571" Column="Updated">2016-07-12 14:56:16.781</Data>
         <Data AD_Column_ID="572" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="728" Column="WindowType">M</Data>
@@ -5637,7 +5474,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
     <Step SeqNo="2390" StepType="AD">
       <PO AD_Table_ID="132" Action="I" Record_ID="0" Table="AD_Window_Trl">
         <Data AD_Column_ID="1211" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="307" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="307" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1212" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="306" Column="AD_Window_ID">53492</Data>
         <Data AD_Column_ID="698" Column="CreatedBy">100</Data>
@@ -5702,7 +5539,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="269" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="655" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1198" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="265" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="265" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1199" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="264" Column="AD_Tab_ID">54233</Data>
         <Data AD_Column_ID="654" Column="Updated">2016-07-12 14:57:29.965</Data>
@@ -5713,9 +5550,9 @@ If you leave the search key empty, the system automatically creates a numeric nu
     </Step>
     <Step SeqNo="2420" StepType="AD">
       <PO AD_Table_ID="132" Action="U" Record_ID="0" Table="AD_Window_Trl">
-        <Data AD_Column_ID="307" Column="AD_Language" oldValue="es_MX">es_MX</Data>
         <Data AD_Column_ID="306" Column="AD_Window_ID" oldValue="53492">53492</Data>
         <Data AD_Column_ID="310" Column="Name" oldValue="Fiscal Document">Documento Fiscal</Data>
+        <Data AD_Column_ID="307" Column="AD_Language" oldValue="es_MX">es_MX</Data>
       </PO>
     </Step>
     <Step SeqNo="2430" StepType="AD">
@@ -5750,11 +5587,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -5765,7 +5600,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:57:44.855</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -5780,7 +5614,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="284" Column="AD_Field_ID">79577</Data>
         <Data AD_Column_ID="289" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="287" Column="Description">The record is active in the system</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-12 14:57:48.212</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
@@ -5813,11 +5647,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">false</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -5828,7 +5660,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:57:48.583</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -5837,7 +5668,7 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="2470" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79578" Table="AD_Field_Trl">
         <Data AD_Column_ID="284" Column="AD_Field_ID">79578</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="671" Column="IsActive">true</Data>
         <Data AD_Column_ID="674" Column="Updated">2016-07-12 14:57:50.522</Data>
@@ -5873,11 +5704,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -5888,7 +5717,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:57:50.992</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -5897,7 +5725,7 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="2490" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79579" Table="AD_Field_Trl">
         <Data AD_Column_ID="284" Column="AD_Field_ID">79579</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="287" Column="Description" isNewNull="true"/>
@@ -5933,11 +5761,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">false</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">false</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -5948,7 +5774,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:57:53.05</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -5965,7 +5790,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79580</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="674" Column="Updated">2016-07-12 14:57:55.013</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="286" Column="Name">Fiscal Document</Data>
@@ -5993,11 +5818,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -6008,7 +5831,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:57:55.437</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -6024,7 +5846,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="284" Column="AD_Field_ID">79581</Data>
         <Data AD_Column_ID="289" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="674" Column="Updated">2016-07-12 14:57:56.755</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="286" Column="Name">Fiscal Document Type</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="671" Column="IsActive">true</Data>
@@ -6053,11 +5875,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -6068,7 +5888,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:57:57.153</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -6084,7 +5903,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="286" Column="Name">Name</Data>
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79582</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="287" Column="Description">Alphanumeric identifier of the entity</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-12 14:57:58.824</Data>
         <Data AD_Column_ID="674" Column="Updated">2016-07-12 14:57:58.824</Data>
@@ -6113,11 +5932,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -6128,7 +5945,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:57:59.315</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -6136,7 +5952,7 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="2570" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79583" Table="AD_Field_Trl">
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="671" Column="IsActive">true</Data>
@@ -6174,11 +5990,9 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -6189,7 +6003,6 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:58:01.672</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -6201,7 +6014,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79584</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="671" Column="IsActive">true</Data>
@@ -6321,7 +6134,7 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="655" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1198" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="264" Column="AD_Tab_ID">54234</Data>
-        <Data AD_Column_ID="265" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="265" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1199" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="653" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="652" Column="Created">2016-07-12 14:59:31.575</Data>
@@ -6331,11 +6144,6 @@ If you leave the search key empty, the system automatically creates a numeric nu
         <Data AD_Column_ID="266" Column="Name">Fiscal Document Line</Data>
         <Data AD_Column_ID="268" Column="Help" isNewNull="true"/>
         <Data AD_Column_ID="654" Column="Updated">2016-07-12 14:59:31.575</Data>
-      </PO>
-    </Step>
-    <Step SeqNo="2740" StepType="AD">
-      <PO AD_Table_ID="100" Action="U" Record_ID="54154" Table="AD_Table">
-        <Data AD_Column_ID="105" Column="AD_Window_ID" isOldNull="true">53492</Data>
       </PO>
     </Step>
     <Step SeqNo="2740" StepType="AD">
@@ -6363,11 +6171,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -6378,10 +6184,14 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:59:33.077</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="2740" StepType="AD">
+      <PO AD_Table_ID="100" Action="U" Record_ID="54154" Table="AD_Table">
+        <Data AD_Column_ID="105" Column="AD_Window_ID" isOldNull="true">53492</Data>
       </PO>
     </Step>
     <Step SeqNo="2750" StepType="AD">
@@ -6395,7 +6205,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79585</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-12 14:59:34.797</Data>
         <Data AD_Column_ID="287" Column="Description">The record is active in the system</Data>
         <Data AD_Column_ID="288" Column="Help">There are two methods of making records unavailable in the system: One is to delete the record, the other is to de-activate the record. A de-activated record is not available for selection, but available for reports.
@@ -6426,11 +6236,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">false</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -6441,7 +6249,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:59:35.156</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -6449,7 +6256,7 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="2770" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79586" Table="AD_Field_Trl">
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="286" Column="Name">Client</Data>
@@ -6486,11 +6293,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -6501,7 +6306,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:59:36.828</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -6509,7 +6313,7 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="2790" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79587" Table="AD_Field_Trl">
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-12 14:59:38.979</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
@@ -6546,11 +6350,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -6561,7 +6363,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:59:39.346</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -6576,7 +6377,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79588</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="286" Column="Name">Fiscal Document</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-12 14:59:40.577</Data>
@@ -6606,11 +6407,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">false</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">false</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -6621,7 +6420,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:59:40.962</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -6634,7 +6432,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79589</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="671" Column="IsActive">true</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-12 14:59:42.825</Data>
@@ -6666,11 +6464,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -6681,7 +6477,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:59:43.208</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -6690,7 +6485,7 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="2850" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79590" Table="AD_Field_Trl">
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="288" Column="Help" isNewNull="true"/>
@@ -6726,11 +6521,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -6741,7 +6534,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:59:44.952</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -6758,7 +6550,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79591</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="286" Column="Name">New Cmd</Data>
         <Data AD_Column_ID="674" Column="Updated">2016-07-12 14:59:46.825</Data>
@@ -6786,11 +6578,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -6801,7 +6591,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:59:47.19</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -6813,7 +6602,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="286" Column="Name">Organization</Data>
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-12 14:59:48.647</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="287" Column="Description">Organizational entity within client</Data>
@@ -6847,11 +6636,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
         <Data AD_Column_ID="15013" Column="IsMandatory" isNewNull="true"/>
@@ -6861,7 +6648,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:59:49.046</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -6874,7 +6660,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79593</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="289" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="674" Column="Updated">2016-07-12 14:59:50.415</Data>
@@ -6906,11 +6692,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -6921,7 +6705,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:59:50.765</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -6930,7 +6713,7 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="2930" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79594" Table="AD_Field_Trl">
         <Data AD_Column_ID="284" Column="AD_Field_ID">79594</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="671" Column="IsActive">true</Data>
@@ -6966,11 +6749,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -6981,7 +6762,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:59:52.577</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -6990,7 +6770,7 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="2950" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79595" Table="AD_Field_Trl">
         <Data AD_Column_ID="284" Column="AD_Field_ID">79595</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="671" Column="IsActive">true</Data>
         <Data AD_Column_ID="286" Column="Name">Rule</Data>
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
@@ -7026,11 +6806,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -7041,7 +6819,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:59:54.51</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -7051,7 +6828,7 @@ There are two reasons for de-activating and not deleting records:
       <PO AD_Table_ID="127" Action="I" Record_ID="79596" Table="AD_Field_Trl">
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79596</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="671" Column="IsActive">true</Data>
@@ -7086,11 +6863,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -7101,7 +6876,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:59:56.222</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -7110,7 +6884,7 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="2990" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79597" Table="AD_Field_Trl">
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="287" Column="Description">Suffix after the number</Data>
@@ -7146,11 +6920,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -7161,7 +6933,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth" isNewNull="true"/>
         <Data AD_Column_ID="181" Column="SeqNo" isNewNull="true"/>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid" isNewNull="true"/>
         <Data AD_Column_ID="182" Column="SortNo" isNewNull="true"/>
         <Data AD_Column_ID="581" Column="Updated">2016-07-12 14:59:58.215</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -7178,7 +6949,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="289" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="286" Column="Name">Validation code</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-12 14:59:59.576</Data>
         <Data AD_Column_ID="674" Column="Updated">2016-07-12 14:59:59.576</Data>
         <Data AD_Column_ID="288" Column="Help">The Validation Code displays the date, time and message of the error.</Data>
@@ -7294,7 +7065,7 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="3160" StepType="AD">
       <PO AD_Table_ID="123" Action="I" Record_ID="0" Table="AD_Tab_Trl">
         <Data AD_Column_ID="1198" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="265" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="265" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="267" Column="Description" isNewNull="true"/>
         <Data AD_Column_ID="268" Column="Help" isNewNull="true"/>
         <Data AD_Column_ID="651" Column="IsActive">true</Data>
@@ -7352,7 +7123,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="640" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1194" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="639" Column="Updated">2016-07-12 15:01:34.983</Data>
-        <Data AD_Column_ID="246" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="246" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="247" Column="Name">Fiscal Document</Data>
         <Data AD_Column_ID="245" Column="AD_Menu_ID">54087</Data>
         <Data AD_Column_ID="637" Column="Created">2016-07-12 15:01:34.983</Data>
@@ -7402,7 +7173,7 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="3220" StepType="AD">
       <PO AD_Table_ID="120" Action="I" Record_ID="0" Table="AD_Menu_Trl">
-        <Data AD_Column_ID="246" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="246" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="638" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="248" Column="Description" isNewNull="true"/>
         <Data AD_Column_ID="636" Column="IsActive">true</Data>
@@ -7460,7 +7231,7 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="3250" StepType="AD">
       <PO AD_Table_ID="120" Action="I" Record_ID="0" Table="AD_Menu_Trl">
-        <Data AD_Column_ID="246" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="246" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="638" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="248" Column="Description" isNewNull="true"/>
         <Data AD_Column_ID="636" Column="IsActive">true</Data>
@@ -7524,7 +7295,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="249" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="640" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1194" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="246" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="246" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="247" Column="Name">Fiscal Device</Data>
         <Data AD_Column_ID="245" Column="AD_Menu_ID">54090</Data>
         <Data AD_Column_ID="639" Column="Updated">2016-07-12 15:03:40.831</Data>
@@ -7937,14 +7708,12 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="6483" Column="IsSyncDatabase">N</Data>
         <Data AD_Column_ID="119" Column="IsKey">false</Data>
         <Data AD_Column_ID="3369" Column="AD_Process_ID" isNewNull="true"/>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">126</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="3900" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="81061" Table="AD_Column_Trl">
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
@@ -8002,15 +7771,13 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">104</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="3920" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="81062" Table="AD_Column_Trl">
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-23 12:55:48.699</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
@@ -8049,7 +7816,7 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="3940" StepType="AD">
       <PO AD_Table_ID="277" Action="I" Record_ID="58984" Table="AD_Element_Trl">
-        <Data AD_Column_ID="2638" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2638" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="2640" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="2643" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="2647" Column="Description" isNewNull="true"/>
@@ -8122,9 +7889,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">58984</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="3970" StepType="AD">
@@ -8138,7 +7903,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12957" Column="Name">Fiscal Document Child</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-23 12:57:02.633</Data>
       </PO>
     </Step>
@@ -8164,11 +7929,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -8179,7 +7942,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth">0</Data>
         <Data AD_Column_ID="181" Column="SeqNo">80</Data>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid">80</Data>
         <Data AD_Column_ID="182" Column="SortNo">0</Data>
         <Data AD_Column_ID="581" Column="Updated">2016-07-23 12:57:35.015</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -8187,7 +7949,7 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="3990" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79648" Table="AD_Field_Trl">
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-23 12:57:36.151</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
@@ -8224,11 +7986,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -8239,7 +7999,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth">0</Data>
         <Data AD_Column_ID="181" Column="SeqNo">140</Data>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid">140</Data>
         <Data AD_Column_ID="182" Column="SortNo">0</Data>
         <Data AD_Column_ID="581" Column="Updated">2016-07-23 12:58:41.012</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -8254,7 +8013,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-23 12:58:42.262</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="286" Column="Name">Fiscal Document Child</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="674" Column="Updated">2016-07-23 12:58:42.262</Data>
@@ -8284,11 +8043,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -8299,7 +8056,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth">0</Data>
         <Data AD_Column_ID="181" Column="SeqNo">150</Data>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid">150</Data>
         <Data AD_Column_ID="182" Column="SortNo">0</Data>
         <Data AD_Column_ID="581" Column="Updated">2016-07-23 12:58:54.174</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -8310,7 +8066,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="286" Column="Name">Column</Data>
         <Data AD_Column_ID="675" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="289" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79650</Data>
@@ -8354,7 +8110,7 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="4070" StepType="AD">
       <PO AD_Table_ID="126" Action="I" Record_ID="0" Table="AD_Reference_Trl">
         <Data AD_Column_ID="1202" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="279" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="279" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1203" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="278" Column="AD_Reference_ID">53848</Data>
         <Data AD_Column_ID="667" Column="Created">2016-07-23 13:04:37.737</Data>
@@ -8379,11 +8135,8 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57270" Column="AD_Window_ID" isNewNull="true"/>
         <Data AD_Column_ID="559" Column="Created">2016-07-23 13:06:52.555</Data>
         <Data AD_Column_ID="560" Column="CreatedBy">100</Data>
-        <Data AD_Column_ID="62121" Column="DisplaySQL" isNewNull="true"/>
         <Data AD_Column_ID="7711" Column="EntityType">ECA05</Data>
         <Data AD_Column_ID="558" Column="IsActive">true</Data>
-        <Data AD_Column_ID="62120" Column="IsAlert">false</Data>
-        <Data AD_Column_ID="62122" Column="IsDisplayIdentifier">true</Data>
         <Data AD_Column_ID="2377" Column="IsValueDisplayed">true</Data>
         <Data AD_Column_ID="147" Column="OrderByClause" isNewNull="true"/>
         <Data AD_Column_ID="561" Column="Updated">2016-07-23 13:06:52.555</Data>
@@ -8398,9 +8151,7 @@ There are two reasons for de-activating and not deleting records:
       </PO>
     </Step>
     <Step SeqNo="4100" StepType="AD">
-      <PO AD_Table_ID="103" Action="U" Record_ID="53848" Table="AD_Ref_Table">
-        <Data AD_Column_ID="62122" Column="IsDisplayIdentifier" oldValue="true">false</Data>
-      </PO>
+      <PO AD_Table_ID="103" Action="U" Record_ID="53848" Table="AD_Ref_Table"/>
     </Step>
     <Step SeqNo="4110" StepType="AD">
       <PO AD_Table_ID="108" Action="I" Record_ID="52485" Table="AD_Val_Rule">
@@ -8589,9 +8340,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">58964</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="4380" StepType="AD">
@@ -8603,7 +8352,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">81091</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-25 15:53:02.733</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12957" Column="Name">Device</Data>
@@ -8636,11 +8385,9 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -8651,7 +8398,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth">0</Data>
         <Data AD_Column_ID="181" Column="SeqNo">430</Data>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid">430</Data>
         <Data AD_Column_ID="182" Column="SortNo">0</Data>
         <Data AD_Column_ID="581" Column="Updated">2016-07-25 15:58:19.372</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -8660,7 +8406,7 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="4410" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79659" Table="AD_Field_Trl">
         <Data AD_Column_ID="284" Column="AD_Field_ID">79659</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="287" Column="Description" isNewNull="true"/>
         <Data AD_Column_ID="288" Column="Help" isNewNull="true"/>
@@ -8766,7 +8512,6 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="2806" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="2810" Column="Description">Print Fiscal Repolrt to Fiscal Printer</Data>
         <Data AD_Column_ID="6485" Column="EntityType">ECA05</Data>
-        <Data AD_Column_ID="78843" Column="GenerateClass">N</Data>
         <Data AD_Column_ID="2811" Column="Help" isNewNull="true"/>
         <Data AD_Column_ID="2804" Column="IsActive">true</Data>
         <Data AD_Column_ID="12458" Column="IsBetaFunctionality">false</Data>
@@ -8788,7 +8533,7 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="4580" StepType="AD">
       <PO AD_Table_ID="287" Action="I" Record_ID="0" Table="AD_Process_Trl">
         <Data AD_Column_ID="2845" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="2844" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2844" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="2846" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="2849" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="2854" Column="Help" isNewNull="true"/>
@@ -8883,7 +8628,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="2840" Column="Name">Fiscal Document Type</Data>
         <Data AD_Column_ID="2839" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="2833" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="2832" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2832" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="2838" Column="Updated">2016-07-25 16:09:41.566</Data>
       </PO>
     </Step>
@@ -8938,7 +8683,7 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="640" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="1194" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="247" Column="Name">Print Fiscal Report</Data>
-        <Data AD_Column_ID="246" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="246" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="245" Column="AD_Menu_ID">54092</Data>
       </PO>
     </Step>
@@ -8993,14 +8738,14 @@ EXISTS(SELECT 1
     </Step>
     <Step SeqNo="4730" StepType="AD">
       <PO AD_Table_ID="276" Action="I" Record_ID="58986" Table="AD_Element">
-        <Data AD_Column_ID="2598" Column="Created">2016-07-25 16:27:22.835</Data>
-        <Data AD_Column_ID="2599" Column="CreatedBy">100</Data>
-        <Data AD_Column_ID="2604" Column="Description" isNewNull="true"/>
-        <Data AD_Column_ID="6484" Column="EntityType">ECA05</Data>
         <Data AD_Column_ID="58589" Column="FieldLength">255</Data>
         <Data AD_Column_ID="58590" Column="AD_Reference_Value_ID" isNewNull="true"/>
         <Data AD_Column_ID="2595" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2594" Column="AD_Element_ID">58986</Data>
+        <Data AD_Column_ID="2598" Column="Created">2016-07-25 16:27:22.835</Data>
+        <Data AD_Column_ID="2599" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="2604" Column="Description" isNewNull="true"/>
+        <Data AD_Column_ID="6484" Column="EntityType">ECA05</Data>
         <Data AD_Column_ID="2596" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="58588" Column="AD_Reference_ID">10</Data>
         <Data AD_Column_ID="2602" Column="ColumnName">FiscalDocNo</Data>
@@ -9034,7 +8779,7 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="4300" Column="PrintName">Fiscal Document No</Data>
         <Data AD_Column_ID="2637" Column="AD_Element_ID">58986</Data>
         <Data AD_Column_ID="2646" Column="Name">Fiscal Document No</Data>
-        <Data AD_Column_ID="2638" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2638" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="2642" Column="Created">2016-07-25 16:27:23.829</Data>
       </PO>
     </Step>
@@ -9096,9 +8841,7 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">58986</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
       </PO>
     </Step>
     <Step SeqNo="4780" StepType="AD">
@@ -9113,7 +8856,7 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="12955" Column="AD_Column_ID">81092</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-07-25 16:28:20.279</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
       </PO>
     </Step>
     <Step SeqNo="4790" StepType="AD">
@@ -9138,11 +8881,9 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -9153,7 +8894,6 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth">0</Data>
         <Data AD_Column_ID="181" Column="SeqNo">450</Data>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid">450</Data>
         <Data AD_Column_ID="182" Column="SortNo">0</Data>
         <Data AD_Column_ID="581" Column="Updated">2016-07-25 16:29:02.252</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -9163,7 +8903,7 @@ EXISTS(SELECT 1
       <PO AD_Table_ID="127" Action="I" Record_ID="79660" Table="AD_Field_Trl">
         <Data AD_Column_ID="1204" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="284" Column="AD_Field_ID">79660</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="287" Column="Description" isNewNull="true"/>
@@ -9295,7 +9035,6 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="2806" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="2810" Column="Description">Print Invoices to Fiscal Printer</Data>
         <Data AD_Column_ID="6485" Column="EntityType">ECA05</Data>
-        <Data AD_Column_ID="78843" Column="GenerateClass">N</Data>
         <Data AD_Column_ID="2811" Column="Help" isNewNull="true"/>
         <Data AD_Column_ID="2804" Column="IsActive">true</Data>
         <Data AD_Column_ID="12458" Column="IsBetaFunctionality">false</Data>
@@ -9317,7 +9056,7 @@ EXISTS(SELECT 1
     <Step SeqNo="5000" StepType="AD">
       <PO AD_Table_ID="287" Action="I" Record_ID="0" Table="AD_Process_Trl">
         <Data AD_Column_ID="2845" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="2844" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2844" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="2846" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="2843" Column="AD_Process_ID">53884</Data>
         <Data AD_Column_ID="2848" Column="Created">2016-07-25 23:03:53.051</Data>
@@ -9370,7 +9109,7 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="2644" Column="Updated">2016-07-26 11:12:20.915</Data>
         <Data AD_Column_ID="2639" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2637" Column="AD_Element_ID">58987</Data>
-        <Data AD_Column_ID="2638" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2638" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="2640" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="2643" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="2647" Column="Description" isNewNull="true"/>
@@ -9439,9 +9178,7 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56352" Column="FormatPattern" isNewNull="true"/>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">58987</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
         <Data AD_Column_ID="11617" Column="IsAlwaysUpdateable">true</Data>
       </PO>
     </Step>
@@ -9456,7 +9193,7 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">81093</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-07-26 11:15:05.105</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12957" Column="Name">Print Fiscal Document</Data>
       </PO>
     </Step>
@@ -9482,11 +9219,9 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="57957" Column="Included_Tab_ID" isNewNull="true"/>
         <Data AD_Column_ID="54359" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="578" Column="IsActive">true</Data>
-        <Data AD_Column_ID="74868" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="2745" Column="IsCentrallyMaintained">true</Data>
         <Data AD_Column_ID="176" Column="IsDisplayed">true</Data>
-        <Data AD_Column_ID="62478" Column="IsDisplayedGrid">true</Data>
-        <Data AD_Column_ID="59703" Column="IsEmbedded">false</Data>
+        <Data AD_Column_ID="59703" Column="HideInListView">false</Data>
         <Data AD_Column_ID="186" Column="IsEncrypted">false</Data>
         <Data AD_Column_ID="185" Column="IsFieldOnly">false</Data>
         <Data AD_Column_ID="184" Column="IsHeading">false</Data>
@@ -9497,7 +9232,6 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="9969" Column="ObscureType" isNewNull="true"/>
         <Data AD_Column_ID="59704" Column="PreferredWidth">0</Data>
         <Data AD_Column_ID="181" Column="SeqNo">460</Data>
-        <Data AD_Column_ID="62479" Column="SeqNoGrid">460</Data>
         <Data AD_Column_ID="182" Column="SortNo">0</Data>
         <Data AD_Column_ID="581" Column="Updated">2016-07-26 11:17:04.424</Data>
         <Data AD_Column_ID="582" Column="UpdatedBy">100</Data>
@@ -9506,7 +9240,7 @@ EXISTS(SELECT 1
     <Step SeqNo="5080" StepType="AD">
       <PO AD_Table_ID="127" Action="I" Record_ID="79661" Table="AD_Field_Trl">
         <Data AD_Column_ID="284" Column="AD_Field_ID">79661</Data>
-        <Data AD_Column_ID="285" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="285" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="1205" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="672" Column="Created">2016-07-26 11:17:06.217</Data>
         <Data AD_Column_ID="673" Column="CreatedBy">100</Data>
@@ -9683,7 +9417,7 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="2840" Column="Name">Device</Data>
         <Data AD_Column_ID="2838" Column="Updated">2016-08-25 00:13:20.516</Data>
         <Data AD_Column_ID="2839" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="2832" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2832" Column="AD_Language">es_VE</Data>
       </PO>
     </Step>
     <Step SeqNo="5340" StepType="AD">
@@ -9736,7 +9470,7 @@ EXISTS(SELECT 1
     <Step SeqNo="5370" StepType="AD">
       <PO AD_Table_ID="286" Action="I" Record_ID="0" Table="AD_Process_Para_Trl">
         <Data AD_Column_ID="2833" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="2832" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2832" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="2834" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="2831" Column="AD_Process_Para_ID">55607</Data>
         <Data AD_Column_ID="2836" Column="Created">2016-08-25 00:14:43.643</Data>

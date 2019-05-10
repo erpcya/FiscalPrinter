@@ -56,7 +56,7 @@ p.TenderType</SQLStatement>
         <Data AD_Column_ID="12721" Column="IsActive">true</Data>
         <Data AD_Column_ID="12724" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12718" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="12715" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12715" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12716" Column="Name">FP Invoice Payment Type</Data>
         <Data AD_Column_ID="12719" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12723" Column="Updated">2016-10-15 13:27:51.402</Data>
@@ -121,7 +121,7 @@ p.TenderType</SQLStatement>
         <Data AD_Column_ID="12957" Column="Name">Client</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-10-15 13:27:52.772</Data>
       </PO>
     </Step>
@@ -184,7 +184,7 @@ p.TenderType</SQLStatement>
         <Data AD_Column_ID="12952" Column="Updated">2016-10-15 13:27:54.2</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-10-15 13:27:54.2</Data>
       </PO>
     </Step>
@@ -241,7 +241,7 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="80" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="81315" Table="AD_Column_Trl">
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
@@ -313,7 +313,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12961" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12955" Column="AD_Column_ID">81316</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-10-15 13:27:57.178</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12957" Column="Name">Created</Data>
       </PO>
     </Step>
@@ -367,7 +367,7 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="120" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="81317" Table="AD_Column_Trl">
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-10-15 13:27:59.021</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
@@ -438,7 +438,7 @@ There are two reasons for de-activating and not deleting records:
         <Data AD_Column_ID="12954" Column="IsTranslated">false</Data>
         <Data AD_Column_ID="12957" Column="Name">Created By</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12960" Column="Created">2016-10-15 13:28:00.661</Data>
         <Data AD_Column_ID="12952" Column="Updated">2016-10-15 13:28:00.661</Data>
       </PO>
@@ -494,7 +494,7 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="160" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="81319" Table="AD_Column_Trl">
         <Data AD_Column_ID="12955" Column="AD_Column_ID">81319</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
@@ -583,7 +583,7 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="190" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="81320" Table="AD_Column_Trl">
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
@@ -647,7 +647,7 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="210" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="81321" Table="AD_Column_Trl">
         <Data AD_Column_ID="12955" Column="AD_Column_ID">81321</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>
@@ -709,7 +709,7 @@ There are two reasons for de-activating and not deleting records:
     </Step>
     <Step SeqNo="230" StepType="AD">
       <PO AD_Table_ID="752" Action="I" Record_ID="81322" Table="AD_Column_Trl">
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12959" Column="IsActive">true</Data>

@@ -49,7 +49,7 @@
         <Data AD_Column_ID="2846" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="2845" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2851" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="2844" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2844" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="2843" Column="AD_Process_ID">54226</Data>
         <Data AD_Column_ID="2849" Column="CreatedBy">100</Data>
       </PO>
@@ -115,7 +115,7 @@
         <Data AD_Column_ID="2833" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2834" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="2837" Column="CreatedBy">100</Data>
-        <Data AD_Column_ID="2832" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2832" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="2839" Column="UpdatedBy">100</Data>
       </PO>
     </Step>
@@ -199,7 +199,7 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="2833" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2834" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="2837" Column="CreatedBy">100</Data>
-        <Data AD_Column_ID="2832" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2832" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="2839" Column="UpdatedBy">100</Data>
       </PO>
     </Step>
@@ -248,7 +248,7 @@ EXISTS(SELECT 1
         <Data AD_Column_ID="1195" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="638" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="245" Column="AD_Menu_ID">54452</Data>
-        <Data AD_Column_ID="246" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="246" Column="AD_Language">es_VE</Data>
       </PO>
     </Step>
     <Step SeqNo="150" StepType="AD">
