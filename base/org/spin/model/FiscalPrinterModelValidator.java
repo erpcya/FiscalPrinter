@@ -125,15 +125,12 @@ public class FiscalPrinterModelValidator implements ModelValidator {
 				ProcessInfoParameter [] parameters = new ProcessInfoParameter[] {deviceId};
 				// Create a process info instance. This is a composite class containing the parameters.
 
-				String processName = "Print Invoices to Fiscal Printer";
-				int AD_Proces_ID = 53884;
-
 				//	Create Trx
 				Trx trx = Trx.get(invoice.get_TrxName(), false);
 				//	Create Process Info
-				ProcessInfo pi_PrintInvoice = new ProcessInfo(processName, AD_Proces_ID);
+				ProcessInfo pi_PrintInvoice = new ProcessInfo(InvoiceFiscalPrint.getProcessName(), InvoiceFiscalPrint.getProcessId());
 
-				MPInstance pi = new MPInstance(Env.getCtx(), AD_Proces_ID, invoice.getC_Invoice_ID());
+				MPInstance pi = new MPInstance(Env.getCtx(), InvoiceFiscalPrint.getProcessId(), invoice.getC_Invoice_ID());
 
 				pi_PrintInvoice.setAD_PInstance_ID(pi.getAD_PInstance_ID());
 				//	Add Parameters
@@ -145,7 +142,7 @@ public class FiscalPrinterModelValidator implements ModelValidator {
 				//	Execute Process
 				ProcessUtil.startJavaProcess(Env.getCtx(), pi_PrintInvoice, trx, false);
 
-				log.info("Starting process " + processName);			
+				log.info("Starting process " + InvoiceFiscalPrint.getProcessName());			
 			}
 		}
 		return null;
