@@ -117,7 +117,7 @@ public class FiscalPrinterModelValidator implements ModelValidator {
 				}
 			}
 		}
-		return null;
+		return "";
 	}
 	
 	/**
