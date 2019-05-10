@@ -112,7 +112,9 @@ public class FiscalPrinterModelValidator implements ModelValidator {
 			log.fine(" TIMING_AFTER_COMPLETE");
 			if(po.get_TableName().equals(I_C_Invoice.Table_Name)) {
 				MInvoice invoice = (MInvoice) po;
-				sendDocumentToPrinter(invoice);			
+				if(invoice.getReversal_ID() == 0) {
+					sendDocumentToPrinter(invoice);			
+				}
 			}
 		}
 		return null;
