@@ -328,25 +328,16 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 				//	Finding Error Pattern on File			
 				if (matcher.find()) {
 					findedError = true;
+					break;
 				}
 			}
-		}
-		catch(Exception e){
-			throw new AdempiereException(e);
-		}finally{
-			// Close File Readed
-			try{                    
-				if( null != filereader ){   
-					filereader.close();     
-				}                  
-			}catch (Exception e2){ 
-				throw new AdempiereException(e2);
+			filereader.close();
+			if (findedError) {
+				throw new AdempiereException();
 			}
+		} catch(Exception e){
+			throw new AdempiereException(e);
 		}
-		if (findedError) {
-			throw new AdempiereException();
-		}
-
 	}
 
 	/**
