@@ -149,9 +149,6 @@ public class FiscalPrinterModelValidator implements ModelValidator {
 					fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_INVOICE);
 				}
 			} else if(documentType.getDocBaseType().equals(X_C_DocType.DOCBASETYPE_ARCreditMemo)) {
-				if(invoice.get_ValueAsInt("DocAffected_ID") == 0) {
-					throw new AdempiereException("@DocAffected_ID@ @NotFound@");
-				}
 				fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_CREDIT_MEMO);
 			}
 			//	Set Device
