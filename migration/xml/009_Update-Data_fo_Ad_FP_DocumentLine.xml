@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Migrations>
+  <Migration EntityType="ECA05" Name="Update Data for Ad_FP_DocumentLine" ReleaseNo="" SeqNo="0">
+    <Step DBType="ALL" SeqNo="10" StepType="SQL">
+      <SQLStatement>UPDATE AD_FP_DocumentLine     
+    SET prefix = '&lt;' , suffix = '&gt;'
+    WHERE code LIKE '&lt;%' And code LIKE '%&gt;'</SQLStatement>
+    </Step>
+    <Step DBType="ALL" SeqNo="20" StepType="SQL">
+      <SQLStatement>UPDATE AD_FP_DocumentLine 
+    SET Code = RTRIM (LTRIM (Code, '&lt;'), '&gt;')
+    WHERE Code LIKE '&lt;%' AND Code LIKE '%&gt;'</SQLStatement>
+    </Step>
+  </Migration>
+</Migrations>
