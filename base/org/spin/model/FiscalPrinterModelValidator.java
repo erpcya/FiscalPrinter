@@ -17,36 +17,17 @@
 package org.spin.model;
 
 import org.adempiere.exceptions.AdempiereException;
-import org.adempiere.util.ProcessUtil;
-import org.compiere.apps.IProcessParameter;
-import org.compiere.apps.ProcessCtl;
-import org.compiere.apps.ProcessParameterPanel;
 import org.compiere.model.I_C_Invoice;
 import org.compiere.model.MClient;
 import org.compiere.model.MDocType;
-import org.compiere.model.MInOut;
 import org.compiere.model.MInvoice;
-import org.compiere.model.MOrder;
-import org.compiere.model.MPInstance;
-import org.compiere.model.MProcess;
 import org.compiere.model.ModelValidationEngine;
 import org.compiere.model.ModelValidator;
 import org.compiere.model.PO;
-import org.compiere.model.Query;
 import org.compiere.model.X_C_DocType;
-import org.compiere.model.X_C_Invoice;
-import org.compiere.model.X_C_PaySelection;
-import org.compiere.print.ReportCtl;
-import org.compiere.print.ReportEngine;
-import org.compiere.process.ProcessCall;
-import org.compiere.process.ProcessInfo;
-import org.compiere.process.ProcessInfoParameter;
 import org.compiere.util.CLogger;
 import org.compiere.util.Env;
 import org.compiere.util.Msg;
-import org.compiere.util.Trx;
-import org.spin.model.I_AD_Device;
-import org.spin.process.InvoiceFiscalPrint;
 import org.spin.util.FiscalDocumentHandler;
 import org.spin.util.FiscalPrinterHandler;
 
@@ -168,6 +149,9 @@ public class FiscalPrinterModelValidator implements ModelValidator {
 					fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_INVOICE);
 				}
 			} else if(documentType.getDocBaseType().equals(X_C_DocType.DOCBASETYPE_ARCreditMemo)) {
+				if(invoice.get_ValueAsInt("DocAffected_ID") == 0) {
+					throw new AdempiereException("@DocAffected_ID@ @NotFound@");
+				}
 				fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_CREDIT_MEMO);
 			}
 			//	Set Device
