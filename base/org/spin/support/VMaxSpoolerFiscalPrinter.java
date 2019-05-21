@@ -54,6 +54,8 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 	private String fileName = null;
 	/**	File Writer	*/
 	private FileWriter fileWriter = null;
+	/**	Out Document File Writer	*/
+	private FileWriter outFileWriter = null;
 	/**	Error Message	*/
 	private StringBuffer errorMessage = new StringBuffer();
 	/**	First Command	*/
@@ -78,7 +80,13 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 			if(runnableFolder.endsWith(File.separator)) {
 				runnableFolder = runnableFolder.substring(0, runnableFolder.length() - 1);
 			}
-			fileName = DOCUMENT_NAME + "_" + System.currentTimeMillis() + ".txt";
+			//	Clean OUT_Document.txt
+			fileName = DOCUMENT_NAME + ".txt";
+			String outFileName = "OUT_" + fileName;
+			String outFileDocument = runnableFolder + File.separator + FILES_FOLDER + File.separator + outFileName;
+			File outFile = new File(outFileDocument);
+			//	Clean OUT_Document.txt
+			cleanOutDoument(outFile);
 			String fileDocument = runnableFolder + File.separator + FILES_FOLDER + File.separator + fileName;
 			File file = new File(fileDocument);
 			deleteIfExist(file);
@@ -302,7 +310,7 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 	}
 
 	/**
-	 * Validates some error code on generated Document
+	 * Validates error code on generated OUT_Document.txt
 	 */
 	private void isValidCommands() {
 		String runnableFolder = getConfigValueAsString(X_AD_DeviceConfigUse.CONFIGTYPE_Connection, KEY_SPFOLDER);
@@ -310,8 +318,9 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 			runnableFolder = runnableFolder.substring(0, runnableFolder.length() - 1);
 		}
 		//	Generates OUT_Document.txt	
-		String fileDocument = runnableFolder + File.separator + FILES_FOLDER + File.separator + "OUT_" + fileName;
-		File file = new File(fileDocument);
+			String outFileName = "OUT_" + fileName;
+	        String outFileDocument = runnableFolder + File.separator + FILES_FOLDER + File.separator + outFileName;
+			File file = new File(outFileDocument);
 		
 		FileReader filereader = null;
 		BufferedReader bufferreader = null;
@@ -337,6 +346,25 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 			}
 		} catch(Exception e){
 			throw new AdempiereException(e);
+		}
+	}
+	
+	/**
+	 * Clear File Writer
+	 * @param file
+	 * @throws IOException
+	 */
+	public void cleanOutDoument(File file) {
+		if(outFileWriter != null) {
+			return;
+		}
+		//	Open it
+		try {
+			outFileWriter = new FileWriter(file);
+			outFileWriter.flush();
+			outFileWriter.close();
+		} catch (IOException e) {
+			addError(e.getLocalizedMessage());
 		}
 	}
 
