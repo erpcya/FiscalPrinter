@@ -47,8 +47,8 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 				&& invoice.get_ValueAsString("FiscalDocumentNo") != null)
 			return "@C_Invoice_ID@ @Printed@";
 		//	Validate is Paid
-		if(!invoice.isPaid())
-			throw new AdempiereException("@C_Invoice_ID@ @No@ @IsPaid@");
+//		if(!invoice.isPaid())
+//			throw new AdempiereException("@C_Invoice_ID@ @No@ @IsPaid@");
 		//	Get Device
 		if(getFiscalPrinterId() == 0)
 			throw new AdempiereException("@AD_Device_ID@ @NotFound@");
@@ -67,7 +67,7 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 			//	Set Document Values
 			String fiscalDocumentNo = null;
 			if(docType.getDocBaseType().equals(X_C_DocType.DOCBASETYPE_ARInvoice)) {
-				if(invoice.get_ValueAsInt("DocAffected_ID") != 0) {
+				if(invoice.get_ValueAsInt("InvoiceToAllocate_ID") != 0) {
 					fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_DEBIT_MEMO);
 				} else {
 					fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_INVOICE);

@@ -22,10 +22,14 @@ import org.compiere.model.MInvoice;
 import org.compiere.model.ModelValidationEngine;
 import org.compiere.model.ModelValidator;
 import org.compiere.model.PO;
+import org.compiere.process.ProcessInfo;
 import org.compiere.util.CLogger;
 import org.compiere.util.Env;
 import org.compiere.util.Msg;
+import org.eevolution.service.dsl.ProcessBuilder;
 import org.spin.model.I_AD_Device;
+import org.spin.process.InvoiceFiscalPrint;
+import org.spin.process.InvoiceFiscalPrintAbstract;
 
 /**
  * @author Yamel Senih, ysenih@erpcya.com, ERPCyA http://www.erpcya.com
@@ -84,6 +88,21 @@ public class FiscalPrinterModelValidator implements ModelValidator {
 				if(invoice.get_ValueAsInt(I_AD_Device.COLUMNNAME_AD_Device_ID) != 0
 						&& !invoice.get_ValueAsBoolean("IsVoidedFiscalPrint")) {
 					return Msg.parseTranslation(Env.getCtx(), "@C_Invoice_ID@ @IsPrinted@");
+				}
+			}
+		} else if(timing == TIMING_AFTER_COMPLETE) {
+			log.fine(" TIMING_AFTER_COMPLETE");
+			if(po.get_TableName().equals(I_C_Invoice.Table_Name)) {
+				MInvoice invoice = (MInvoice) po;
+				if(invoice.getReversal_ID() == 0) {
+					ProcessInfo info = ProcessBuilder.create(invoice.getCtx())
+						.withRecordId(I_C_Invoice.Table_ID, invoice.getC_Invoice_ID())
+						.process(InvoiceFiscalPrint.getProcessId())
+						.withoutTransactionClose()
+						.execute(invoice.get_TrxName());
+					if(info.isError()) {
+						return info.getSummary();
+					}
 				}
 			}
 		}
