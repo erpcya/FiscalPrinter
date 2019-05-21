@@ -29,7 +29,6 @@ import org.compiere.util.Msg;
 import org.eevolution.service.dsl.ProcessBuilder;
 import org.spin.model.I_AD_Device;
 import org.spin.process.InvoiceFiscalPrint;
-import org.spin.process.InvoiceFiscalPrintAbstract;
 
 /**
  * @author Yamel Senih, ysenih@erpcya.com, ERPCyA http://www.erpcya.com
