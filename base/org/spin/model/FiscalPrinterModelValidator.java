@@ -85,7 +85,8 @@ public class FiscalPrinterModelValidator implements ModelValidator {
 			if(po.get_TableName().equals(I_C_Invoice.Table_Name)) {
 				MInvoice invoice = (MInvoice) po;
 				//	Validate Fiscal document generated
-				if(invoice.get_ValueAsInt(I_AD_Device.COLUMNNAME_AD_Device_ID) != 0) {
+				if(invoice.get_ValueAsInt(I_AD_Device.COLUMNNAME_AD_Device_ID) != 0
+						&& !invoice.get_ValueAsBoolean("IsVoidedFiscalPrint")) {
 					return Msg.parseTranslation(Env.getCtx(), "@C_Invoice_ID@ @IsPrinted@");
 				}
 			}
