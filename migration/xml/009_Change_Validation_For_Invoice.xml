@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Migrations>
+  <Migration EntityType="D" Name="Change Validation for Invoice Fiscal Print" ReleaseNo="3.9.2" SeqNo="385">
+    <Step SeqNo="10" StepType="AD">
+      <PO AD_Table_ID="108" Action="U" Record_ID="52683" Table="AD_Val_Rule">
+        <Data AD_Column_ID="193" Column="Code" oldValue="C_Invoice.AD_Device_ID IS NOT NULL">C_Invoice.AD_Device_ID IS NOT NULL
+AND EXISTS(SELECT 1 FROM C_DocType dt WHERE dt.C_DocType_ID = C_Invoice.C_DocTypeTarget_ID AND dt.AD_FP_DocumentType_ID IS NOT NULL)</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="20" StepType="AD">
+      <PO AD_Table_ID="116" Action="U" Record_ID="54456" Table="AD_Menu">
+        <Data AD_Column_ID="4426" Column="IsSOTrx" oldValue="false">true</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="30" StepType="AD">
+      <PO AD_Table_ID="108" Action="U" Record_ID="52683" Table="AD_Val_Rule">
+        <Data AD_Column_ID="193" Column="Code" oldValue="C_Invoice.AD_Device_ID IS NOT NULL&#10;AND EXISTS(SELECT 1 FROM C_DocType dt WHERE dt.C_DocType_ID = C_Invoice.C_DocTypeTarget_ID AND dt.AD_FP_DocumentType_ID IS NOT NULL)">C_Invoice.AD_Device_ID IS NOT NULL
+AND C_Invoice.IsSOTrx = 'Y'
+AND EXISTS(SELECT 1 FROM C_DocType dt WHERE dt.C_DocType_ID = C_Invoice.C_DocTypeTarget_ID AND dt.AD_FP_DocumentType_ID IS NOT NULL)</Data>
+      </PO>
+    </Step>
+  </Migration>
+</Migrations>
