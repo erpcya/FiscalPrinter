@@ -19,12 +19,15 @@ package org.spin.support;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.adempiere.exceptions.AdempiereException;
 import org.compiere.util.Env;
@@ -39,14 +42,16 @@ import org.spin.util.FiscalPrinterHandler;
  * @author Yamel Senih, ysenih@erpya.com, ERPCyA http://www.erpya.com
  */
 public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements ISpoolerPrinter {
-	
+
 	public VMaxSpoolerFiscalPrinter(MADDevice device) {
 		super(device);
 	}
 	/**	Folder where is write document file	*/
 	private static final String FILES_FOLDER = "files";
 	/**	Folder where is write document file	*/
-	private static final String DOCUMENT_NAME = "Document.txt";
+	private String DOCUMENT_NAME = "Document";
+	/**	File Name	*/
+	private String fileName = null;
 	/**	File Writer	*/
 	private FileWriter fileWriter = null;
 	/**	Error Message	*/
@@ -59,7 +64,7 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 	private final int DOCUMENT_NO_LENGTH = 8;
 	/**	Last Spooler result	*/
 	private StringBuffer lastSpoolerLog = new StringBuffer();
-	
+
 	@Override
 	public boolean isAvailable() throws Exception {
 		return validateFiles();
@@ -73,7 +78,8 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 			if(runnableFolder.endsWith(File.separator)) {
 				runnableFolder = runnableFolder.substring(0, runnableFolder.length() - 1);
 			}
-			String fileDocument = runnableFolder + File.separator + FILES_FOLDER + File.separator + DOCUMENT_NAME;
+			fileName = DOCUMENT_NAME + "_" + System.currentTimeMillis() + ".txt";
+			String fileDocument = runnableFolder + File.separator + FILES_FOLDER + File.separator + fileName;
 			File file = new File(fileDocument);
 			deleteIfExist(file);
 			setIsConnected(true);
@@ -99,7 +105,7 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 	public Object write(Object... value) throws Exception {
 		return writeLine((String) value[0]);
 	}
-	
+
 	@Override
 	public void printStackCmd() throws Exception {
 		super.printStackCmd();
@@ -107,7 +113,7 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 		//	Run Spooler
 		runSpooler();
 	}
-	
+
 	/**
 	 * Run Spooler after write file
 	 * @return void
@@ -125,21 +131,27 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 			}
 			//	Get complete path
 			runnableFile = runnableFolder + File.separator + runnableFile;
-        	ProcessBuilder builder = new ProcessBuilder(runnableFile);
-        	builder.directory(new File(runnableFolder));
-            final Process process = builder.start();
-            InputStream is = process.getInputStream();
-            InputStreamReader isr = new InputStreamReader(is);
-            BufferedReader br = new BufferedReader(isr);
-            String line;
-            lastSpoolerLog = new StringBuffer();
-            while ((line = br.readLine()) != null) {
-            	lastSpoolerLog.append(line);
-            }
-            //	Read document No
-        } catch (Exception e) {
-        	throw new AdempiereException(e);
-        }
+			ProcessBuilder builder = new ProcessBuilder(runnableFile);
+			builder.directory(new File(runnableFolder));
+			final Process process = builder.start();
+			InputStream is = process.getInputStream();
+			InputStreamReader isr = new InputStreamReader(is);
+			BufferedReader br = new BufferedReader(isr);
+			String line;
+			lastSpoolerLog = new StringBuffer();
+			while ((line = br.readLine()) != null) {
+				lastSpoolerLog.append(line);
+			}
+			Pattern findpattern = Pattern.compile(".*ERROR>.*");
+			Matcher matcher = findpattern.matcher(lastSpoolerLog);
+			if (matcher.find()) {
+				throw new AdempiereException(lastSpoolerLog.toString());
+			}
+			isValidCommands();
+			//	Read document No
+		} catch (Exception e) {
+			throw new AdempiereException(e);
+		}
 	}
 
 	@Override
@@ -154,12 +166,12 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 
 	@Override
 	public void printXReport() throws Exception {
-		
+
 	}
 
 	@Override
 	public void printZReport() throws Exception {
-		
+
 	}
 
 	@Override
@@ -194,13 +206,13 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 		//	Default
 		return null;
 	}
-	
+
 	@Override
 	public String toString() {
 		try {
 			return getPrinterInfo();
 		} catch (Exception e) {
-			
+
 		}
 		//	Default
 		return super.toString();
@@ -218,7 +230,7 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 		//	Return
 		return values;
 	}
-	
+
 	/**
 	 * Validate if Exist files for run
 	 * @return boolean
@@ -238,7 +250,7 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 		runnableFile = runnableFolder + File.separator + runnableFile;
 		return new File(runnableFolder).exists() && new File(runnableFile).exists() && new File(fileDocument).exists();
 	}
-	
+
 	/**
 	 * Delete File
 	 * @param file
@@ -252,7 +264,7 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 			file.delete();
 		}
 	}
-	
+
 	/**
 	 * Open File Writer
 	 * @param file
@@ -269,7 +281,7 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 			addError(e.getLocalizedMessage());
 		}
 	}
-	
+
 	/**
 	 * Close File Writer and set to null
 	 * @throws IOException
@@ -288,7 +300,55 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 			addError(e.getLocalizedMessage());
 		}
 	}
-	
+
+	/**
+	 * Validates some error code on generated Document
+	 */
+	private void isValidCommands() {
+		String runnableFolder = getConfigValueAsString(X_AD_DeviceConfigUse.CONFIGTYPE_Connection, KEY_SPFOLDER);
+		if(runnableFolder.endsWith(File.separator)) {
+			runnableFolder = runnableFolder.substring(0, runnableFolder.length() - 1);
+		}
+		//	Generates OUT_Document.txt	
+		String fileDocument = runnableFolder + File.separator + FILES_FOLDER + File.separator + "OUT_" + fileName;
+		File file = new File(fileDocument);
+		
+		FileReader filereader = null;
+		BufferedReader bufferreader = null;
+		boolean findedError = false;
+		try {
+			// Open File and Open Buffer
+			filereader = new FileReader (file);
+			bufferreader = new BufferedReader(filereader);
+			// Reading File
+			String txtline;
+			while((txtline=bufferreader.readLine())!=null) {
+				Pattern findpattern = Pattern.compile(".*ERROR>.*");
+				Matcher matcher = findpattern.matcher(txtline);
+				//	Finding Error Pattern on File			
+				if (matcher.find()) {
+					findedError = true;
+				}
+			}
+		}
+		catch(Exception e){
+			throw new AdempiereException(e);
+		}finally{
+			// Close File Readed
+			try{                    
+				if( null != filereader ){   
+					filereader.close();     
+				}                  
+			}catch (Exception e2){ 
+				throw new AdempiereException(e2);
+			}
+		}
+		if (findedError) {
+			throw new AdempiereException();
+		}
+
+	}
+
 	/**
 	 * Write a line to file
 	 * @param line
@@ -314,7 +374,7 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 		}
 		return ok;
 	}
-	
+
 	/**
 	 * Add error to buffer
 	 * @param error
@@ -326,7 +386,7 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 		//	Add error
 		errorMessage.append(error);
 	}
-	
+
 	/**
 	 * Get Error Message
 	 * @return
