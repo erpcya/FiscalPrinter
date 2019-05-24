@@ -150,6 +150,7 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 			while ((line = br.readLine()) != null) {
 				lastSpoolerLog.append(line);
 			}
+			//	Find Error Pattern on Log
 			Pattern findpattern = Pattern.compile(".*ERROR>.*");
 			Matcher matcher = findpattern.matcher(lastSpoolerLog);
 			if (matcher.find()) {
@@ -350,7 +351,7 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 	}
 	
 	/**
-	 * Clear File Writer
+	 * Clear Document with File Writer
 	 * @param file
 	 * @throws IOException
 	 */
