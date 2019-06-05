@@ -44,8 +44,14 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 		MInvoice invoice = new MInvoice(getCtx(), getRecord_ID(), get_TrxName());
 		//	Validate Printing
 		if(invoice.get_ValueAsInt("AD_Device_ID") != 0
-				&& invoice.get_ValueAsString("FiscalDocumentNo") != null)
-			return "@C_Invoice_ID@ @Printed@";
+				&& invoice.get_ValueAsString("FiscalDocumentNo") != null) {
+			return "@C_Invoice_ID@ " + invoice.getDocumentNo() + " @Printed@";
+		}
+		//	Validate onlyu completed
+		if(invoice.getDocStatus().equals(MInvoice.STATUS_Reversed)
+				|| invoice.getDocStatus().equals(MInvoice.STATUS_Voided)) {
+			return "@C_Invoice_ID@ " + invoice.getDocumentNo() + " @Voided@";
+		}
 		//	Validate is Paid
 //		if(!invoice.isPaid())
 //			throw new AdempiereException("@C_Invoice_ID@ @No@ @IsPaid@");

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Migrations>
+  <Migration EntityType="D" Name="Add Maintainig Process Reverse for Invoice" ReleaseNo="3.9.0" SeqNo="4580">
+    <Step SeqNo="10" StepType="AD">
+      <PO AD_Table_ID="104" Action="I" Record_ID="55364" Table="AD_Ref_List">
+        <Data AD_Column_ID="563" Column="IsActive">true</Data>
+        <Data AD_Column_ID="564" Column="Created">2019-06-05 11:27:16.691</Data>
+        <Data AD_Column_ID="566" Column="Updated">2019-06-05 11:27:16.691</Data>
+        <Data AD_Column_ID="200" Column="Value">C</Data>
+        <Data AD_Column_ID="7712" Column="EntityType">ECA05</Data>
+        <Data AD_Column_ID="151" Column="AD_Reference_ID">54127</Data>
+        <Data AD_Column_ID="150" Column="Description" isNewNull="true"/>
+        <Data AD_Column_ID="152" Column="ValidFrom" isNewNull="true"/>
+        <Data AD_Column_ID="149" Column="Name">Complete Document (Without Printing)</Data>
+        <Data AD_Column_ID="153" Column="ValidTo" isNewNull="true"/>
+        <Data AD_Column_ID="148" Column="AD_Ref_List_ID">55364</Data>
+        <Data AD_Column_ID="372" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="371" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="565" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="567" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="84390" Column="UUID">987ba0ba-87aa-11e9-b996-6323e8f330c9</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="20" StepType="AD">
+      <PO AD_Table_ID="136" Action="I" Record_ID="55364" Table="AD_Ref_List_Trl">
+        <Data AD_Column_ID="707" Column="Created">2019-06-05 11:27:19.284</Data>
+        <Data AD_Column_ID="709" Column="Updated">2019-06-05 11:27:19.284</Data>
+        <Data AD_Column_ID="706" Column="IsActive">true</Data>
+        <Data AD_Column_ID="338" Column="Name">Complete Document (Without Printing)</Data>
+        <Data AD_Column_ID="340" Column="IsTranslated">false</Data>
+        <Data AD_Column_ID="339" Column="Description" isNewNull="true"/>
+        <Data AD_Column_ID="1216" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="1215" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="710" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="708" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="336" Column="AD_Ref_List_ID">55364</Data>
+        <Data AD_Column_ID="337" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="84391" Column="UUID">9903a00a-87aa-11e9-b9a9-83cfde94e0c9</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="30" StepType="AD">
+      <PO AD_Table_ID="136" Action="U" Record_ID="55364" Table="AD_Ref_List_Trl">
+        <Data AD_Column_ID="338" Column="Name" oldValue="Complete Document (Without Printing)">Completar Comprobante (Sin Impresión)</Data>
+        <Data AD_Column_ID="336" Column="AD_Ref_List_ID" oldValue="55364">55364</Data>
+        <Data AD_Column_ID="337" Column="AD_Language" oldValue="es_MX">es_MX</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="40" StepType="AD">
+      <PO AD_Table_ID="285" Action="I" Record_ID="56927" Table="AD_Process_Para">
+        <Data AD_Column_ID="2820" Column="Updated">2019-06-05 11:32:45.614</Data>
+        <Data AD_Column_ID="2822" Column="Name">Device</Data>
+        <Data AD_Column_ID="2817" Column="IsActive">true</Data>
+        <Data AD_Column_ID="2830" Column="IsRange">false</Data>
+        <Data AD_Column_ID="2818" Column="Created">2019-06-05 11:32:45.614</Data>
+        <Data AD_Column_ID="3738" Column="IsMandatory">true</Data>
+        <Data AD_Column_ID="3742" Column="ValueMax" isNewNull="true"/>
+        <Data AD_Column_ID="4017" Column="ColumnName">AD_Device_ID</Data>
+        <Data AD_Column_ID="2823" Column="Description" isNewNull="true"/>
+        <Data AD_Column_ID="2824" Column="Help" isNewNull="true"/>
+        <Data AD_Column_ID="56299" Column="ReadOnlyLogic">1=1</Data>
+        <Data AD_Column_ID="5819" Column="IsCentrallyMaintained">true</Data>
+        <Data AD_Column_ID="5593" Column="DefaultValue2" isNewNull="true"/>
+        <Data AD_Column_ID="3740" Column="VFormat" isNewNull="true"/>
+        <Data AD_Column_ID="3741" Column="ValueMin" isNewNull="true"/>
+        <Data AD_Column_ID="3739" Column="DefaultValue">@#FiscalPrinter_ID@</Data>
+        <Data AD_Column_ID="56300" Column="DisplayLogic" isNewNull="true"/>
+        <Data AD_Column_ID="81287" Column="IsInfoOnly">false</Data>
+        <Data AD_Column_ID="2814" Column="AD_Process_Para_ID">56927</Data>
+        <Data AD_Column_ID="2815" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="2816" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="7728" Column="EntityType">ECA05</Data>
+        <Data AD_Column_ID="3737" Column="FieldLength">10</Data>
+        <Data AD_Column_ID="2825" Column="AD_Process_ID">54232</Data>
+        <Data AD_Column_ID="2819" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="2827" Column="AD_Reference_ID">19</Data>
+        <Data AD_Column_ID="3736" Column="AD_Val_Rule_ID" isNewNull="true"/>
+        <Data AD_Column_ID="2826" Column="SeqNo">30</Data>
+        <Data AD_Column_ID="2821" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="2828" Column="AD_Reference_Value_ID" isNewNull="true"/>
+        <Data AD_Column_ID="7729" Column="AD_Element_ID">58964</Data>
+        <Data AD_Column_ID="84385" Column="UUID">5c0fed10-87ab-11e9-ba79-2704d8f2272b</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="50" StepType="AD">
+      <PO AD_Table_ID="286" Action="I" Record_ID="56927" Table="AD_Process_Para_Trl">
+        <Data AD_Column_ID="2836" Column="Created">2019-06-05 11:32:46.974</Data>
+        <Data AD_Column_ID="2835" Column="IsActive">true</Data>
+        <Data AD_Column_ID="2838" Column="Updated">2019-06-05 11:32:46.974</Data>
+        <Data AD_Column_ID="2840" Column="Name">Device</Data>
+        <Data AD_Column_ID="2842" Column="IsTranslated">false</Data>
+        <Data AD_Column_ID="2841" Column="Description" isNewNull="true"/>
+        <Data AD_Column_ID="3743" Column="Help" isNewNull="true"/>
+        <Data AD_Column_ID="2831" Column="AD_Process_Para_ID">56927</Data>
+        <Data AD_Column_ID="2833" Column="AD_Client_ID">0</Data>
+        <Data AD_Column_ID="2834" Column="AD_Org_ID">0</Data>
+        <Data AD_Column_ID="2837" Column="CreatedBy">100</Data>
+        <Data AD_Column_ID="2832" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2839" Column="UpdatedBy">100</Data>
+        <Data AD_Column_ID="84386" Column="UUID">5c555238-87ab-11e9-ba9c-b766bfe685eb</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="60" StepType="AD">
+      <PO AD_Table_ID="285" Action="U" Record_ID="56927" Table="AD_Process_Para">
+        <Data AD_Column_ID="2822" Column="Name" oldValue="Device">Fiscal Printer</Data>
+        <Data AD_Column_ID="5819" Column="IsCentrallyMaintained" oldValue="true">false</Data>
+        <Data AD_Column_ID="56300" Column="DisplayLogic" isOldNull="true">@AuthorizationType@=C</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="70" StepType="AD">
+      <PO AD_Table_ID="286" Action="U" Record_ID="56927" Table="AD_Process_Para_Trl">
+        <Data AD_Column_ID="2840" Column="Name" oldValue="Device">Impresora Fiscal</Data>
+        <Data AD_Column_ID="2831" Column="AD_Process_Para_ID" oldValue="56927">56927</Data>
+        <Data AD_Column_ID="2832" Column="AD_Language" oldValue="es_MX">es_MX</Data>
+      </PO>
+    </Step>
+    <Step SeqNo="80" StepType="AD">
+      <PO AD_Table_ID="108" Action="U" Record_ID="52683" Table="AD_Val_Rule">
+        <Data AD_Column_ID="193" Column="Code" oldValue="C_Invoice.AD_Device_ID IS NOT NULL&#10;AND C_Invoice.IsSOTrx = 'Y'&#10;AND EXISTS(SELECT 1 FROM C_DocType dt WHERE dt.C_DocType_ID = C_Invoice.C_DocTypeTarget_ID AND dt.AD_FP_DocumentType_ID IS NOT NULL)">C_Invoice.DocStatus NOT IN('CL')
+AND C_Invoice.IsSOTrx = 'Y'
+AND EXISTS(SELECT 1 FROM C_DocType dt WHERE dt.C_DocType_ID = C_Invoice.C_DocTypeTarget_ID AND dt.AD_FP_DocumentType_ID IS NOT NULL)</Data>
+        <Data AD_Column_ID="188" Column="Name" oldValue="C_Invoice only printed">C_Invoice only of Fiscal Printer</Data>
+      </PO>
+    </Step>
+  </Migration>
+</Migrations>

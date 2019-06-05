@@ -33,26 +33,53 @@ public class FiscalDocumentAuthorization extends FiscalDocumentAuthorizationAbst
 	private final String RE_PRINT = "R";
 	/**	Void Document	*/
 	private final String VOID = "V";
+	/**	Complete Document without printing	*/
+	private final String COMPLETE_DOCUMENT_WITHOUT_PRINTING = "C";
 	
 	@Override
 	protected String doIt() throws Exception {
+		String customMessage = null;
 		MInvoice invoice = new MInvoice(getCtx(), getInvoiceId(), get_TrxName());
 		//	Invoice for authorize
 		if(getAuthorizationType().equals(RE_PRINT)) {
-			if(invoice.get_ValueAsInt(I_AD_Device.COLUMNNAME_AD_Device_ID) > 0) {
+			if(invoice.get_ValueAsInt(I_AD_Device.COLUMNNAME_AD_Device_ID) > 0
+					&& invoice.getDocStatus().equals(MInvoice.STATUS_Completed)) {
 				MADDevice device = MADDevice.get(getCtx(), invoice.get_ValueAsInt(I_AD_Device.COLUMNNAME_AD_Device_ID));
 				invoice.set_ValueOfColumn(I_AD_Device.COLUMNNAME_AD_Device_ID, null);
 				invoice.addDescription(Msg.parseTranslation(getCtx(), "@AD_Device_ID@ (@OldValue@): ") + device.getName());
+			} else {
+				throw new AdempiereException("@C_Invoice_ID@ " + invoice.getDocumentNo() + " @Invalid@");
 			}
+			customMessage = "@C_Invoice_ID@: " + invoice.getDocumentNo() + " @Updated@";
 		} else if(getAuthorizationType().equals(VOID)) {
 			invoice.set_ValueOfColumn("IsVoidedFiscalPrint", true);
 			invoice.addDescription(Msg.parseTranslation(getCtx(), "@IsVoidedFiscalPrint@"));
+			invoice.saveEx();
+			if(!invoice.processIt(MInvoice.DOCACTION_Reverse_Correct)) {
+				throw new AdempiereException("@Error@: " + invoice.getProcessMsg());
+			}
+			customMessage = "@C_Invoice_ID@: " + invoice.getDocumentNo() + " @Voided@";
+		} else if(getAuthorizationType().equals(COMPLETE_DOCUMENT_WITHOUT_PRINTING)) {
+			if(getDeviceId() <= 0) {
+				throw new AdempiereException("@AD_Device_ID@ @NotFound@");
+			}
+			if(!invoice.getDocStatus().equals(MInvoice.STATUS_Drafted)
+					&& !invoice.getDocStatus().equals(MInvoice.STATUS_InProgress)
+					&& !invoice.getDocStatus().equals(MInvoice.STATUS_Invalid)
+					&& !invoice.getDocStatus().equals(MInvoice.STATUS_NotApproved)) {
+				throw new AdempiereException("@C_Invoice_ID@ " + invoice.getDocumentNo() + " @Invalid@");
+			}
+			invoice.set_ValueOfColumn(I_AD_Device.COLUMNNAME_AD_Device_ID, getDeviceId());
+			if(!invoice.processIt(MInvoice.DOCACTION_Complete)) {
+				throw new AdempiereException("@Error@: " + invoice.getProcessMsg());
+			}
+			customMessage = "@C_Invoice_ID@: " + invoice.getDocumentNo() + " @Completed@";
 		} else {
 			throw new AdempiereException("@ActionNotSupported@");
 		}
 		//	Save document
 		invoice.saveEx();
 		addLog(getInvoiceId(), invoice.getDateInvoiced(), invoice.getGrandTotal(), invoice.getDocumentNo());
-		return "@C_Invoice_ID@: " + invoice.getDocumentNo() + " @Updated@";
+		return customMessage;
 	}
 }
