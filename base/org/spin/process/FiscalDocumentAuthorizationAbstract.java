@@ -17,6 +17,10 @@
 
 package org.spin.process;
 
+import java.math.BigDecimal;
+import java.util.logging.Level;
+
+import org.compiere.process.ProcessInfoParameter;
 import org.compiere.process.SvrProcess;
 
 /** Generated Process for (Fiscal Document Authorization)
@@ -41,8 +45,19 @@ public abstract class FiscalDocumentAuthorizationAbstract extends SvrProcess {
 
 	@Override
 	protected void prepare() {
-		invoiceId = getParameterAsInt(C_INVOICE_ID);
-		authorizationType = getParameterAsString(AUTHORIZATIONTYPE);
+		ProcessInfoParameter[] para = getParameter();
+		for (int i = 0; i < para.length; i++)
+		{
+			String name = para[i].getParameterName();
+			if (para[i].getParameter() == null)
+				;
+			else if (name.equals(C_INVOICE_ID))
+				invoiceId = ((BigDecimal)para[i].getParameter()).intValue();
+			else if (name.equals(AUTHORIZATIONTYPE))
+				authorizationType = ((String)para[i].getParameter());
+			else
+				log.log(Level.SEVERE, "Unknown Parameter: " + name);
+		}
 	}
 
 	/**	 Getter Parameter Value for Invoice	*/

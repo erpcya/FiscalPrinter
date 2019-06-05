@@ -16,7 +16,6 @@
 
 package org.spin.process;
 
-import java.math.BigDecimal;
 import java.util.logging.Level;
 
 import org.compiere.process.ProcessInfoParameter;

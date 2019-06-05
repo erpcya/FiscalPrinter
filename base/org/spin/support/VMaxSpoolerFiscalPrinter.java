@@ -25,6 +25,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -48,10 +51,16 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 	}
 	/**	Folder where is write document file	*/
 	private static final String FILES_FOLDER = "files";
-	/**	Folder where is write document file	*/
+	/**	Folder where is write LOG file	*/
+//	private static final String LOG_FOLDER = "LOGS";
+	/**	Document file	*/
 	private String DOCUMENT_NAME = "Document";
+	/**	Document LOG file	*/
+//	private String LOG_NAME = "debug_"; 
 	/**	File Name	*/
 	private String fileName = null;
+	/**	LOG Name	*/
+//	private String logName = null;
 	/**	File Writer	*/
 	private FileWriter fileWriter = null;
 	/**	Out Document File Writer	*/
@@ -80,13 +89,24 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 			if(runnableFolder.endsWith(File.separator)) {
 				runnableFolder = runnableFolder.substring(0, runnableFolder.length() - 1);
 			}
-			//	Clean OUT_Document.txt
 			fileName = DOCUMENT_NAME + ".txt";
+			//	Clean OUT_Document.txt
 			String outFileName = "OUT_" + fileName;
 			String outFileDocument = runnableFolder + File.separator + FILES_FOLDER + File.separator + outFileName;
 			File outFile = new File(outFileDocument);
-			//	Clean OUT_Document.txt
 			cleanOutDoument(outFile);
+			//	Clean LOG.log
+//			Date date = new Date();
+//			DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+//			String actualDate = dateFormat.format(date);
+//			logName = LOG_NAME + actualDate + ".log";
+//			String logFileName = logName;
+//			String logFileDocument = runnableFolder + File.separator + LOG_FOLDER + File.separator + logFileName;
+//			System.out.println(logFileDocument);
+//			File logFile = new File(logFileDocument);
+//			cleanOutDoument(logFile);
+//			deleteIfExist(logFile);
+			//	Clean Document.txt
 			String fileDocument = runnableFolder + File.separator + FILES_FOLDER + File.separator + fileName;
 			File file = new File(fileDocument);
 			deleteIfExist(file);
@@ -177,6 +197,8 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 	public void printXReport() throws Exception {
 
 	}
+	
+	
 
 	@Override
 	public void printZReport() throws Exception {
@@ -368,6 +390,7 @@ public class VMaxSpoolerFiscalPrinter extends FiscalPrinterHandler implements IS
 			addError(e.getLocalizedMessage());
 		}
 	}
+	
 
 	/**
 	 * Write a line to file
