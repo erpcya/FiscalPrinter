@@ -55,7 +55,14 @@ public class FiscalDocumentAuthorization extends FiscalDocumentAuthorizationAbst
 			invoice.set_ValueOfColumn("IsVoidedFiscalPrint", true);
 			invoice.addDescription(Msg.parseTranslation(getCtx(), "@IsVoidedFiscalPrint@"));
 			invoice.saveEx();
-			if(!invoice.processIt(MInvoice.DOCACTION_Reverse_Correct)) {
+			if(invoice.getDocStatus().equals(MInvoice.STATUS_Closed)) {
+				throw new AdempiereException("@C_Invoice_ID@ " + invoice.getDocumentNo() + " @Closed@");
+			}
+			String docAction = MInvoice.DOCACTION_Reverse_Correct;
+			if(!invoice.getDocStatus().equals(MInvoice.STATUS_Completed)) {
+				docAction = MInvoice.DOCACTION_Void;
+			}
+			if(!invoice.processIt(docAction)) {
 				throw new AdempiereException("@Error@: " + invoice.getProcessMsg());
 			}
 			customMessage = "@C_Invoice_ID@: " + invoice.getDocumentNo() + " @Voided@";
