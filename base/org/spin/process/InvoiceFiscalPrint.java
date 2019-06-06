@@ -45,12 +45,21 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 		MInvoice invoice = new MInvoice(getCtx(), getRecord_ID(), get_TrxName());
 		//	Validate Printing
 		if(invoice.get_ValueAsInt("AD_Device_ID") != 0
-				&& invoice.get_ValueAsString("FiscalDocumentNo") != null)
-			return "@C_Invoice_ID@ @Printed@";
+				&& invoice.get_ValueAsString("FiscalDocumentNo") != null) {
+			return "@C_Invoice_ID@ " + invoice.getDocumentNo() + " @Printed@";
+		}
+		//	Validate onlyu completed
+		if(invoice.getDocStatus().equals(MInvoice.STATUS_Reversed)
+				|| invoice.getDocStatus().equals(MInvoice.STATUS_Voided)) {
+			return "@C_Invoice_ID@ " + invoice.getDocumentNo() + " @Voided@";
+		}
 		//	Validates GrandTotal > 0
 		if (invoice.getGrandTotal().compareTo(Env.ZERO) < 0)
 			return "@C_Invoice_ID@ @GrandTotal@ < 0";
 		
+		//	Validate is Paid
+//		if(!invoice.isPaid())
+//			throw new AdempiereException("@C_Invoice_ID@ @No@ @IsPaid@");
 		//	Get Device
 		if(getFiscalPrinterId() == 0)
 			throw new AdempiereException("@AD_Device_ID@ @NotFound@");
@@ -69,7 +78,7 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 			//	Set Document Values
 			String fiscalDocumentNo = null;
 			if(docType.getDocBaseType().equals(X_C_DocType.DOCBASETYPE_ARInvoice)) {
-				if(invoice.get_ValueAsInt("DocAffected_ID") != 0) {
+				if(invoice.get_ValueAsInt("InvoiceToAllocate_ID") != 0) {
 					fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_DEBIT_MEMO);
 				} else {
 					fiscalDocumentNo = documentHandler.getLastDocumentNo(FiscalPrinterHandler.DOCUMENT_TYPE_INVOICE);
@@ -83,7 +92,7 @@ public class InvoiceFiscalPrint extends InvoiceFiscalPrintAbstract {
 			if(fiscalDocumentNo != null
 					&& fiscalDocumentNo.length() > 0) {
 				invoice.set_ValueOfColumn("FiscalDocumentNo", fiscalDocumentNo);
-				invoice.setDocumentNo(fiscalDocumentNo);
+//				invoice.setDocumentNo(fiscalDocumentNo);
 			}
 			//	Save
 			invoice.saveEx();

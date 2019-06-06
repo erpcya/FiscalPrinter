@@ -38,10 +38,14 @@ public abstract class FiscalDocumentAuthorizationAbstract extends SvrProcess {
 	public static final String C_INVOICE_ID = "C_Invoice_ID";
 	/**	Parameter Name for Authorization Type	*/
 	public static final String AUTHORIZATIONTYPE = "AuthorizationType";
+	/**	Parameter Name for Fiscal Printer	*/
+	public static final String AD_DEVICE_ID = "AD_Device_ID";
 	/**	Parameter Value for Invoice	*/
 	private int invoiceId;
 	/**	Parameter Value for Authorization Type	*/
 	private String authorizationType;
+	/**	Parameter Value for Fiscal Printer	*/
+	private int deviceId;
 
 	@Override
 	protected void prepare() {
@@ -55,6 +59,8 @@ public abstract class FiscalDocumentAuthorizationAbstract extends SvrProcess {
 				invoiceId = ((BigDecimal)para[i].getParameter()).intValue();
 			else if (name.equals(AUTHORIZATIONTYPE))
 				authorizationType = ((String)para[i].getParameter());
+			else if (name.equals(AD_DEVICE_ID))
+				deviceId = ((BigDecimal)para[i].getParameter()).intValue();
 			else
 				log.log(Level.SEVERE, "Unknown Parameter: " + name);
 		}
@@ -78,6 +84,16 @@ public abstract class FiscalDocumentAuthorizationAbstract extends SvrProcess {
 	/**	 Setter Parameter Value for Authorization Type	*/
 	protected void setAuthorizationType(String authorizationType) {
 		this.authorizationType = authorizationType;
+	}
+
+	/**	 Getter Parameter Value for Fiscal Printer	*/
+	protected int getDeviceId() {
+		return deviceId;
+	}
+
+	/**	 Setter Parameter Value for Fiscal Printer	*/
+	protected void setDeviceId(int deviceId) {
+		this.deviceId = deviceId;
 	}
 
 	/**	 Getter Parameter Value for Process ID	*/
