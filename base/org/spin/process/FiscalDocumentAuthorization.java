@@ -70,6 +70,7 @@ public class FiscalDocumentAuthorization extends FiscalDocumentAuthorizationAbst
 				throw new AdempiereException("@C_Invoice_ID@ " + invoice.getDocumentNo() + " @Invalid@");
 			}
 			invoice.set_ValueOfColumn(I_AD_Device.COLUMNNAME_AD_Device_ID, getDeviceId());
+			invoice.saveEx();
 			if(!invoice.processIt(MInvoice.DOCACTION_Complete)) {
 				throw new AdempiereException("@Error@: " + invoice.getProcessMsg());
 			}
