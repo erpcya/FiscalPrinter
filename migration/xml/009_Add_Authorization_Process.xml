@@ -24,7 +24,6 @@
         <Data AD_Column_ID="2599" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="58590" Column="AD_Reference_Value_ID" isNewNull="true"/>
         <Data AD_Column_ID="2601" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="84316" Column="UUID">0913fe80-7bd0-11e9-bb55-5777b7bc85ae</Data>
       </PO>
     </Step>
     <Step SeqNo="20" StepType="AD">
@@ -33,7 +32,7 @@
         <Data AD_Column_ID="6449" Column="PO_Help" isNewNull="true"/>
         <Data AD_Column_ID="2641" Column="IsActive">true</Data>
         <Data AD_Column_ID="2644" Column="Updated">2019-05-21 09:25:05.696</Data>
-        <Data AD_Column_ID="2638" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2638" Column="AD_Language"> es_VE</Data>
         <Data AD_Column_ID="6450" Column="PO_Name" isNewNull="true"/>
         <Data AD_Column_ID="2648" Column="Help" isNewNull="true"/>
         <Data AD_Column_ID="2646" Column="Name">Voided Fiscal Print</Data>
@@ -47,12 +46,11 @@
         <Data AD_Column_ID="2645" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="2643" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="2637" Column="AD_Element_ID">60980</Data>
-        <Data AD_Column_ID="84317" Column="UUID">09a8c844-7bd0-11e9-bb6e-670b581e7bf8</Data>
       </PO>
     </Step>
     <Step SeqNo="40" StepType="AD">
       <PO AD_Table_ID="277" Action="U" Record_ID="0" Table="AD_Element_Trl">
-        <Data AD_Column_ID="2638" Column="AD_Language" oldValue="es_MX">es_MX</Data>
+        <Data AD_Column_ID="2638" Column="AD_Language" oldValue=" es_VE"> es_VE</Data>
         <Data AD_Column_ID="2646" Column="Name" oldValue="Voided Fiscal Print">Impresión Fiscal Anulada</Data>
         <Data AD_Column_ID="2647" Column="Description" oldValue="Fiscal Print was voided for device">La Impresión Fiscal fue Anulada por el dispositivo</Data>
         <Data AD_Column_ID="4300" Column="PrintName" oldValue="Voided Fiscal Print">Impresión Fiscal Anulada</Data>
@@ -63,7 +61,6 @@
       <PO AD_Table_ID="101" Action="I" Record_ID="93087" Table="AD_Column">
         <Data AD_Column_ID="112" Column="Description">Fiscal Print was voided for device</Data>
         <Data AD_Column_ID="548" Column="IsActive">true</Data>
-        <Data AD_Column_ID="90939" Column="AD_Image_ID" isNewNull="true"/>
         <Data AD_Column_ID="549" Column="Created">2019-05-21 09:30:03.302</Data>
         <Data AD_Column_ID="3388" Column="ValueMin" isNewNull="true"/>
         <Data AD_Column_ID="551" Column="Updated">2019-05-21 09:30:03.302</Data>
@@ -93,13 +90,10 @@
         <Data AD_Column_ID="54358" Column="InfoFactoryClass" isNewNull="true"/>
         <Data AD_Column_ID="56187" Column="IsAllowLogging">true</Data>
         <Data AD_Column_ID="56149" Column="IsAutocomplete">false</Data>
-        <Data AD_Column_ID="68024" Column="IsRange">false</Data>
-        <Data AD_Column_ID="62199" Column="IsAllowCopy">true</Data>
         <Data AD_Column_ID="127" Column="SeqNo">0</Data>
         <Data AD_Column_ID="6482" Column="EntityType">ECA05</Data>
         <Data AD_Column_ID="359" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="360" Column="AD_Org_ID">0</Data>
-        <Data AD_Column_ID="59702" Column="AD_Chart_ID" isNewNull="true"/>
         <Data AD_Column_ID="114" Column="AD_Table_ID">318</Data>
         <Data AD_Column_ID="550" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="2608" Column="AD_Element_ID">60980</Data>
@@ -108,7 +102,6 @@
         <Data AD_Column_ID="118" Column="FieldLength">1</Data>
         <Data AD_Column_ID="226" Column="AD_Reference_ID">20</Data>
         <Data AD_Column_ID="552" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="84306" Column="UUID">bb7aef16-7bd0-11e9-815e-5b1973519b37</Data>
         <Data AD_Column_ID="3369" Column="AD_Process_ID" isNewNull="true"/>
       </PO>
     </Step>
@@ -124,21 +117,19 @@
         <Data AD_Column_ID="12951" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12958" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12956" Column="CreatedBy">100</Data>
-        <Data AD_Column_ID="12953" Column="AD_Language">es_MX</Data>
-        <Data AD_Column_ID="84310" Column="UUID">bbbf14ca-7bd0-11e9-8192-1fd8e9dae668</Data>
+        <Data AD_Column_ID="12953" Column="AD_Language"> es_VE</Data>
       </PO>
     </Step>
     <Step SeqNo="70" StepType="AD">
       <PO AD_Table_ID="287" Action="U" Record_ID="0" Table="AD_Process_Trl">
         <Data AD_Column_ID="2855" Column="IsTranslated" oldValue="true">false</Data>
-        <Data AD_Column_ID="2844" Column="AD_Language" oldValue="es_MX">es_MX</Data>
+        <Data AD_Column_ID="2844" Column="AD_Language" oldValue=" es_VE"> es_VE</Data>
         <Data AD_Column_ID="2843" Column="AD_Process_ID" oldValue="181">181</Data>
       </PO>
     </Step>
     <Step SeqNo="80" StepType="AD">
       <PO AD_Table_ID="284" Action="I" Record_ID="54232" Table="AD_Process">
         <Data AD_Column_ID="4374" Column="AD_ReportView_ID" isNewNull="true"/>
-        <Data AD_Column_ID="84383" Column="UUID">5ed57078-7bd1-11e9-81a2-6fcdec1b1ba0</Data>
         <Data AD_Column_ID="4656" Column="Classname">org.spin.process.FiscalDocumentAuthorization</Data>
         <Data AD_Column_ID="2811" Column="Help">Note that this functionality need a supervisor level</Data>
         <Data AD_Column_ID="12458" Column="IsBetaFunctionality">false</Data>
@@ -168,7 +159,6 @@
         <Data AD_Column_ID="56515" Column="AD_Form_ID" isNewNull="true"/>
         <Data AD_Column_ID="5790" Column="AccessLevel">3</Data>
         <Data AD_Column_ID="14084" Column="IsServerProcess">false</Data>
-        <Data AD_Column_ID="78843" Column="GenerateClass">N</Data>
         <Data AD_Column_ID="7752" Column="AD_PrintFormat_ID" isNewNull="true"/>
       </PO>
     </Step>
@@ -184,10 +174,9 @@
         <Data AD_Column_ID="2846" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="2845" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2851" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="2844" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2844" Column="AD_Language"> es_VE</Data>
         <Data AD_Column_ID="2843" Column="AD_Process_ID">54232</Data>
         <Data AD_Column_ID="2849" Column="CreatedBy">100</Data>
-        <Data AD_Column_ID="84387" Column="UUID">5f0f75ca-7bd1-11e9-81c6-c75250ca01c9</Data>
       </PO>
     </Step>
     <Step SeqNo="100" StepType="AD">
@@ -195,7 +184,7 @@
         <Data AD_Column_ID="2853" Column="Description" oldValue="Allows re-print or void a fiscal document">Permite reimprimir o anular un documento fiscal</Data>
         <Data AD_Column_ID="2854" Column="Help" oldValue="Note that this functionality need a supervisor level">Note que esta funcionalidad necesita un nivel de supervisor</Data>
         <Data AD_Column_ID="2852" Column="Name" oldValue="Fiscal Document Authorization">Autorizar Documento Fiscal</Data>
-        <Data AD_Column_ID="2844" Column="AD_Language" oldValue="es_MX">es_MX</Data>
+        <Data AD_Column_ID="2844" Column="AD_Language" oldValue=" es_VE"> es_VE</Data>
         <Data AD_Column_ID="2843" Column="AD_Process_ID" oldValue="54232">54232</Data>
       </PO>
     </Step>
@@ -214,7 +203,6 @@
         <Data AD_Column_ID="7715" Column="EntityType">ECA05</Data>
         <Data AD_Column_ID="587" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="585" Column="CreatedBy">100</Data>
-        <Data AD_Column_ID="84460" Column="UUID">b9e2529c-7bd1-11e9-81e1-cfff34befa2c</Data>
       </PO>
     </Step>
     <Step SeqNo="120" StepType="AD">
@@ -236,7 +224,6 @@
         <Data AD_Column_ID="3741" Column="ValueMin" isNewNull="true"/>
         <Data AD_Column_ID="3739" Column="DefaultValue" isNewNull="true"/>
         <Data AD_Column_ID="56300" Column="DisplayLogic" isNewNull="true"/>
-        <Data AD_Column_ID="81287" Column="IsInfoOnly">false</Data>
         <Data AD_Column_ID="2814" Column="AD_Process_Para_ID">56909</Data>
         <Data AD_Column_ID="2815" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2816" Column="AD_Org_ID">0</Data>
@@ -250,7 +237,6 @@
         <Data AD_Column_ID="2821" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="2828" Column="AD_Reference_Value_ID">336</Data>
         <Data AD_Column_ID="7729" Column="AD_Element_ID">1008</Data>
-        <Data AD_Column_ID="84385" Column="UUID">c2cf01a2-7bd1-11e9-8988-07aaf0012027</Data>
       </PO>
     </Step>
     <Step SeqNo="130" StepType="AD">
@@ -266,9 +252,8 @@
         <Data AD_Column_ID="2833" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2834" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="2837" Column="CreatedBy">100</Data>
-        <Data AD_Column_ID="2832" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2832" Column="AD_Language"> es_VE</Data>
         <Data AD_Column_ID="2839" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="84386" Column="UUID">c3051968-7bd1-11e9-89ab-632722bb86f2</Data>
       </PO>
     </Step>
     <Step SeqNo="140" StepType="AD">
@@ -296,7 +281,6 @@
         <Data AD_Column_ID="4621" Column="AD_Form_ID" isNewNull="true"/>
         <Data AD_Column_ID="602" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="3375" Column="AD_Process_ID">54232</Data>
-        <Data AD_Column_ID="84344" Column="UUID">d2ea0bcc-7bd1-11e9-81f2-3bc7fc5e5f6c</Data>
       </PO>
     </Step>
     <Step SeqNo="150" StepType="AD">
@@ -312,13 +296,11 @@
         <Data AD_Column_ID="1195" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="638" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="245" Column="AD_Menu_ID">54456</Data>
-        <Data AD_Column_ID="246" Column="AD_Language">es_MX</Data>
-        <Data AD_Column_ID="84345" Column="UUID">d31d1594-7bd1-11e9-820d-af0c04cfae8f</Data>
+        <Data AD_Column_ID="246" Column="AD_Language"> es_VE</Data>
       </PO>
     </Step>
     <Step SeqNo="160" StepType="AD">
       <PO AD_Table_ID="452" Action="I" Record_ID="54456" Table="AD_TreeNodeMM">
-        <Data AD_Column_ID="84442" Column="UUID">d345f554-7bd1-11e9-821c-839e18309dd0</Data>
         <Data AD_Column_ID="6150" Column="IsActive">true</Data>
         <Data AD_Column_ID="6153" Column="Updated">2019-05-21 09:37:53.446</Data>
         <Data AD_Column_ID="6151" Column="Created">2019-05-21 09:37:53.446</Data>
@@ -378,7 +360,6 @@
         <Data AD_Column_ID="6486" Column="EntityType">ECA05</Data>
         <Data AD_Column_ID="557" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="555" Column="CreatedBy">100</Data>
-        <Data AD_Column_ID="84393" Column="UUID">1b9314b2-7bd3-11e9-b2e1-773b7ff2009e</Data>
       </PO>
     </Step>
     <Step SeqNo="220" StepType="AD">
@@ -394,9 +375,8 @@
         <Data AD_Column_ID="1203" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="1202" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="670" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="279" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="279" Column="AD_Language"> es_VE</Data>
         <Data AD_Column_ID="278" Column="AD_Reference_ID">54127</Data>
-        <Data AD_Column_ID="84394" Column="UUID">1bdd302e-7bd3-11e9-b2f4-b32cde27bbd5</Data>
       </PO>
     </Step>
     <Step SeqNo="230" StepType="AD">
@@ -416,7 +396,6 @@
         <Data AD_Column_ID="371" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="565" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="567" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="84390" Column="UUID">2d4f9c8e-7bd3-11e9-b304-2f7f1741f33f</Data>
       </PO>
     </Step>
     <Step SeqNo="240" StepType="AD">
@@ -432,8 +411,7 @@
         <Data AD_Column_ID="710" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="708" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="336" Column="AD_Ref_List_ID">55359</Data>
-        <Data AD_Column_ID="337" Column="AD_Language">es_MX</Data>
-        <Data AD_Column_ID="84391" Column="UUID">2d7ed166-7bd3-11e9-b317-c7861037feb2</Data>
+        <Data AD_Column_ID="337" Column="AD_Language"> es_VE</Data>
       </PO>
     </Step>
     <Step SeqNo="250" StepType="AD">
@@ -441,7 +419,7 @@
         <Data AD_Column_ID="338" Column="Name" oldValue="Re-Print">Reimpresión</Data>
         <Data AD_Column_ID="339" Column="Description" oldValue="Re-Print fiscal document">Reimpresión de documento fiscal</Data>
         <Data AD_Column_ID="336" Column="AD_Ref_List_ID" oldValue="55359">55359</Data>
-        <Data AD_Column_ID="337" Column="AD_Language" oldValue="es_MX">es_MX</Data>
+        <Data AD_Column_ID="337" Column="AD_Language" oldValue=" es_VE"> es_VE</Data>
       </PO>
     </Step>
     <Step SeqNo="260" StepType="AD">
@@ -461,7 +439,6 @@
         <Data AD_Column_ID="371" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="565" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="567" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="84390" Column="UUID">43d3e53c-7bd3-11e9-b32b-fbfba4099a12</Data>
       </PO>
     </Step>
     <Step SeqNo="270" StepType="AD">
@@ -477,8 +454,7 @@
         <Data AD_Column_ID="710" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="708" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="336" Column="AD_Ref_List_ID">55360</Data>
-        <Data AD_Column_ID="337" Column="AD_Language">es_MX</Data>
-        <Data AD_Column_ID="84391" Column="UUID">4401bc5a-7bd3-11e9-b33e-e3711d334af4</Data>
+        <Data AD_Column_ID="337" Column="AD_Language"> es_VE</Data>
       </PO>
     </Step>
     <Step SeqNo="280" StepType="AD">
@@ -486,7 +462,7 @@
         <Data AD_Column_ID="338" Column="Name" oldValue="Void">Anulación</Data>
         <Data AD_Column_ID="339" Column="Description" oldValue="Void Fiscal Document">Anulación de documento fiscal</Data>
         <Data AD_Column_ID="336" Column="AD_Ref_List_ID" oldValue="55360">55360</Data>
-        <Data AD_Column_ID="337" Column="AD_Language" oldValue="es_MX">es_MX</Data>
+        <Data AD_Column_ID="337" Column="AD_Language" oldValue=" es_VE"> es_VE</Data>
       </PO>
     </Step>
     <Step SeqNo="290" StepType="AD">
@@ -512,7 +488,6 @@
         <Data AD_Column_ID="2599" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="58590" Column="AD_Reference_Value_ID">54127</Data>
         <Data AD_Column_ID="2601" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="84316" Column="UUID">53ab9fcc-7bd3-11e9-b352-07b3c795ec1c</Data>
       </PO>
     </Step>
     <Step SeqNo="300" StepType="AD">
@@ -521,7 +496,7 @@
         <Data AD_Column_ID="6449" Column="PO_Help" isNewNull="true"/>
         <Data AD_Column_ID="2641" Column="IsActive">true</Data>
         <Data AD_Column_ID="2644" Column="Updated">2019-05-21 09:48:38.682</Data>
-        <Data AD_Column_ID="2638" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2638" Column="AD_Language"> es_VE</Data>
         <Data AD_Column_ID="6450" Column="PO_Name" isNewNull="true"/>
         <Data AD_Column_ID="2648" Column="Help" isNewNull="true"/>
         <Data AD_Column_ID="2646" Column="Name">Authorization Type</Data>
@@ -535,16 +510,15 @@
         <Data AD_Column_ID="2645" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="2643" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="2637" Column="AD_Element_ID">60981</Data>
-        <Data AD_Column_ID="84317" Column="UUID">53dd4bda-7bd3-11e9-b36b-f74f4f880bff</Data>
       </PO>
     </Step>
     <Step SeqNo="310" StepType="AD">
       <PO AD_Table_ID="277" Action="U" Record_ID="0" Table="AD_Element_Trl">
-        <Data AD_Column_ID="2638" Column="AD_Language" oldValue="es_MX">es_MX</Data>
+        <Data AD_Column_ID="2638" Column="AD_Language" oldValue=" es_VE"> es_VE</Data>
         <Data AD_Column_ID="2646" Column="Name" oldValue="Authorization Type">Tipo de Autorización</Data>
+        <Data AD_Column_ID="2637" Column="AD_Element_ID" oldValue="60981">60981</Data>
         <Data AD_Column_ID="2647" Column="Description" oldValue="Authorization Type for Fiscal Document">Tipo de Autorización para Documento Fiscal</Data>
         <Data AD_Column_ID="4300" Column="PrintName" oldValue="Authorization Type">Tipo de Autorización</Data>
-        <Data AD_Column_ID="2637" Column="AD_Element_ID" oldValue="60981">60981</Data>
       </PO>
     </Step>
     <Step SeqNo="320" StepType="AD">
@@ -566,7 +540,6 @@
         <Data AD_Column_ID="3741" Column="ValueMin" isNewNull="true"/>
         <Data AD_Column_ID="3739" Column="DefaultValue">-1</Data>
         <Data AD_Column_ID="56300" Column="DisplayLogic" isNewNull="true"/>
-        <Data AD_Column_ID="81287" Column="IsInfoOnly">false</Data>
         <Data AD_Column_ID="2814" Column="AD_Process_Para_ID">56910</Data>
         <Data AD_Column_ID="2815" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2816" Column="AD_Org_ID">0</Data>
@@ -580,7 +553,6 @@
         <Data AD_Column_ID="2821" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="2828" Column="AD_Reference_Value_ID">54127</Data>
         <Data AD_Column_ID="7729" Column="AD_Element_ID">60981</Data>
-        <Data AD_Column_ID="84385" Column="UUID">6b2ef4b4-7bd3-11e9-b386-5b5055731431</Data>
       </PO>
     </Step>
     <Step SeqNo="330" StepType="AD">
@@ -596,9 +568,8 @@
         <Data AD_Column_ID="2833" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="2834" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="2837" Column="CreatedBy">100</Data>
-        <Data AD_Column_ID="2832" Column="AD_Language">es_MX</Data>
+        <Data AD_Column_ID="2832" Column="AD_Language"> es_VE</Data>
         <Data AD_Column_ID="2839" Column="UpdatedBy">100</Data>
-        <Data AD_Column_ID="84386" Column="UUID">6b64fe7e-7bd3-11e9-b3a9-d7ace142aadd</Data>
       </PO>
     </Step>
     <Step SeqNo="340" StepType="AD">

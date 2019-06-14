@@ -51,6 +51,7 @@ p.TenderType</SQLStatement>
       <PO AD_Table_ID="746" Action="I" Record_ID="0" Table="AD_Table_Trl">
         <Data AD_Column_ID="12720" Column="AD_Org_ID">0</Data>
         <Data AD_Column_ID="12714" Column="AD_Table_ID">54169</Data>
+        <Data AD_Column_ID="12719" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12722" Column="Created">2016-10-15 13:27:51.402</Data>
         <Data AD_Column_ID="12717" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="12721" Column="IsActive">true</Data>
@@ -58,7 +59,6 @@ p.TenderType</SQLStatement>
         <Data AD_Column_ID="12718" Column="UpdatedBy">100</Data>
         <Data AD_Column_ID="12715" Column="AD_Language">es_VE</Data>
         <Data AD_Column_ID="12716" Column="Name">FP Invoice Payment Type</Data>
-        <Data AD_Column_ID="12719" Column="AD_Client_ID">0</Data>
         <Data AD_Column_ID="12723" Column="Updated">2016-10-15 13:27:51.402</Data>
       </PO>
     </Step>
@@ -725,7 +725,7 @@ There are two reasons for de-activating and not deleting records:
     <Step SeqNo="240" StepType="AD">
       <PO AD_Table_ID="746" Action="U" Record_ID="0" Table="AD_Table_Trl">
         <Data AD_Column_ID="12716" Column="Name" oldValue="FP Invoice Payment Type">Tipo de Pago</Data>
-        <Data AD_Column_ID="12715" Column="AD_Language" oldValue="es_MX">es_MX</Data>
+        <Data AD_Column_ID="12715" Column="AD_Language" oldValue="es_VE">es_VE</Data>
         <Data AD_Column_ID="12714" Column="AD_Table_ID" oldValue="54169">54169</Data>
       </PO>
     </Step>

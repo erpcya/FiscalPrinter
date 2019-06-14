@@ -19,7 +19,6 @@
         <Data AD_Column_ID="15603" Column="Help">Contribution by E.R.P Consultores y Asociados, C.A</Data>
         <Data AD_Column_ID="15598" Column="CreatedBy">100</Data>
         <Data AD_Column_ID="15601" Column="Name">Spin Contribution (Fiscal Printer)</Data>
-        <Data AD_Column_ID="84318" Column="UUID">5589cece-6173-11e9-9591-0b9f575d0af2</Data>
       </PO>
     </Step>
   </Migration>
