@@ -69,6 +69,7 @@ public class FiscalDocumentAuthorization extends FiscalDocumentAuthorizationAbst
 					&& !invoice.getDocStatus().equals(MInvoice.STATUS_NotApproved)) {
 				throw new AdempiereException("@C_Invoice_ID@ " + invoice.getDocumentNo() + " @Invalid@");
 			}
+			invoice.setDocStatus(MInvoice.STATUS_InProgress);
 			invoice.set_ValueOfColumn(I_AD_Device.COLUMNNAME_AD_Device_ID, getDeviceId());
 			invoice.saveEx();
 			if(!invoice.processIt(MInvoice.DOCACTION_Complete)) {
