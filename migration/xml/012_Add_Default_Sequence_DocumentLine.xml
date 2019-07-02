@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Migrations>
+  <Migration EntityType="ECA05" Name="Add Document Line Default Value" ReleaseNo="3.9.3" SeqNo="5490">
+    <Step SeqNo="10" StepType="AD">
+      <PO AD_Table_ID="101" Action="U" Record_ID="80950" Table="AD_Column">
+        <Data AD_Column_ID="117" Column="DefaultValue" isOldNull="true">@SQL=SELECT NVL(MAX(SeqNo),0)+10 AS DefaultValue FROM AD_FP_DocumentLine WHERE AD_FP_Document_ID=@AD_FP_Document_ID@</Data>
+      </PO>
+    </Step>
+  </Migration>
+</Migrations>
