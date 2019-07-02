@@ -15,7 +15,7 @@
  * All Rights Reserved.                                                       *
  * Contributor(s): Yamel Senih www.erpya.com                                  *
  *****************************************************************************/
-package org.spin.handler;
+package org.spin.util.impexp;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,7 +48,7 @@ import org.spin.model.MADFPDocument;
 import org.spin.model.MADFPDocumentLine;
 import org.xml.sax.SAXException;
 
-public class FiscalPrinterElementHandler extends GenericPOHandler {
+public class FiscalPrinterExporter extends GenericPOHandler {
 	public void create(Properties ctx, TransformerHandler document) throws SAXException {
 		int deviceTypeId = Env.getContextAsInt(ctx, "AD_DeviceType_ID");
 		PackOut packOut = (PackOut) ctx.get("PackOutProcess");
