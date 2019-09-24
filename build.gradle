@@ -20,6 +20,7 @@ sourceSets {
 dependencies {
     implementation name: 'Adempiere'
     implementation name: 'DeviceManagement'
+    implementation name: 'ADempierePOS'
     implementation name: 'jssc'
     implementation name: 'TfhkaJava'
 }
