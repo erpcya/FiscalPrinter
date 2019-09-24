@@ -1,0 +1,30 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    jcenter()
+    flatDir {
+       dirs 'dependences', 'lib'
+	}
+}
+
+sourceSets {
+    main {
+         java {
+            srcDirs = ['base', 'patches']
+         }
+    }
+}
+
+dependencies {
+    implementation name: 'Adempiere'
+    implementation name: 'DeviceManagement'
+}
+
+jar {
+    manifest {
+        attributes('Implementation-Title': project.name,
+                   'Implementation-Version': project.version)
+    }
+}

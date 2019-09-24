@@ -1,0 +1,31 @@
+language: java
+jdk:
+- openjdk8
+install: gradle wrapper
+os:
+- linux
+sudo: required
+addons:
+  apt:
+    packages:
+      gradle
+before_script:
+  - mkdir dependences
+  - wget http://github.com/erpcya/adempiere/releases/latest/download/Adempiere_392LTS.tar.gz -c -O Adempiere.tar.gz
+  - tar -xzf Adempiere.tar.gz
+  - mv Adempiere/lib/Adempiere.jar dependences/Adempiere.jar
+  - wget http://github.com/erpcya/DeviceManagement/releases/latest/download/DeviceManagement.jar -c -O dependences/DeviceManagement.jar
+jobs:
+  include:
+    - stage: Compilation
+      script: ./gradlew build
+    - stage: Generate Jar
+      script: ./gradlew jar
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN_KEY
+  file: 
+    - "$TRAVIS_BUILD_DIR/build/libs/FiscalPrinter.jar"
+  skip_cleanup: true
+  on:
+    tags: true
