@@ -93,7 +93,8 @@ public class FiscalPrinterModelValidator implements ModelValidator {
 			log.fine(" TIMING_AFTER_COMPLETE");
 			if(po.get_TableName().equals(I_C_Invoice.Table_Name)) {
 				MInvoice invoice = (MInvoice) po;
-				if(invoice.getReversal_ID() == 0) {
+				if(invoice.getReversal_ID() == 0
+						&& invoice.isSOTrx()) {
 					ProcessInfo info = ProcessBuilder.create(invoice.getCtx())
 						.withRecordId(I_C_Invoice.Table_ID, invoice.getC_Invoice_ID())
 						.process(InvoiceFiscalPrint.getProcessId())
