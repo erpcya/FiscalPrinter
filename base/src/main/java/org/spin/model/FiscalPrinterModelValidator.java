@@ -96,8 +96,8 @@ public class FiscalPrinterModelValidator implements ModelValidator {
 				if(invoice.getReversal_ID() == 0
 						&& invoice.isSOTrx()) {
 					ProcessInfo info = ProcessBuilder.create(invoice.getCtx())
-						.withRecordId(I_C_Invoice.Table_ID, invoice.getC_Invoice_ID())
 						.process(InvoiceFiscalPrint.getProcessId())
+						.withRecordId(I_C_Invoice.Table_ID, invoice.getC_Invoice_ID())
 						.withoutTransactionClose()
 						.execute(invoice.get_TrxName());
 					if(info.isError()) {
